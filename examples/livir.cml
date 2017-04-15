@@ -22,7 +22,8 @@ contract of query Livir.searchBooks(keywords: String): Book*
     require (words | count) > 0;
 
     return for book in bookStore.books, word in words
-        | select book.title = /.*(<word>).*/ | yield unique book;
+        | select book.title = /.*(<word>).*/
+        | yield unique book;
 }
 
 contract of command Livir.addToOrder(order: Order, book: Book, quantity: Integer)

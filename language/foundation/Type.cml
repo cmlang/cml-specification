@@ -1,8 +1,14 @@
 
 // Model (Abstract Syntax)
 
+const primitiveTypeNames = [
+    "Boolean", "Integer", "Decimal", "String", "Regex", // main primitive types
+    "Byte", "Short", "Long", "Float", "Double", "Char"  // remaining primitive types
+];
+
 concept Type: NamedElement
 {
+    primitive: Boolean = primitiveTypeNames | exists name;
     cardinality: String?;
 
     /kind: String

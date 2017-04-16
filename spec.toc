@@ -5,5 +5,6 @@
 \contentsline {chapter}{\chapternumberline {5}Targets}{5}
 \contentsline {chapter}{\chapternumberline {6}Modules and Libraries}{6}
 \contentsline {appendix}{\chapternumberline {A}Concrete Syntax (Grammar)}{7}
-\contentsline {appendix}{\chapternumberline {B}Abstract Syntax (Metamodel)}{8}
-\contentsline {appendix}{\chapternumberline {C}AST Instantiation}{9}
+\contentsline {section}{\numberline {A.1}ANTLR Grammar}{8}
+\contentsline {appendix}{\chapternumberline {B}Abstract Syntax (Metamodel)}{10}
+\contentsline {appendix}{\chapternumberline {C}Abstract Syntax Tree (Instantiation)}{11}

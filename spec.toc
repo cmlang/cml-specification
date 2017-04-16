@@ -1,7 +1,7 @@
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}
 \contentsline {chapter}{\chapternumberline {2}Concepts}{2}
-\contentsline {chapter}{\chapternumberline {3}Primitive Types}{3}
-\contentsline {chapter}{\chapternumberline {4}Reference Types}{4}
+\contentsline {chapter}{\chapternumberline {3}Associations}{3}
+\contentsline {chapter}{\chapternumberline {4}Values}{4}
 \contentsline {chapter}{\chapternumberline {5}Expressions}{5}
 \contentsline {chapter}{\chapternumberline {6}Targets}{6}
 \contentsline {chapter}{\chapternumberline {7}Modules and Libraries}{7}

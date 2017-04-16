@@ -1,7 +1,10 @@
-\documentclass[ebook,oneside,12pt]{memoir}
-\chapterstyle{companion}
+\documentclass[a4paper,oneside,14pt, extrafontsizes]{memoir}
+\renewcommand{\familydefault}{\sfdefault}
+\chapterstyle{demo2}
 
-\title{\emph{Conceptual Modeling Language}\\Specification\\ \small{Version 1.0}}\author{Quenio Cesar Machado dos Santos\\ \small{Universidade Federal de Santa Catarina}}\date{July 2017\thanks{First drafted in April 2017}}
+\title{\emph{Conceptual Modeling Language}\\Specification\\ \small{Version 1.0}}\author{Quenio Cesar Machado dos Santos\\
+\small{Universidade Federal de Santa Catarina}\thanks{
+Initially developed as part of the author's Bachelor Technical Report in Computer Sciences}}\date{July 2017}
 
 \begin{document}
 
@@ -11,19 +14,40 @@
 
 \frontmatter
 
+\begin{KeepFromToc}
+
+\clearpage
+\tableofcontents
+
+\clearpage
+\listoffigures
+
+\clearpage
+\listoftables 
+
+\end{KeepFromToc}
+
 \mainmatter
 
 \chapter{Introduction}
 
+\chapter{Concepts}
+
 \chapter{Primitive Types}
 
-\chapter{Concepts}
+\chapter{Expressions}
 
 \chapter{Targets}
 
 \chapter{Modules and Libraries}
 
-\chapter{Expressions}
+\appendix
+
+\chapter{Concrete Syntax (Grammar)}
+
+\chapter{Abstract Syntax (Metamodel)}
+
+\chapter{AST Instantiation}
 
 \backmatter
 

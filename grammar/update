@@ -1,0 +1,15 @@
+#!/bin/bash
+
+GRAMMAR_ANTLR_DIR="../../cml-compiler/cml-compiler/cml-language/src/main/antlr4"
+GRAMMAR_IMPORTS_DIR="$GRAMMAR_ANTLR_DIR/imports"
+SED_REGEX="/(lexer )?grammar/,/(import [A-Z][A-Ba-b]*.)|(import: none)/d"
+
+function extract {
+        sed -E "$SED_REGEX" "$GRAMMAR_IMPORTS_DIR/$1.g4" > $1.txt
+}
+
+echo Generating grammar text files:
+for i in $GRAMMAR_IMPORTS_DIR/*.g4; do
+    echo - $(basename $i .g4).txt
+    extract $(basename $i .g4)
+done

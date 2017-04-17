@@ -1,11 +1,14 @@
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}
 \contentsline {chapter}{\chapternumberline {2}Concepts}{2}
+\contentsline {section}{\numberline {2.1}Concept Declarations}{2}
 \contentsline {chapter}{\chapternumberline {3}Associations}{3}
+\contentsline {section}{\numberline {3.1}Unidirectional Associations}{3}
+\contentsline {section}{\numberline {3.2}Bidirectional Associations}{3}
 \contentsline {chapter}{\chapternumberline {4}Values}{4}
 \contentsline {chapter}{\chapternumberline {5}Expressions}{5}
 \contentsline {chapter}{\chapternumberline {6}Targets}{6}
 \contentsline {chapter}{\chapternumberline {7}Modules and Libraries}{7}
 \contentsline {appendix}{\chapternumberline {A}Concrete Syntax (Grammar)}{8}
 \contentsline {section}{\numberline {A.1}ANTLR Grammar}{9}
-\contentsline {appendix}{\chapternumberline {B}Abstract Syntax (Metamodel)}{11}
-\contentsline {appendix}{\chapternumberline {C}Abstract Syntax Tree (Instantiation)}{12}
+\contentsline {appendix}{\chapternumberline {B}Abstract Syntax (Metamodel)}{12}
+\contentsline {appendix}{\chapternumberline {C}Abstract Syntax Tree (Instantiation)}{13}

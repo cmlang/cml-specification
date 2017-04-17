@@ -1,0 +1,8 @@
+
+typeDeclaration returns [Type type]:
+    NAME CARDINALITY?;
+
+CARDINALITY:
+    ('?' | '*');
+
+

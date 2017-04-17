@@ -1,0 +1,12 @@
+
+conceptDeclaration returns [Concept concept]:
+    ABSTRACT? 'concept' NAME
+    (':' ancestorList)?
+    (';' | propertyList);
+
+ancestorList:
+    NAME (',' NAME)*;
+
+ABSTRACT:
+    'abstract';
+

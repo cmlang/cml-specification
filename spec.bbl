@@ -1,0 +1,20 @@
+\begin{thebibliography}{1}
+
+\bibitem{torben}
+Torben~Ægidius Mogensen.
+\newblock {\em {Introduction to Compiler Design.}}
+\newblock {Undergraduate Topics in Computer Science}. Springer, 2011.
+
+\bibitem{ocl}
+OMG.
+\newblock {Object Constraint Language (OCL), Version 2.4}, 2014.
+
+\bibitem{uml}
+OMG.
+\newblock {Unified Modeling Language (UML), Superstructure, Version 2.5}, 2015.
+
+\bibitem{mof}
+OMG.
+\newblock {Meta Object Facility (MOF) Core Specification, Version 2.5.1}, 2016.
+
+\end{thebibliography}

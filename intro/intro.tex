@@ -1,0 +1,22 @@
+The \emph{Conceptual Modeling Language} (CML) is specified in this document.
+It allows modeling the information to be managed by software systems,
+focusing on the structural aspects.
+Using CML,
+it is possible to represent the information as understood by the system users,
+disregarding its physical organization as implemented by the target languages or technologies.
+
+The CML compilers has:
+\begin{itemize}
+\item as \emph{input},
+source files defined using its own conceptual language (as specified in this document),
+which provides an abstract syntax similar to (but less comprehensive than) a combination of UML \cite{uml} and OCL \cite{ocl}; 
+\item and, as \emph{output},
+any target languages based on extensible templates,
+which may be provided by the compiler's base libraries, by third-party libraries, or even by developers.
+\end{itemize}
+
+The following chapters will specify every element of CML metamodel.
+Each chapter starts with an example,
+followed by the specification of the concrete syntax,
+and then presenting the corresponding EMOF \cite{emof} class diagram with the abstract syntax.
+

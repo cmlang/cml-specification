@@ -1,5 +1,6 @@
 \documentclass[a4paper,oneside,14pt, extrafontsizes]{memoir}
 
+ \usepackage{graphicx}
 \usepackage{verbatim}
 \renewcommand{\familydefault}{\sfdefault}
 \chapterstyle{demo2}
@@ -38,6 +39,10 @@ Initially developed as part of the author's Bachelor Technical Report in Compute
 \mainmatter
 
 \chapter{Introduction}
+\input{intro/intro.tex}
+
+\chapter{Compiler Overview}
+\input{compiler/overview.tex}
 
 \chapter{Concepts}
 \input{concepts/concepts.tex}

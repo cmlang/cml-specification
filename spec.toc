@@ -1,7 +1,7 @@
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}
 \contentsline {chapter}{\chapternumberline {2}Compiler Overview}{2}
-\contentsline {subsubsection}{The Frontend}{3}
-\contentsline {subsubsection}{The Backend}{3}
+\contentsline {section}{\numberline {2.1}Frontend}{3}
+\contentsline {section}{\numberline {2.2}Backend}{3}
 \contentsline {chapter}{\chapternumberline {3}Concepts}{4}
 \contentsline {section}{\numberline {3.1}Properties}{4}
 \contentsline {section}{\numberline {3.2}Inheritance}{4}

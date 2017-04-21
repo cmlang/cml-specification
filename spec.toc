@@ -4,7 +4,8 @@
 \contentsline {section}{\numberline {2.2}Backend}{3}
 \contentsline {chapter}{\chapternumberline {3}Concepts}{5}
 \contentsline {section}{\numberline {3.1}Properties}{5}
-\contentsline {section}{\numberline {3.2}Generalization/Specialization}{5}
+\contentsline {section}{\numberline {3.2}Generalization/Specialization}{7}
+\contentsline {section}{\numberline {3.3}Abstract Concepts}{7}
 \contentsline {chapter}{\chapternumberline {4}Attributes}{8}
 \contentsline {section}{\numberline {4.1}Literal Values}{8}
 \contentsline {section}{\numberline {4.2}Primitive Types}{8}

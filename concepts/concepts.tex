@@ -28,6 +28,14 @@ another \emph{concept}.
 \label{fig:ex:concepts}
 \end{figure}
 
+Figure \ref{fig:stx:concept} specifies the syntax used
+to declare a \emph{concept}.
+The \textbf{concept} keyword is followed by a NAME.
+Optionally, a list of other NAMEs may be enumerated,
+referring to other \emph{concepts}
+that are generalizations of the declared \emph{concept}.
+Under the \textbf{concept} block,
+a list of \emph{properties} may be declared as well.
 
 \begin{figure}
 \verbatimfont{\small}
@@ -35,18 +43,5 @@ another \emph{concept}.
 \verbatiminput{grammar/Concepts.txt}
 \end{framed}
 \caption{Concept Declaration Syntax}
-\label{fig:concept-syntax}
+\label{fig:stx:concept}
 \end{figure}
-
-\section{Properties}\label{sec:properties}
-
-\begin{figure}
-\verbatimfont{\small}
-\begin{framed}
-\verbatiminput{grammar/Properties.txt}
-\end{framed}
-\caption{Properties Declaration Syntax}
-\label{fig:properties-syntax}
-\end{figure}
-
-\section{Generalization/Specialization}\label{sec:generalization}

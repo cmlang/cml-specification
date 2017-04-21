@@ -1,7 +1,14 @@
 \begin{thebibliography}{1}
 
+\bibitem{er}
+Peter Pin-Shan Chen.
+\newblock {The Entity-Relationship Model (Reprinted Historic Data)}.
+\newblock In David~W. Embley and Bernhard Thalheim, editors, {\em Handbook of
+  Conceptual Modeling: Theory, Practice, and Research Challenges}, pages
+  57--84. Springer Berlin Heidelberg, Berlin, Heidelberg, 2011.
+
 \bibitem{torben}
-Torben~Ægidius Mogensen.
+Torben~ï¿½gidius Mogensen.
 \newblock {\em {Introduction to Compiler Design.}}
 \newblock {Undergraduate Topics in Computer Science}. Springer, 2011.
 

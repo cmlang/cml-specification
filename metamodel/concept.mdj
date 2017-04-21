@@ -923,9 +923,9 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": -3322,
+									"left": -3418,
 									"top": 216,
-									"width": 7248,
+									"width": 7440,
 									"height": 13,
 									"autoResize": false,
 									"alpha": -5.379694637671854,
@@ -935,7 +935,7 @@
 									},
 									"edgePosition": 2,
 									"underline": false,
-									"text": "/ / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / allAncestors",
+									"text": "/ / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / allAncestors",
 									"horizontalAlignment": 2,
 									"verticalAlignment": 5,
 									"wordWrap": false
@@ -1769,19 +1769,19 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 375,
+									"left": 368,
 									"top": 351,
 									"width": 65,
 									"height": 13,
 									"autoResize": false,
-									"alpha": -1.1479423427018784,
-									"distance": 43.86342439892262,
+									"alpha": -1.034985074503365,
+									"distance": 37.21558813185679,
 									"hostEdge": {
 										"$ref": "AAAAAAFbQCG9zRbjvvY="
 									},
 									"edgePosition": 0,
 									"underline": false,
-									"text": "/ properties",
+									"text": "elements",
 									"horizontalAlignment": 2,
 									"verticalAlignment": 5,
 									"wordWrap": false
@@ -2514,9 +2514,9 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": -3294,
+									"left": -3390,
 									"top": 318,
-									"width": 7644,
+									"width": 7836,
 									"height": 13,
 									"autoResize": false,
 									"alpha": 1.3586525012907933,
@@ -2526,7 +2526,7 @@
 									},
 									"edgePosition": 2,
 									"underline": false,
-									"text": "/ / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / inheritedProperties",
+									"text": "/ / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / inheritedProperties",
 									"horizontalAlignment": 2,
 									"verticalAlignment": 5,
 									"wordWrap": false
@@ -2943,7 +2943,7 @@
 								"_parent": {
 									"$ref": "AAAAAAFbQCG9zRbfofs="
 								},
-								"name": "properties",
+								"name": "elements",
 								"reference": {
 									"$ref": "AAAAAAFbQCEAkxZBdxA="
 								},
@@ -2954,7 +2954,7 @@
 								"isReadOnly": false,
 								"isOrdered": false,
 								"isUnique": false,
-								"isDerived": true,
+								"isDerived": false,
 								"isID": false
 							},
 							"visibility": "public",
@@ -3565,7 +3565,7 @@
 									"containerExtending": true,
 									"left": 52,
 									"top": 52,
-									"width": 95.048828125,
+									"width": 91,
 									"height": 38,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -4247,7 +4247,7 @@
 									"containerExtending": true,
 									"left": 212,
 									"top": 112,
-									"width": 88.755859375,
+									"width": 84,
 									"height": 38,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -5320,7 +5320,7 @@
 									"containerExtending": true,
 									"left": 184,
 									"top": 308,
-									"width": 83.828125,
+									"width": 81,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -5609,7 +5609,7 @@
 									"containerExtending": true,
 									"left": 252,
 									"top": 352,
-									"width": 83.828125,
+									"width": 81,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -5898,7 +5898,7 @@
 									"containerExtending": true,
 									"left": 316,
 									"top": 400,
-									"width": 83.828125,
+									"width": 81,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -6187,7 +6187,7 @@
 									"containerExtending": true,
 									"left": 380,
 									"top": 448,
-									"width": 83.828125,
+									"width": 81,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -6476,7 +6476,7 @@
 									"containerExtending": true,
 									"left": 440,
 									"top": 496,
-									"width": 83.828125,
+									"width": 81,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -8314,7 +8314,7 @@
 									"containerExtending": true,
 									"left": 380,
 									"top": 580,
-									"width": 147.537109375,
+									"width": 142,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -8514,7 +8514,7 @@
 									"containerExtending": true,
 									"left": 236,
 									"top": 584,
-									"width": 83.828125,
+									"width": 81,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -8946,7 +8946,7 @@
 									"containerExtending": true,
 									"left": 720,
 									"top": 204,
-									"width": 83.828125,
+									"width": 81,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -9235,7 +9235,7 @@
 									"containerExtending": true,
 									"left": 720,
 									"top": 256,
-									"width": 83.828125,
+									"width": 81,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -9524,7 +9524,7 @@
 									"containerExtending": true,
 									"left": 720,
 									"top": 308,
-									"width": 83.828125,
+									"width": 81,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -9813,7 +9813,7 @@
 									"containerExtending": true,
 									"left": 720,
 									"top": 360,
-									"width": 140.353515625,
+									"width": 131,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -10102,7 +10102,7 @@
 									"containerExtending": true,
 									"left": 720,
 									"top": 416,
-									"width": 83.828125,
+									"width": 81,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -10391,7 +10391,7 @@
 									"containerExtending": true,
 									"left": 720,
 									"top": 472,
-									"width": 83.828125,
+									"width": 81,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -11514,7 +11514,7 @@
 									"containerExtending": true,
 									"left": 556,
 									"top": 540,
-									"width": 107.828125,
+									"width": 102,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -11714,7 +11714,7 @@
 									"containerExtending": true,
 									"left": 720,
 									"top": 544,
-									"width": 83.828125,
+									"width": 81,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -12003,7 +12003,7 @@
 									"containerExtending": true,
 									"left": 720,
 									"top": 592,
-									"width": 107.27734375,
+									"width": 98,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -12292,7 +12292,7 @@
 									"containerExtending": true,
 									"left": 720,
 									"top": 648,
-									"width": 83.828125,
+									"width": 81,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -12581,7 +12581,7 @@
 									"containerExtending": true,
 									"left": 720,
 									"top": 704,
-									"width": 83.828125,
+									"width": 81,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -12870,7 +12870,7 @@
 									"containerExtending": true,
 									"left": 720,
 									"top": 760,
-									"width": 83.828125,
+									"width": 81,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -13850,7 +13850,7 @@
 									"containerExtending": true,
 									"left": 56,
 									"top": 644,
-									"width": 112.36328125,
+									"width": 108,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -14050,7 +14050,7 @@
 									"containerExtending": true,
 									"left": 236,
 									"top": 644,
-									"width": 83.828125,
+									"width": 81,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -14339,7 +14339,7 @@
 									"containerExtending": true,
 									"left": 236,
 									"top": 708,
-									"width": 83.828125,
+									"width": 81,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -14628,7 +14628,7 @@
 									"containerExtending": true,
 									"left": 236,
 									"top": 764,
-									"width": 83.828125,
+									"width": 81,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -14917,7 +14917,7 @@
 									"containerExtending": true,
 									"left": 236,
 									"top": 820,
-									"width": 97.796875,
+									"width": 91,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -15206,7 +15206,7 @@
 									"containerExtending": true,
 									"left": 236,
 									"top": 876,
-									"width": 83.828125,
+									"width": 81,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -16329,7 +16329,7 @@
 									"containerExtending": true,
 									"left": 556,
 									"top": 28,
-									"width": 108.349609375,
+									"width": 103,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -16529,7 +16529,7 @@
 									"containerExtending": true,
 									"left": 740,
 									"top": 24,
-									"width": 83.828125,
+									"width": 81,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -16596,7 +16596,7 @@
 									"containerExtending": true,
 									"left": 740,
 									"top": 60,
-									"width": 129.255859375,
+									"width": 122,
 									"height": 22,
 									"autoResize": false
 								},
@@ -16849,7 +16849,7 @@
 									"containerExtending": true,
 									"left": 740,
 									"top": 96,
-									"width": 83.828125,
+									"width": 81,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -17138,7 +17138,7 @@
 									"containerExtending": true,
 									"left": 740,
 									"top": 148,
-									"width": 83.828125,
+									"width": 81,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -18032,7 +18032,7 @@
 									"containerExtending": true,
 									"left": 724,
 									"top": 832,
-									"width": 83.828125,
+									"width": 81,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -18321,7 +18321,7 @@
 									"containerExtending": true,
 									"left": 724,
 									"top": 888,
-									"width": 91.234375,
+									"width": 85,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -19639,7 +19639,7 @@
 									"containerExtending": true,
 									"left": 212,
 									"top": 84,
-									"width": 83.828125,
+									"width": 81,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -20247,7 +20247,7 @@
 									"containerExtending": true,
 									"left": 212,
 									"top": 32,
-									"width": 83.828125,
+									"width": 81,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -20679,7 +20679,7 @@
 									"containerExtending": true,
 									"left": 212,
 									"top": 136,
-									"width": 83.828125,
+									"width": 81,
 									"height": 36,
 									"autoResize": false,
 									"stereotypeLabel": {

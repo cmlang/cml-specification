@@ -3,7 +3,7 @@
 
 abstract concept ModelElement
 {
-    parentScope: Scope?;
+    scope: Scope?;
 }
 
 // Validator (Well-Formedness Rules)

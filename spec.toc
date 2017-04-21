@@ -3,21 +3,21 @@
 \contentsline {section}{\numberline {2.1}Frontend}{3}
 \contentsline {section}{\numberline {2.2}Backend}{3}
 \contentsline {chapter}{\chapternumberline {3}Concepts}{5}
-\contentsline {section}{\numberline {3.1}Properties}{7}
-\contentsline {section}{\numberline {3.2}Generalization/Specialization}{7}
-\contentsline {section}{\numberline {3.3}Abstract Concepts}{7}
-\contentsline {chapter}{\chapternumberline {4}Attributes}{8}
-\contentsline {section}{\numberline {4.1}Literal Values}{8}
-\contentsline {section}{\numberline {4.2}Primitive Types}{8}
-\contentsline {chapter}{\chapternumberline {5}Associations}{9}
-\contentsline {section}{\numberline {5.1}Unidirectional Associations}{9}
-\contentsline {section}{\numberline {5.2}Bidirectional Associations}{9}
-\contentsline {section}{\numberline {5.3}Collection Types}{9}
-\contentsline {chapter}{\chapternumberline {6}Expressions}{10}
-\contentsline {chapter}{\chapternumberline {7}Targets}{11}
-\contentsline {chapter}{\chapternumberline {8}Modules and Libraries}{12}
-\contentsline {appendix}{\chapternumberline {A}Concrete Syntax (Grammar)}{13}
-\contentsline {section}{\numberline {A.1}ANTLR Grammar}{14}
-\contentsline {appendix}{\chapternumberline {B}Abstract Syntax (Metamodel)}{16}
-\contentsline {appendix}{\chapternumberline {C}Abstract Syntax Tree (Instantiation)}{17}
-\contentsline {chapter}{Bibliography}{18}
+\contentsline {section}{\numberline {3.1}Properties}{8}
+\contentsline {section}{\numberline {3.2}Generalization/Specialization}{8}
+\contentsline {section}{\numberline {3.3}Abstract Concepts}{8}
+\contentsline {chapter}{\chapternumberline {4}Attributes}{9}
+\contentsline {section}{\numberline {4.1}Literal Values}{9}
+\contentsline {section}{\numberline {4.2}Primitive Types}{9}
+\contentsline {chapter}{\chapternumberline {5}Associations}{10}
+\contentsline {section}{\numberline {5.1}Unidirectional Associations}{10}
+\contentsline {section}{\numberline {5.2}Bidirectional Associations}{10}
+\contentsline {section}{\numberline {5.3}Collection Types}{10}
+\contentsline {chapter}{\chapternumberline {6}Expressions}{11}
+\contentsline {chapter}{\chapternumberline {7}Targets}{12}
+\contentsline {chapter}{\chapternumberline {8}Modules and Libraries}{13}
+\contentsline {appendix}{\chapternumberline {A}Concrete Syntax (Grammar)}{14}
+\contentsline {section}{\numberline {A.1}ANTLR Grammar}{15}
+\contentsline {appendix}{\chapternumberline {B}Abstract Syntax (Metamodel)}{17}
+\contentsline {appendix}{\chapternumberline {C}Abstract Syntax Tree (Instantiation)}{18}
+\contentsline {chapter}{Bibliography}{19}

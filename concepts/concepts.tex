@@ -9,6 +9,27 @@ The CML \emph{concept} differs, however, from the UML \emph{class},
 because it only contains \emph{properties},
 while the UML \emph{class} may also have \emph{operations}.
 
+Figure \ref{fig:ex:concepts} presents some examples of \emph{concepts} declared in CML.
+As shown in the examples,
+a \emph{concept} may have zero or more \emph{properties}
+(\ref{sec:properties}),
+and a \emph{property} may optionally declare a \emph{type}
+(\ref{sec:primitive-types}, \ref{sec:collection-types}).
+Also, as shown in the last example of figure \ref{fig:ex:concepts},
+a \emph{concept} may also specialize
+(\ref{sec:generalization})
+another \emph{concept}.
+
+\begin{figure}
+\verbatimfont{\small}
+\begin{framed}
+\verbatiminput{examples/concepts.cml}
+\end{framed}
+\caption{Concept Examples}
+\label{fig:ex:concepts}
+\end{figure}
+
+
 \begin{figure}
 \verbatimfont{\small}
 \begin{framed}
@@ -29,4 +50,4 @@ while the UML \emph{class} may also have \emph{operations}.
 \label{fig:properties-syntax}
 \end{figure}
 
-\section{Inheritance}\label{sec:inheritance}
+\section{Generalization/Specialization}\label{sec:generalization}

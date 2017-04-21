@@ -1,0 +1,17 @@
+// Empty concept:
+concept Book;
+
+// Property without a type:
+concept TitledBook
+{
+    title;
+}
+
+// Property with the String type:
+concept StringTitledBook
+{
+    title: String;
+}
+
+// Specializing another concept:
+concept Ebook: Book;

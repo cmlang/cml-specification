@@ -1,6 +1,6 @@
 \documentclass[a4paper,oneside,14pt, extrafontsizes]{memoir}
 
- \usepackage{graphicx}
+\usepackage{graphicx}
 \usepackage{verbatim}
 \renewcommand{\familydefault}{\sfdefault}
 \chapterstyle{demo2}
@@ -13,6 +13,11 @@ Initially developed as part of the author's Bachelor Technical Report in Compute
 
 \makeatletter
 \newcommand{\verbatimfont}[1]{\renewcommand{\verbatim@font}{\ttfamily#1}}
+\makeatother
+
+\makeatletter
+\renewcommand*{\p@section}{\S\,}
+\renewcommand*{\p@subsection}{\S\,}
 \makeatother
 
 \begin{document}
@@ -48,11 +53,11 @@ Initially developed as part of the author's Bachelor Technical Report in Compute
 \chapter{Concepts}
 \input{concepts/concepts.tex}
 
+\chapter{Attributes}
+\input{attributes/attributes.tex}
+
 \chapter{Associations}
 \input{associations/associations.tex}
-
-\chapter{Values}
-\input{values/values.tex}
 
 \chapter{Expressions}
 

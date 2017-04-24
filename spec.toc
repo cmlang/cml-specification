@@ -3,9 +3,9 @@
 \contentsline {section}{\numberline {2.1}Frontend}{2}
 \contentsline {section}{\numberline {2.2}Backend}{3}
 \contentsline {chapter}{\chapternumberline {3}Concepts}{4}
-\contentsline {section}{\numberline {3.1}Properties}{4}
-\contentsline {section}{\numberline {3.2}Generalization/Specialization}{4}
-\contentsline {section}{\numberline {3.3}Abstract Concepts}{4}
+\contentsline {section}{\numberline {3.1}Properties}{6}
+\contentsline {section}{\numberline {3.2}Generalization/Specialization}{6}
+\contentsline {section}{\numberline {3.3}Abstract Concepts}{6}
 \contentsline {chapter}{\chapternumberline {4}Attributes}{8}
 \contentsline {section}{\numberline {4.1}Literal Values}{8}
 \contentsline {section}{\numberline {4.2}Primitive Types}{8}

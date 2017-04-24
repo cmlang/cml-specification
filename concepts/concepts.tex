@@ -46,6 +46,34 @@ And the \textbf{abstract} keyword may precede the \textbf{concept} keyword, maki
 \label{fig:stx:concept}
 \end{figure}
 
+Figure \ref{fig:meta:concept} presents the \emph{concept} metamodel
+in an EMOF \cite{mof} class diagram,
+and figure \ref{fig:ast:concept} specifies the transformation
+from the concrete syntax to the abstract syntax.
+For each \emph{concept} parsed by the compiler,
+an instance of the \emph{Concept} class will be created,
+and its properties will be assigned,
+according to parsed information:
+
+\begin{itemize}
+
+\item \emph{name}:
+assigned with the value of the terminal node NAME.
+
+\item \emph{abstract}:
+set to \emph{true} if the \textbf{abstract} keyword
+is found before the \textbf{concept} keyword.
+
+\item \emph{elements}:
+an \emph{ordered set} referencing all \emph{properties}
+parsed in the \textbf{concept} block.
+
+\item \emph{directAncestors}:
+an \emph{ordered set} referencing all \emph{concepts}
+whose NAMEs were enumerated in the \emph{AncestorList}.
+
+\end{itemize}
+
 \begin{figure}
 \includegraphics[width=\textwidth]{metamodel/concept}
 \caption{Concept Metamodel}

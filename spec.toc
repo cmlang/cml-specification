@@ -15,9 +15,11 @@
 \contentsline {section}{\numberline {5.3}Collection Types}{9}
 \contentsline {chapter}{\chapternumberline {6}Expressions}{10}
 \contentsline {chapter}{\chapternumberline {7}Targets}{11}
-\contentsline {chapter}{\chapternumberline {8}Modules and Libraries}{12}
-\contentsline {appendix}{\chapternumberline {A}Concrete Syntax (Grammar)}{13}
-\contentsline {section}{\numberline {A.1}ANTLR Grammar}{14}
-\contentsline {appendix}{\chapternumberline {B}Abstract Syntax (Metamodel)}{16}
-\contentsline {appendix}{\chapternumberline {C}Abstract Syntax Tree (Instantiation)}{17}
-\contentsline {chapter}{Bibliography}{18}
+\contentsline {chapter}{\chapternumberline {8}Templates}{12}
+\contentsline {chapter}{\chapternumberline {9}Modules}{13}
+\contentsline {chapter}{\chapternumberline {10}Libraries}{14}
+\contentsline {appendix}{\chapternumberline {A}Concrete Syntax (Grammar)}{15}
+\contentsline {section}{\numberline {A.1}ANTLR Grammar}{16}
+\contentsline {appendix}{\chapternumberline {B}Abstract Syntax (Metamodel)}{18}
+\contentsline {appendix}{\chapternumberline {C}Abstract Syntax Tree (Instantiation)}{19}
+\contentsline {chapter}{Bibliography}{20}

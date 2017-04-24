@@ -1,4 +1,5 @@
-A \emph{concept} in CML is used to represent anything
+\begin{definition}
+A \emph{concept} in CML represents anything
 that has a coherent, cohesive meaning in a domain.
 On the ER \cite{er} metamodel,
 it corresponds to an \emph{entity};
@@ -7,7 +8,9 @@ to a \emph{class}.
 The CML \emph{concept} differs, however, from the UML \emph{class},
 because it has only \emph{properties},
 while the UML \emph{class} may also have \emph{operations}.
+\end{definition}
 
+\begin{examples}
 Figure \ref{fig:ex:concepts} presents some examples of \emph{concepts} declared in CML.
 As shown in the examples,
 a \emph{concept} may have zero or more \emph{properties}
@@ -18,6 +21,7 @@ Also, as shown in the last example of figure \ref{fig:ex:concepts},
 a \emph{concept} may specialize
 (\ref{sec:generalization})
 another \emph{concept}.
+\end{examples}
 
 \begin{figure}
 \verbatimfont{\small}
@@ -28,6 +32,7 @@ another \emph{concept}.
 \label{fig:ex:concepts}
 \end{figure}
 
+\begin{concrete-syntax}
 Figure \ref{fig:stx:concept} specifies the syntax used
 to declare a \emph{concept}.
 The \textbf{concept} keyword is followed by a NAME.
@@ -36,6 +41,7 @@ referring to other \emph{concepts}
 that are generalizations (\ref{sec:generalization}) of the declared \emph{concept}.
 A list of \emph{properties} (\ref{sec:properties}) may be declared under the \textbf{concept} block.
 And the \textbf{abstract} keyword may precede the \textbf{concept} keyword, making a \emph{concept} abstract (\ref{sec:abstract}).
+\end{concrete-syntax}
 
 \begin{figure}
 \verbatimfont{\small}
@@ -46,13 +52,15 @@ And the \textbf{abstract} keyword may precede the \textbf{concept} keyword, maki
 \label{fig:stx:concept}
 \end{figure}
 
+\begin{abstract-syntax}
 Figure \ref{fig:meta:concept} presents the \emph{concept} metamodel
 in an EMOF \cite{mof} class diagram,
-and figure \ref{fig:ast:concept} specifies the transformation
-from the concrete syntax to the abstract syntax.
+and figure \ref{fig:ast:concept} specifies
+the \emph{concept} transformation
+from its concrete syntax to its abstract syntax.
 For each \emph{concept} parsed by the compiler,
 an instance of the \emph{Concept} class will be created,
-and its properties will be assigned,
+and its properties will be assigned
 according to parsed information:
 
 \begin{itemize}
@@ -62,7 +70,8 @@ assigned with the value of the terminal node NAME.
 
 \item \emph{abstract}:
 set to \emph{true} if the \textbf{abstract} keyword
-is found before the \textbf{concept} keyword.
+is found before the \textbf{concept} keyword;
+otherwise, set to \emph{false}.
 
 \item \emph{elements}:
 an \emph{ordered set} referencing all \emph{properties}
@@ -73,6 +82,7 @@ an \emph{ordered set} referencing all \emph{concepts}
 whose NAMEs were enumerated in the \emph{AncestorList}.
 
 \end{itemize}
+\end{abstract-syntax}
 
 \begin{figure}
 \includegraphics[width=\textwidth]{metamodel/concept}

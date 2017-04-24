@@ -10,3 +10,5 @@ node Concept:
     directAncestors = for name in AncestorList.NAME*
         | yield Model.concept[name];
 }
+
+node AncestorList: NAME (',' NAME)*;

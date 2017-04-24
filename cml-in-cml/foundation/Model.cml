@@ -1,0 +1,15 @@
+
+// Model (Abstract Syntax)
+
+concept Model: Scope
+{
+    /modules: Module* = elements;
+
+    /concept[name: String]: Concept? = for c in modules.concepts
+        | select first c.name = name;
+
+    /target[name: String]: Target? = for t in modules.targets
+        | select first t.name = name;
+
+    errors: Error*;
+}

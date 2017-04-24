@@ -1,7 +1,6 @@
 
-compilationUnit returns [Model model]:
+compilationUnit:
     declarations*;
 
 declarations:
     conceptDeclaration | targetDeclaration;
-

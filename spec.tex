@@ -16,6 +16,9 @@
 \theoremstyle{definition}
 \newtheorem*{abstract-syntax}{Abstract Syntax}
 
+\theoremstyle{definition}
+\newtheorem*{constraints}{Constraints}
+
 \renewcommand{\familydefault}{\sfdefault}
 \chapterstyle{demo2}
 
@@ -60,9 +63,21 @@ Initially developed as part of the author's Bachelor Technical Report in Compute
 \chapter{Introduction}
 \input{intro/intro.tex}
 
-\chapter{Compiler}
-\label{ch:compiler}
+\section{The CML Compiler}
+\label{sec:compiler}
 \input{compiler/overview.tex}
+
+\subsection[Frontend]{The Compiler Frontend}
+\label{subsec:frontend}
+\input{compiler/frontend.tex}
+
+\subsection[Backend]{The Compiler Backend}
+\label{subsec:backend}
+\input{compiler/backend.tex}
+
+\section{Organization and Notations}
+\label{sec:org}
+\input{intro/organization.tex}
 
 \chapter{Concepts}
 \label{ch:concepts}
@@ -104,14 +119,25 @@ Initially developed as part of the author's Bachelor Technical Report in Compute
 
 \appendix
 
-\chapter{Concrete Syntax (Grammar)}
+\chapter{CML Concrete Syntax (Grammar)}
+\label{apx:concrete-syntax}
 \input{grammar/grammar.tex}
 
-\chapter{Abstract Syntax (Metamodel)}
+\chapter{CML Abstract Syntax (Metamodel)}
+\label{apx:abstract-syntax}
 \input{metamodel.tex}
 
-\chapter{Abstract Syntax Tree (Instantiation)}
+\chapter{CML Abstract Syntax Tree (Instantiation)}
+\label{apx:ast}
 \input{ast.tex}
+
+\chapter{CML Constraints (Validations)}
+\label{apx:ocl}
+\input{ocl.tex}
+
+\chapter{Language Specification Notation}
+\label{apx:lsl}
+\input{lsl.tex}
 
 \backmatter
 

@@ -1,25 +1,28 @@
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}
-\contentsline {chapter}{\chapternumberline {2}Compiler}{2}
-\contentsline {section}{\numberline {2.1}Frontend}{2}
-\contentsline {section}{\numberline {2.2}Backend}{3}
-\contentsline {chapter}{\chapternumberline {3}Concepts}{4}
-\contentsline {section}{\numberline {3.1}Properties}{6}
-\contentsline {section}{\numberline {3.2}Generalization/Specialization}{6}
-\contentsline {section}{\numberline {3.3}Abstract Concepts}{6}
-\contentsline {chapter}{\chapternumberline {4}Attributes}{8}
-\contentsline {section}{\numberline {4.1}Literal Values}{8}
-\contentsline {section}{\numberline {4.2}Primitive Types}{8}
-\contentsline {chapter}{\chapternumberline {5}Associations}{9}
-\contentsline {section}{\numberline {5.1}Unidirectional Associations}{9}
-\contentsline {section}{\numberline {5.2}Bidirectional Associations}{9}
-\contentsline {section}{\numberline {5.3}Collection Types}{9}
-\contentsline {chapter}{\chapternumberline {6}Expressions}{10}
-\contentsline {chapter}{\chapternumberline {7}Targets}{11}
-\contentsline {chapter}{\chapternumberline {8}Templates}{12}
-\contentsline {chapter}{\chapternumberline {9}Modules}{13}
-\contentsline {chapter}{\chapternumberline {10}Libraries}{14}
-\contentsline {appendix}{\chapternumberline {A}Concrete Syntax (Grammar)}{15}
-\contentsline {section}{\numberline {A.1}ANTLR Grammar}{16}
-\contentsline {appendix}{\chapternumberline {B}Abstract Syntax (Metamodel)}{18}
-\contentsline {appendix}{\chapternumberline {C}Abstract Syntax Tree (Instantiation)}{19}
-\contentsline {chapter}{Bibliography}{20}
+\contentsline {section}{\numberline {1.1}The CML Compiler}{1}
+\contentsline {subsection}{Frontend}{2}
+\contentsline {subsection}{Backend}{2}
+\contentsline {section}{\numberline {1.2}Organization and Notations}{3}
+\contentsline {chapter}{\chapternumberline {2}Concepts}{5}
+\contentsline {section}{\numberline {2.1}Properties}{7}
+\contentsline {section}{\numberline {2.2}Generalization/Specialization}{7}
+\contentsline {section}{\numberline {2.3}Abstract Concepts}{7}
+\contentsline {chapter}{\chapternumberline {3}Attributes}{9}
+\contentsline {section}{\numberline {3.1}Literal Values}{9}
+\contentsline {section}{\numberline {3.2}Primitive Types}{9}
+\contentsline {chapter}{\chapternumberline {4}Associations}{10}
+\contentsline {section}{\numberline {4.1}Unidirectional Associations}{10}
+\contentsline {section}{\numberline {4.2}Bidirectional Associations}{10}
+\contentsline {section}{\numberline {4.3}Collection Types}{10}
+\contentsline {chapter}{\chapternumberline {5}Expressions}{11}
+\contentsline {chapter}{\chapternumberline {6}Targets}{12}
+\contentsline {chapter}{\chapternumberline {7}Templates}{13}
+\contentsline {chapter}{\chapternumberline {8}Modules}{14}
+\contentsline {chapter}{\chapternumberline {9}Libraries}{15}
+\contentsline {appendix}{\chapternumberline {A}CML Concrete Syntax (Grammar)}{16}
+\contentsline {section}{\numberline {A.1}ANTLR Grammar}{17}
+\contentsline {appendix}{\chapternumberline {B}CML Abstract Syntax (Metamodel)}{19}
+\contentsline {appendix}{\chapternumberline {C}CML Abstract Syntax Tree (Instantiation)}{20}
+\contentsline {appendix}{\chapternumberline {D}CML Constraints (Validations)}{21}
+\contentsline {appendix}{\chapternumberline {E}Language Specification Notation}{22}
+\contentsline {chapter}{Bibliography}{23}

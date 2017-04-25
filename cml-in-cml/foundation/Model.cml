@@ -5,10 +5,13 @@ concept Model: Scope
 {
     /modules: Module* = elements;
 
-    /concept[name: String]: Concept? = for c in modules.concepts
+    /concepts = modules.concepts;
+    /targets = modules.targets;
+
+    /concept[name: String]: Concept? = for c in concepts
         | select first c.name = name;
 
-    /target[name: String]: Target? = for t in modules.targets
+    /target[name: String]: Target? = for t in targets
         | select first t.name = name;
 
     errors: Error*;

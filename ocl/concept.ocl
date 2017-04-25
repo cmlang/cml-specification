@@ -1,5 +1,11 @@
 context Concept
+
 inv unique_concept_name:
     self.parent.concepts
-        ->select(p| p != self and p.name = self.name)
+        ->select(c| c != self and c.name = self.name)
+        ->isEmpty()
+
+inv not_own_ancestor:
+    self.allAncestors
+        ->select(c| c = self)
         ->isEmpty()

@@ -107,6 +107,10 @@ Figure \ref{fig:ocl:concept} presents the invariants of the \emph{concept} metam
 \item \emph{unique\_concept\_name}:
 Each \emph{concept} must have a unique NAME within its \emph{module} (\ref{ch:modules}).
 
+\item \emph{not\_own\_ancestor}:
+A \emph{concept} may not be listed on its own \emph{AncestorList},
+nor on the \emph{AncestorList} of its direct or indirect ancestors.
+
 \end{itemize}
 \end{constraints}
 

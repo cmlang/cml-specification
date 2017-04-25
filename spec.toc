@@ -7,22 +7,22 @@
 \contentsline {section}{\numberline {2.1}Properties}{7}
 \contentsline {section}{\numberline {2.2}Generalization/Specialization}{7}
 \contentsline {section}{\numberline {2.3}Abstract Concepts}{7}
-\contentsline {chapter}{\chapternumberline {3}Attributes}{9}
-\contentsline {section}{\numberline {3.1}Literal Values}{9}
-\contentsline {section}{\numberline {3.2}Primitive Types}{9}
-\contentsline {chapter}{\chapternumberline {4}Associations}{10}
-\contentsline {section}{\numberline {4.1}Unidirectional Associations}{10}
-\contentsline {section}{\numberline {4.2}Bidirectional Associations}{10}
-\contentsline {section}{\numberline {4.3}Collection Types}{10}
-\contentsline {chapter}{\chapternumberline {5}Expressions}{11}
-\contentsline {chapter}{\chapternumberline {6}Targets}{12}
-\contentsline {chapter}{\chapternumberline {7}Templates}{13}
-\contentsline {chapter}{\chapternumberline {8}Modules}{14}
-\contentsline {chapter}{\chapternumberline {9}Libraries}{15}
-\contentsline {appendix}{\chapternumberline {A}CML Concrete Syntax (Grammar)}{16}
-\contentsline {section}{\numberline {A.1}ANTLR Grammar}{17}
-\contentsline {appendix}{\chapternumberline {B}CML Abstract Syntax (Metamodel)}{19}
-\contentsline {appendix}{\chapternumberline {C}CML Abstract Syntax Tree (Instantiation)}{20}
-\contentsline {appendix}{\chapternumberline {D}CML Constraints (Validations)}{21}
-\contentsline {appendix}{\chapternumberline {E}Language Specification Notation}{22}
-\contentsline {chapter}{Bibliography}{23}
+\contentsline {chapter}{\chapternumberline {3}Attributes}{10}
+\contentsline {section}{\numberline {3.1}Literal Values}{10}
+\contentsline {section}{\numberline {3.2}Primitive Types}{10}
+\contentsline {chapter}{\chapternumberline {4}Associations}{11}
+\contentsline {section}{\numberline {4.1}Unidirectional Associations}{11}
+\contentsline {section}{\numberline {4.2}Bidirectional Associations}{11}
+\contentsline {section}{\numberline {4.3}Collection Types}{11}
+\contentsline {chapter}{\chapternumberline {5}Expressions}{12}
+\contentsline {chapter}{\chapternumberline {6}Targets}{13}
+\contentsline {chapter}{\chapternumberline {7}Templates}{14}
+\contentsline {chapter}{\chapternumberline {8}Modules}{15}
+\contentsline {chapter}{\chapternumberline {9}Libraries}{16}
+\contentsline {appendix}{\chapternumberline {A}CML Concrete Syntax (Grammar)}{17}
+\contentsline {section}{\numberline {A.1}ANTLR Grammar}{18}
+\contentsline {appendix}{\chapternumberline {B}CML Abstract Syntax (Metamodel)}{20}
+\contentsline {appendix}{\chapternumberline {C}CML Abstract Syntax Tree (Instantiation)}{21}
+\contentsline {appendix}{\chapternumberline {D}CML Constraints (Validations)}{22}
+\contentsline {appendix}{\chapternumberline {E}Language Specification Notation}{23}
+\contentsline {chapter}{Bibliography}{24}

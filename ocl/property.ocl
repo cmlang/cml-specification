@@ -1,3 +1,6 @@
 context Property
+
 inv unique_property_name:
-    self.parent.properties->select(p| p != self and p.name = self.name)->isEmpty()
+    self.parent.properties
+        ->select(p| p != self and p.name = self.name)
+        ->isEmpty()

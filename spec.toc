@@ -24,5 +24,5 @@
 \contentsline {appendix}{\chapternumberline {B}CML Abstract Syntax (Metamodel)}{20}
 \contentsline {appendix}{\chapternumberline {C}CML Abstract Syntax Tree (Instantiation)}{21}
 \contentsline {appendix}{\chapternumberline {D}CML Constraints (Validations)}{22}
-\contentsline {appendix}{\chapternumberline {E}Language Specification Notation}{23}
-\contentsline {chapter}{Bibliography}{24}
+\contentsline {appendix}{\chapternumberline {E}Language Specification Notation}{24}
+\contentsline {chapter}{Bibliography}{25}

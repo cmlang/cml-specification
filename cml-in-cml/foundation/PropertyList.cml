@@ -4,6 +4,9 @@
 abstract concept PropertyList: Scope
 {
     /properties: list of Property* = elements;
+
+    /property[name: String] = for p in properties
+        | select first p.name = name
 }
 
 // Validator (Well-Formedness Rules)

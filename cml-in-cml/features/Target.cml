@@ -3,6 +3,7 @@
 
 concept Target: NamedElement, PropertyList
 {
+    /type = property["type"].value
 }
 
 invariant of Target

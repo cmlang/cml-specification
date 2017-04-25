@@ -1,0 +1,5 @@
+context Concept
+inv unique_concept_name:
+    self.parent.concepts
+        ->select(p| p != self and p.name = self.name)
+        ->isEmpty()

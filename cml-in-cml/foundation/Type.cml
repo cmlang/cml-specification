@@ -11,6 +11,8 @@ concept Type: NamedElement
     primitive: Boolean = primitiveTypeNames | exists name;
     cardinality: String?;
 
+    concept: Concept?;
+
     /kind: String
     {
         given (cardinality = /\?/) return "optional";

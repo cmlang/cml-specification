@@ -3,4 +3,5 @@ compilationUnit:
     declarations*;
 
 declarations:
-    conceptDeclaration | targetDeclaration;
+    moduleDeclaration | conceptDeclaration | targetDeclaration;
+

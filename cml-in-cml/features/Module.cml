@@ -1,19 +1,42 @@
 
-// Model (Abstract Syntax)
+// Module (Abstract Syntax)
 
 concept Module: Scope
 {
-    /concepts: list of Concept* = elements;
-    /targets: list of Target* = elements;
+    /model: Model? = parent;
+    /siblings = model.modules - self;
+
+    /imports: Import* = elements;
+    /concepts: Concept* = elements;
+    /targets: Target* = elements;
+
+    /allConcepts = concepts + imports.module.concepts;
+    /allTargets = targets + imports.module.targets;
+
+    /concept[name: String]: Concept? = for c in allConcepts
+        | select first c.name = name;
+
+    /target[name: String]: Target? = for t in allTargets
+        | select first t.name = name;
+}
+
+concept Import: NamedElement
+{
+    module: Module;
+
+    /siblings = module.imports - self;
 }
 
 // Validator (Well-Formedness Rules)
 
-command validateModel(model: Model)
+invariants of Module
 {
-    for concept in model.concepts
-        invoke validateConcept(concept);
+    duplicate_modules_not_allowed:
+        for m in siblings | all m.name != name;
+}
 
-    for target in model.targets
-        invoke validateTarget(target);
+invariants of Import
+{
+    duplicate_imports_not_allowed:
+        for i in siblings | all i.name != name;
 }

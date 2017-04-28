@@ -5,8 +5,8 @@
 \contentsline {section}{\numberline {1.2}Organization and Notations}{3}
 \contentsline {chapter}{\chapternumberline {2}Concepts}{5}
 \contentsline {section}{\numberline {2.1}Properties}{7}
-\contentsline {section}{\numberline {2.2}Generalization/Specialization}{7}
-\contentsline {section}{\numberline {2.3}Abstract Concepts}{7}
+\contentsline {section}{\numberline {2.2}Generalization/Specialization}{9}
+\contentsline {section}{\numberline {2.3}Abstract Concepts}{9}
 \contentsline {chapter}{\chapternumberline {3}Attributes}{10}
 \contentsline {section}{\numberline {3.1}Literal Values}{10}
 \contentsline {section}{\numberline {3.2}Primitive Types}{10}

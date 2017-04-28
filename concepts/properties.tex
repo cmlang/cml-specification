@@ -42,3 +42,41 @@ in order to set the initial value.
 \caption{Property Declaration Syntax}
 \label{fig:stx:property}
 \end{figure}
+
+\begin{abstract-syntax}
+Figure \ref{fig:meta:property} presents the \emph{property} metamodel
+in an EMOF \cite{mof} class diagram,
+and figure \ref{fig:ast:property} specifies
+the transformation
+from the \emph{property} concrete syntax to its abstract syntax.
+For each \emph{property} parsed by the compiler,
+an instance of the \emph{Property} class will be created,
+and its properties will be assigned
+according to parsed information:
+
+\begin{itemize}
+
+\item \emph{name}:
+assigned with the value of the terminal node NAME.
+
+\item \emph{type}:
+if \emph{typeDeclaration} is provided,
+\emph{type} is set with the instance of the \emph{Type} class
+matching the \emph{typeDeclaration}.
+
+\item \emph{expression}:
+if \emph{expression} is provided,
+it contains the instance of the \emph{Expression} class
+matching the parsed \emph{expression}.
+
+\end{itemize}
+\end{abstract-syntax}
+
+\begin{figure}
+\verbatimfont{\small}
+\begin{framed}
+\verbatiminput{ast/property.lsl}
+\end{framed}
+\caption{Property AST Instantiation}
+\label{fig:ast:property}
+\end{figure}

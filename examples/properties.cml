@@ -1,0 +1,13 @@
+
+// Attributes of primitive types:
+concept Book
+{
+    title: String;
+    quantity: Integer;
+}
+
+// Role in unidirectional association:
+concept Order
+{
+    customer: Customer;
+}

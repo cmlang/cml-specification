@@ -25,11 +25,20 @@ or represent the role/end of an \emph{association} (\ref{ch:associations}).
 \label{fig:ex:properties}
 \end{figure}
 
+\begin{concrete-syntax}
+Figure \ref{fig:stx:property} specifies the syntax used
+to declare a \emph{property}.
+The NAME is followed by a \emph{typeDeclaration}
+(\ref{sec:primitive-types} and \ref{sec:collection-types}).
+Optionally, an \emph{expression} (\ref{ch:expressions}) may be specified
+in order to set the initial value.
+\end{concrete-syntax}
+
 \begin{figure}
 \verbatimfont{\small}
 \begin{framed}
 \verbatiminput{grammar/Properties.txt}
 \end{framed}
-\caption{Properties Declaration Syntax}
-\label{fig:properties-syntax}
+\caption{Property Declaration Syntax}
+\label{fig:stx:property}
 \end{figure}

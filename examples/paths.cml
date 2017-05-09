@@ -1,0 +1,7 @@
+concept Paths
+{
+    self_path = self;
+    single_var_path = foo;
+    path1 = somePath.bar;
+    path2 = somePath.oneMorePath.etc;
+}

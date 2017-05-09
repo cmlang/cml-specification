@@ -1,0 +1,6 @@
+concept UnaryOperators
+{
+    plus_sign = +1;
+    minus_sign = -2;
+    not_expr = not a;
+}

@@ -1,15 +1,23 @@
 concept Expressions
 {
     // Literals
-    a: Boolean = true;
-    b: Boolean = false;
     c: String = "SomeString";
     d: Integer = 123;
-    e: Decimal = 123.456;
 
-    // Unary operators:
+    // Unary Operators:
     plus_sign = +1;
-    minus_sign = -2;
-    not_expr = not a;
 
+    // Infix Operators:
+    addition = 1 + 2;
+    equality = 3 == 3;
+    and_expr = q and p;
+
+    // Path:
+    path = somePath.bar;
+
+    // Conditional:
+    if_then_else = if a > 0 then a else b;
+
+    // Query:
+    select_transform = items | select name == "this";
 }

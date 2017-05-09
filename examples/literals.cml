@@ -1,0 +1,9 @@
+concept Literals
+{
+    // Literals
+    a: Boolean = true;
+    b: Boolean = false;
+    c: String = "SomeString";
+    d: Integer = 123;
+    e: Decimal = 123.456;
+}

@@ -1,0 +1,7 @@
+concept Conditionals
+{
+    b: Integer;
+    c: String;
+
+    if_then_else = if a then b else c;
+}

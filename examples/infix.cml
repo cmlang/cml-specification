@@ -1,0 +1,24 @@
+concept InfixOperators
+{
+    // Arithmetic Operators:
+    addition = 1 + 2;
+    subtraction = 2 - 1;
+    multiplication = 2 * 3;
+    division = 6 / 2;
+    modulus = 5 % 2;
+    exponentiation = 2 ^ 3;
+
+    // Relational Operators:
+    equality = 3 == 3;
+    inequality = 2 != 3;
+    less_than = 2 < 3;
+    less_or_equal_than = 2 <= 3;
+    greater_than = 3 > 2;
+    greater_or_equal_than = 3 >= 2;
+
+    // Boolean Operators:
+    and_expr = q and p;
+    or_expr = q or p;
+    xor_expr = q xor p;
+    implies_expr = p implies q;
+}

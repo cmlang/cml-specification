@@ -30,6 +30,17 @@ and queries (\ref{ch:queries}).
 
 \begin{concrete-syntax}
 Figure \ref{fig:stx:expressions} specifies the syntax of all CML \emph{expressions}. It also lists them in their order of precedence.
+Observe that the grammar in figure \ref{fig:stx:expressions} has left
+recursions, and thus is ambiguous.
+However, ANTLR \cite{antlr} will use the order in which the alternatives
+are listed in order to resolve the ambiguity,
+and define the precedence between the operators.
+Also, according to ANTLR,
+and as required by CML,
+all expressions in the grammar are left-to-right associative,
+except for the \emph{exponentiation expression},
+which is right-to-left associative,
+as defined by the \textbf{<assoc=right>} clause.
 \end{concrete-syntax}
 
 \begin{figure}

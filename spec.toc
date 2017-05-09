@@ -14,11 +14,11 @@
 \contentsline {section}{\numberline {4.2}Bidirectional Associations}{12}{section.4.2}
 \contentsline {section}{\numberline {4.3}Collection Types}{12}{section.4.3}
 \contentsline {chapter}{\chapternumberline {5}Expressions}{13}{chapter.5}
-\contentsline {section}{\numberline {5.1}Literal Values}{13}{section.5.1}
-\contentsline {section}{\numberline {5.2}Prefix Expressions}{13}{section.5.2}
-\contentsline {section}{\numberline {5.3}Infix Expressions}{13}{section.5.3}
-\contentsline {section}{\numberline {5.4}Conditional Expressions}{13}{section.5.4}
-\contentsline {section}{\numberline {5.5}Path Expressions}{13}{section.5.5}
+\contentsline {section}{\numberline {5.1}Literal Values}{14}{section.5.1}
+\contentsline {section}{\numberline {5.2}Prefix Expressions}{14}{section.5.2}
+\contentsline {section}{\numberline {5.3}Infix Expressions}{14}{section.5.3}
+\contentsline {section}{\numberline {5.4}Conditional Expressions}{14}{section.5.4}
+\contentsline {section}{\numberline {5.5}Path Expressions}{14}{section.5.5}
 \contentsline {chapter}{\chapternumberline {6}Queries}{17}{chapter.6}
 \contentsline {chapter}{\chapternumberline {7}Code Generation}{18}{chapter.7}
 \contentsline {section}{\numberline {7.1}Tasks}{18}{section.7.1}

@@ -1,22 +1,22 @@
 concept Expressions
 {
-    // Literals
+    // Literals:
     c: String = "SomeString";
     d: Integer = 123;
 
-    // Unary Operators:
-    plus_sign = +1;
+    // Prefix Expression:
+    minus_sign = -2;
 
-    // Infix Operators:
+    // Infix Expressions:
     addition = 1 + 2;
     equality = 3 == 3;
-    and_expr = q and p;
-
-    // Path:
-    path = somePath.bar;
+    boolean_expr = q and p;
 
     // Conditional:
     if_then_else = if a > 0 then a else b;
+
+    // Path:
+    path = somePath.bar;
 
     // Query:
     select_transform = items | select name == "this";

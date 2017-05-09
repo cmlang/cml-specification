@@ -13,14 +13,19 @@
 \BOOKMARK [1][-]{section.4.3}{Collection Types}{chapter.4}% 13
 \BOOKMARK [0][-]{chapter.5}{Expressions}{}% 14
 \BOOKMARK [1][-]{section.5.1}{Literal Values}{chapter.5}% 15
-\BOOKMARK [0][-]{chapter.6}{Targets}{}% 16
-\BOOKMARK [0][-]{chapter.7}{Templates}{}% 17
-\BOOKMARK [0][-]{chapter.8}{Modules}{}% 18
-\BOOKMARK [0][-]{chapter.9}{Libraries}{}% 19
-\BOOKMARK [0][-]{appendix.A}{CML Concrete Syntax \(Grammar\)}{}% 20
-\BOOKMARK [1][-]{section.A.1}{ANTLR Grammar}{appendix.A}% 21
-\BOOKMARK [0][-]{appendix.B}{CML Abstract Syntax \(Metamodel\)}{}% 22
-\BOOKMARK [0][-]{appendix.C}{CML Abstract Syntax Tree \(Instantiation\)}{}% 23
-\BOOKMARK [0][-]{appendix.D}{CML Constraints \(Validations\)}{}% 24
-\BOOKMARK [0][-]{appendix.E}{Language Specification Notation}{}% 25
-\BOOKMARK [0][-]{section*.4}{Bibliography}{}% 26
+\BOOKMARK [1][-]{section.5.2}{Prefix Expressions}{chapter.5}% 16
+\BOOKMARK [1][-]{section.5.3}{Infix Expressions}{chapter.5}% 17
+\BOOKMARK [1][-]{section.5.4}{Conditional Expressions}{chapter.5}% 18
+\BOOKMARK [1][-]{section.5.5}{Path Expressions}{chapter.5}% 19
+\BOOKMARK [0][-]{chapter.6}{Queries}{}% 20
+\BOOKMARK [0][-]{chapter.7}{Targets}{}% 21
+\BOOKMARK [0][-]{chapter.8}{Templates}{}% 22
+\BOOKMARK [0][-]{chapter.9}{Modules}{}% 23
+\BOOKMARK [0][-]{chapter.10}{Libraries}{}% 24
+\BOOKMARK [0][-]{appendix.A}{CML Concrete Syntax \(Grammar\)}{}% 25
+\BOOKMARK [1][-]{section.A.1}{ANTLR Grammar}{appendix.A}% 26
+\BOOKMARK [0][-]{appendix.B}{CML Abstract Syntax \(Metamodel\)}{}% 27
+\BOOKMARK [0][-]{appendix.C}{CML Abstract Syntax Tree \(Instantiation\)}{}% 28
+\BOOKMARK [0][-]{appendix.D}{CML Constraints \(Validations\)}{}% 29
+\BOOKMARK [0][-]{appendix.E}{Language Specification Notation}{}% 30
+\BOOKMARK [0][-]{section*.4}{Bibliography}{}% 31

@@ -6,6 +6,12 @@ concept Queries
     children: Class*;
     top_orders: Order*;
 
+    // Collection Path - Simplest type of query:
+    self_path = self;
+    single_var_path = class;
+    path1 = class.children;
+    path2 = top_orders.items.product;
+
     // Select / Reject:
     select_transform = top_items | select name == "this";
     select_transform_nested = top_items

@@ -21,9 +21,7 @@ and queries (\ref{ch:queries}).
 
 \begin{figure}
 \verbatimfont{\small}
-\begin{framed}
-\verbatiminput{examples/expressions.cml}
-\end{framed}
+\lstinputlisting[language=cml]{examples/expressions.cml}
 \caption{Expression Examples}
 \label{fig:ex:expressions}
 \end{figure}
@@ -43,11 +41,12 @@ which is right-to-left associative,
 as defined by the \textbf{<assoc=right>} clause.
 \end{concrete-syntax}
 
+TODO:
+- Escaping quotes in String expressions.
+
 \begin{figure}
 \verbatimfont{\small}
-\begin{framed}
-\verbatiminput{grammar/Expressions.txt}
-\end{framed}
+\lstinputlisting[language=antlr]{grammar/Expressions.txt}
 \caption{Expressions Syntax}
 \label{fig:stx:expressions}
 \end{figure}

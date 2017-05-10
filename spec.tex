@@ -26,6 +26,50 @@
 \hypersetup{pdftex,colorlinks=true,allcolors=blue}
 \usepackage{hypcap}
 
+\usepackage{color}
+\definecolor{dark_blue}{rgb}{0.0,0.0,0.7}
+\definecolor{fielddrab}{rgb}{0.42, 0.33, 0.12}
+
+\usepackage{textcomp}
+\usepackage{listings}
+\lstset{upquote=true,basicstyle=\footnotesize,frame=single}
+\lstdefinelanguage{cml}
+{
+  identifierstyle=\color{dark_blue},
+  morestring=[b]",
+  stringstyle=\color{fielddrab},
+  morecomment=[l]{//},
+  commentstyle = \color{black},
+  morekeywords={,concept,task,association,select,reject,
+  yield,recurse,count,first,last,if,then,else,for,in,}]
+}
+\lstdefinelanguage{antlr}
+{
+  identifierstyle=\color{dark_blue},
+  morestring=[b]",
+  stringstyle=\color{fielddrab},
+  morekeywords={,returns,}]
+}
+\lstdefinelanguage{lsl}
+{
+  identifierstyle=\color{dark_blue},
+  morestring=[b]',
+  stringstyle=\color{fielddrab},
+  morecomment=[l]{//},
+  commentstyle = \color{black},
+  morekeywords={,node,select,reject,
+  yield,recurse,count,first,last,if,then,else,for,in,}]
+}
+\lstdefinelanguage{ocl_}
+{
+  identifierstyle=\color{dark_blue},
+  morestring=[b]",
+  stringstyle=\color{fielddrab},
+  morecomment=[l]{//},
+  commentstyle = \color{black},
+  morekeywords={,context,inv,pre,post,and,or,implies,}]
+}
+
 \title{\emph{Conceptual Modeling Language}\\Specification\\ \small{Version 1.0 (Draft)}}
 \author{Quenio Cesar Machado dos Santos\\
 \small{Universidade Federal de Santa Catarina}\thanks{

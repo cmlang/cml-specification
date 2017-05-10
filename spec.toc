@@ -4,7 +4,7 @@
 \contentsline {subsection}{Backend}{2}{section*.2}
 \contentsline {section}{\numberline {1.2}Organization and Notations}{3}{section.1.2}
 \contentsline {chapter}{\chapternumberline {2}Concepts}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Properties}{7}{section.2.1}
+\contentsline {section}{\numberline {2.1}Properties}{8}{section.2.1}
 \contentsline {section}{\numberline {2.2}Generalization/Specialization}{10}{section.2.2}
 \contentsline {section}{\numberline {2.3}Abstract Concepts}{10}{section.2.3}
 \contentsline {chapter}{\chapternumberline {3}Attributes}{11}{chapter.3}

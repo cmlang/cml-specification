@@ -13,6 +13,7 @@
 \contentsline {section}{\numberline {4.1}Unidirectional Associations}{11}{section.4.1}
 \contentsline {section}{\numberline {4.2}Bidirectional Associations}{11}{section.4.2}
 \contentsline {section}{\numberline {4.3}Collection Types}{11}{section.4.3}
+\contentsline {section}{\numberline {4.4}Collections}{11}{section.4.4}
 \contentsline {chapter}{\chapternumberline {5}Expressions}{12}{chapter.5}
 \contentsline {section}{\numberline {5.1}Literal Values}{13}{section.5.1}
 \contentsline {section}{\numberline {5.2}Prefix Expressions}{13}{section.5.2}

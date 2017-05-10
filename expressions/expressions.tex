@@ -1,5 +1,5 @@
 \begin{definition}
-An \emph{expression} may be used in CML to compute values and collections that initialize \emph{properties} or define \emph{derived properties}.
+An \emph{expression} in CML is used to compute values and collections that initialize \emph{properties} or define \emph{derived properties}.
 On the UML \cite{uml} metamodel,
 it corresponds to an \emph{Expression};
 in OCL \cite{ocl}, to \emph{OclExpressionCS}.
@@ -9,7 +9,7 @@ but the CML syntax varies from OCL, especially for collection operations.
 \end{definition}
 
 \begin{examples}
-Figure \ref{fig:ex:expressions} presents some examples of CML \emph{expressions}.
+Figure \ref{fig:ex:expressions} has some examples of CML \emph{expressions}.
 As shown, there are different types of expressions:
 literals (\ref{sec:literals}),
 prefix expressions (\ref{sec:prefix}),
@@ -32,7 +32,7 @@ Observe that the grammar in figure \ref{fig:stx:expressions} has left
 recursions, and thus is ambiguous.
 However, ANTLR \cite{antlr} will use the order in which the alternatives
 are listed in order to resolve the ambiguity,
-and define the precedence between the operators.
+and so define the precedence among the operators.
 Also, according to ANTLR,
 and as required by CML,
 all expressions in the grammar are left-to-right associative,

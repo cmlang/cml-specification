@@ -11,24 +11,25 @@
 \BOOKMARK [1][-]{section.4.1}{Unidirectional Associations}{chapter.4}% 11
 \BOOKMARK [1][-]{section.4.2}{Bidirectional Associations}{chapter.4}% 12
 \BOOKMARK [1][-]{section.4.3}{Collection Types}{chapter.4}% 13
-\BOOKMARK [0][-]{chapter.5}{Expressions}{}% 14
-\BOOKMARK [1][-]{section.5.1}{Literal Values}{chapter.5}% 15
-\BOOKMARK [1][-]{section.5.2}{Prefix Expressions}{chapter.5}% 16
-\BOOKMARK [1][-]{section.5.3}{Infix Expressions}{chapter.5}% 17
-\BOOKMARK [1][-]{section.5.4}{Conditional Expressions}{chapter.5}% 18
-\BOOKMARK [1][-]{section.5.5}{Path Expressions}{chapter.5}% 19
-\BOOKMARK [0][-]{chapter.6}{Queries}{}% 20
-\BOOKMARK [0][-]{chapter.7}{Code Generation}{}% 21
-\BOOKMARK [1][-]{section.7.1}{Tasks}{chapter.7}% 22
-\BOOKMARK [1][-]{section.7.2}{Constructors}{chapter.7}% 23
-\BOOKMARK [1][-]{section.7.3}{Templates}{chapter.7}% 24
-\BOOKMARK [1][-]{section.7.4}{Targets}{chapter.7}% 25
-\BOOKMARK [0][-]{chapter.8}{Modules}{}% 26
-\BOOKMARK [0][-]{chapter.9}{Libraries}{}% 27
-\BOOKMARK [0][-]{appendix.A}{CML Concrete Syntax \(Grammar\)}{}% 28
-\BOOKMARK [1][-]{section.A.1}{ANTLR Grammar}{appendix.A}% 29
-\BOOKMARK [0][-]{appendix.B}{CML Abstract Syntax \(Metamodel\)}{}% 30
-\BOOKMARK [0][-]{appendix.C}{CML Abstract Syntax Tree \(Instantiation\)}{}% 31
-\BOOKMARK [0][-]{appendix.D}{CML Constraints \(Validations\)}{}% 32
-\BOOKMARK [0][-]{appendix.E}{Language Specification Notation}{}% 33
-\BOOKMARK [0][-]{section*.4}{Bibliography}{}% 34
+\BOOKMARK [1][-]{section.4.4}{Collections}{chapter.4}% 14
+\BOOKMARK [0][-]{chapter.5}{Expressions}{}% 15
+\BOOKMARK [1][-]{section.5.1}{Literal Values}{chapter.5}% 16
+\BOOKMARK [1][-]{section.5.2}{Prefix Expressions}{chapter.5}% 17
+\BOOKMARK [1][-]{section.5.3}{Infix Expressions}{chapter.5}% 18
+\BOOKMARK [1][-]{section.5.4}{Conditional Expressions}{chapter.5}% 19
+\BOOKMARK [1][-]{section.5.5}{Path Expressions}{chapter.5}% 20
+\BOOKMARK [0][-]{chapter.6}{Queries}{}% 21
+\BOOKMARK [0][-]{chapter.7}{Code Generation}{}% 22
+\BOOKMARK [1][-]{section.7.1}{Tasks}{chapter.7}% 23
+\BOOKMARK [1][-]{section.7.2}{Constructors}{chapter.7}% 24
+\BOOKMARK [1][-]{section.7.3}{Templates}{chapter.7}% 25
+\BOOKMARK [1][-]{section.7.4}{Targets}{chapter.7}% 26
+\BOOKMARK [0][-]{chapter.8}{Modules}{}% 27
+\BOOKMARK [0][-]{chapter.9}{Libraries}{}% 28
+\BOOKMARK [0][-]{appendix.A}{CML Concrete Syntax \(Grammar\)}{}% 29
+\BOOKMARK [1][-]{section.A.1}{ANTLR Grammar}{appendix.A}% 30
+\BOOKMARK [0][-]{appendix.B}{CML Abstract Syntax \(Metamodel\)}{}% 31
+\BOOKMARK [0][-]{appendix.C}{CML Abstract Syntax Tree \(Instantiation\)}{}% 32
+\BOOKMARK [0][-]{appendix.D}{CML Constraints \(Validations\)}{}% 33
+\BOOKMARK [0][-]{appendix.E}{Language Specification Notation}{}% 34
+\BOOKMARK [0][-]{section*.4}{Bibliography}{}% 35

@@ -1,0 +1,44 @@
+
+// Generalization of Circle and Rectangle:
+concept Shape
+{
+    // All specializations below share the color property:
+    color: String;
+
+    // Some specializations below redefine the area property:
+    area: Integer;
+}
+
+// Specialization of Shape:
+concept Circle: Shape
+{
+    radius: Integer;
+
+    // Another redefinition of the area property:
+    /area = 3.14159 * radius ^ 2;
+}
+
+// Another specialization of Shape:
+concept Rectangle: Shape
+{
+    width: Integer;
+    height: Integer;
+
+    // Redefinition of the area property:
+    /area = width * height;
+}
+
+// A specialization of Retangle:
+concept Square: Rectangle
+{
+    length: Integer;
+
+    // Redefinitions:
+    /width = length;
+    /height = length;    
+
+    // No redefnition of the area property; 
+    // reusing the one from Rectangle.
+}
+
+// Missing multiple inheritance:

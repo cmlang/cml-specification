@@ -1,7 +1,28 @@
-context Concept
+context Concept::all_generalizations: OrderedSet(Concept)
+derive: generalizations->closure(generalizations)
 
+context Concept
 inv not_own_generalization:
-    generalizations
-        ->closure(generalizations)
+    self.all_generalizations    
         ->select(c| c = self)
+        ->isEmpty()
+
+context Concept
+inv compatible_generalizations:
+    self.all_generalizations
+        ->forAll(generalization|
+            generalization.elements->forAll(property|
+                self.all_generalizations
+                    ->reject(g| g == generalization)
+                    ->forAll(
+                        elements
+                            ->select(name = property.name)    
+                            ->select(type != property.type)
+                            ->isEmpty())))
+
+context Property
+inv redefinition_compatible_with_generalizations:
+    self.scope.all_generalizations.elements
+        ->select(property| self.name = property.name)    
+        ->select(property| self.type != property.type)
         ->isEmpty()

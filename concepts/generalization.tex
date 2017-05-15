@@ -73,7 +73,8 @@ of the declared \emph{concept}.
 \end{abstract-syntax}
 
 \begin{constraints}
-Figure \ref{fig:ocl:generalization} presents the invariants of the \emph{Concept} class
+Figure \ref{fig:ocl:generalization} presents the invariants
+of the \emph{Concept} and \emph{Property} classes
 related to \emph{generalizations}:
 
 \begin{itemize}
@@ -81,6 +82,14 @@ related to \emph{generalizations}:
 \item \emph{not\_own\_generalization}:
 A \emph{concept} (\ref{ch:concepts}) may not be listed on its own \emph{GeneralizationList},
 nor on the \emph{GeneralizationList} of its direct or indirect generalizations.
+
+\item \emph{compatible\_generalizations}:
+The \emph{generalizations} of a \emph{concept} must all be compatible between themselves,
+that is, no two \emph{generalizations} may have a \emph{property} with the same name
+but different types.
+
+\item \emph{redefinition\_compatible\_with\_generalizations}:
+A \emph{property} may only be redefined with same type defined in the \emph{generalizations}.
 
 \end{itemize}
 \end{constraints}

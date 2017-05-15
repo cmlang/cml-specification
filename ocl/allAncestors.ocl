@@ -1,0 +1,4 @@
+context Concept::allAncestors: Set(Concept)
+derive: self->closure(directAncestors)
+
+

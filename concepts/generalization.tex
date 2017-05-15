@@ -57,3 +57,34 @@ and in turn its generalizations, if any.
 A list of NAMEs may be enumerated after the declared \emph{concept}'s NAME,
 referring to other \emph{concepts} that this concept is a specialization of.
 \end{concrete-syntax}
+
+\begin{abstract-syntax}
+Figure \ref{fig:meta:concept} presents the \emph{concept} metamodel
+in an EMOF \cite{mof} class diagram,
+and figure \ref{fig:ast:concept} specifies
+the \emph{concept} transformation
+from its concrete syntax to its abstract syntax.
+There are two unidirecional associations in the \emph{Concept} class
+that keep track of generalization/specialization relationships:
+
+\begin{itemize}
+
+\item \emph{directAncestors}:
+an \emph{ordered set} referencing all \emph{concepts}
+whose NAMEs were enumerated in the \emph{AncestorList}
+of the declared \emph{concept}.
+
+\item \emph{allAncestors}:
+a derived property,
+defined in the figure \ref{fig:meta:allAncestors},
+referencing all \emph{concepts} whose NAMEs were enumerated in the \emph{AncestorList}
+of the declared \emph{concept} and of all its \emph{directAncestors}.
+
+\end{itemize}
+\end{abstract-syntax}
+
+\begin{figure}
+\lstinputlisting[language=ocl_]{ocl/allAncestors.ocl}
+\caption{Definition of Concept::allAncestors}
+\label{fig:meta:allAncestors}
+\end{figure}

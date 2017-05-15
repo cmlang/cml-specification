@@ -16,7 +16,7 @@ concept Rectangle: Shape
     width: Integer;
     height: Integer;
 
-    // Another redefinition of the area attribute:
+    // Redefinition of the area attribute:
     /area = width * height;
 }
 

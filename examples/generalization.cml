@@ -46,6 +46,6 @@ concept Square: Rectangle, Rhombus
     /q = p;
 
     // Required to redefine area in order to resolve conflict
-    // between Rectangle's area and Rhombu's area:
+    // between Rectangle's area and Rhombus' area:
     /area = side_length ^ 2;
 }

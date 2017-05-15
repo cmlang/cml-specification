@@ -37,11 +37,11 @@ concept Square: Rectangle, Rhombus
     // Only attribute needed to characterize a square:
     side_length: Integer;
 
-    // Redefinitions from Rectangle:
+    // Redefinitions of Rectangle's attributes:
     /width = side_length;
     /height = side_length;
 
-    // Redefinitions from Rhombus:        
+    // Redefinitions of Rhombus' attributes:        
     /p = side_length * 1.41421356237; // square root of 2
     /q = p;
 

@@ -20,6 +20,24 @@ inv compatible_generalizations:
                             ->select(type != property.type)
                             ->isEmpty())))
 
+content context
+inv definition_conflict:
+    self.generalizations
+        ->forAll(generalization|
+            generalization.elements->forAll(property|
+                self.generalizations
+                    ->reject(g| g == generalization)
+                    ->forAll(
+                        elements
+                            ->select(name = property.name)    
+                            ->select(type = property.type)
+                            ->forAll(conflict|
+                                self.properties
+                                    ->select(name = conflict.name)
+                                    ->notEmpty()))))
+
+                            
+
 context Property
 inv redefinition_compatible_with_generalizations:
     self.scope.all_generalizations.elements

@@ -2,10 +2,10 @@
 // Generalization of Circle and Rectangle:
 concept Shape
 {
-    // All specializations below share the color attribute as-is:
+    // Specializations below share the color attribute as-is:
     color: String;
 
-    // All specializations below redefine the area attribute:
+    // Specializations below redefine the area attribute:
     area: Integer;
 }
 
@@ -31,7 +31,7 @@ concept Rhombus: Shape
     /area = (p * q) / 2;
 }
 
-// Multiple Inheritance: specialization of both Rectangle and Rhombus:
+// Specialization of both Rectangle and Rhombus:
 concept Square: Rectangle, Rhombus
 {
     // Only attribute needed to characterize a square:
@@ -42,7 +42,7 @@ concept Square: Rectangle, Rhombus
     /height = side_length;
 
     // Redefinitions from Rhombus:        
-    /p = side_length * 1.41421356237; // side_length * square root of 2
+    /p = side_length * 1.41421356237; // square root of 2
     /q = p;
 
     // Required to redefine area in order to resolve conflict

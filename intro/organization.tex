@@ -51,8 +51,7 @@ starting with the ``\textbf{Abstract Syntax.}'' heading.
 This type of paragraph refers to two types of figure:
 the first figure presents a class diagram
 with the EMOF \cite{mof}-based metamodel
-of the element being described,
-or the OCL defining a derived attribute or association;
+of the element being described;
 the second figure specifies the transformation
 from the concrete syntax into instances of the metamodel classes,
 which are the nodes of the abstract syntax tree
@@ -74,6 +73,8 @@ and it must be considered normative.
 Each invariant has a name in the format \verb+inv_name+
 so that it can be referred by the compiler's error messages
 and users.
+Derived properties may also be defined before the constraints
+in order to simplify the constraint expressions.
 The appendix \ref{apx:ocl} presents all the constraint rules
 in a single listing.
 \end{constraints}

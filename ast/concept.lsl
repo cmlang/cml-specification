@@ -1,14 +1,14 @@
 node Concept:
     'abstract'?
     'concept' NAME
-    (':' AncestorList)?
+    (':' GeneralizationList)?
     (';' | PropertyList)
 {
     name = NAME;
     abstract = 'abstract'?;
     elements = PropertyList.Property*;
-    directAncestors = for name in AncestorList.NAME*
+    generalizations = for name in GeneralizationList.NAME*
         | yield Model.concept[name];
 }
 
-node AncestorList: NAME (',' NAME)*;
+node GeneralizationList: NAME (',' NAME)*;

@@ -1,0 +1,7 @@
+context Concept
+
+inv not_own_generalization:
+    generalizations
+        ->closure(generalizations)
+        ->select(c| c = self)
+        ->isEmpty()

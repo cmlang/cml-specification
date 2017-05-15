@@ -1,8 +1,8 @@
 \begin{definition}
 A \emph{concept} in CML represents anything
-that has a coherent, cohesive meaning in a domain.
+that has a coherent, cohesive and relevant meaning in a domain.
 In the ER \cite{er} metamodel,
-it corresponds to an \emph{entity};
+it corresponds to an \emph{entity type};
 in UML \cite{uml},
 to a \emph{class}.
 The CML \emph{concept} differs, however, from the UML \emph{class},
@@ -17,7 +17,7 @@ a \emph{concept} may have zero or more \emph{properties}
 (\ref{sec:properties}),
 and a \emph{property} may optionally declare a \emph{type}
 (\ref{sec:primitive-types}, \ref{sec:collection-types}).
-Also, as shown in the last example of figure \ref{fig:ex:concepts},
+Also, as shown in the concept \textbf{EBook} of the example,
 a \emph{concept} may specialize
 (\ref{sec:generalization})
 another \emph{concept}.
@@ -73,15 +73,16 @@ otherwise, set to \emph{false}.
 an \emph{ordered set} referencing all \emph{properties}
 parsed in the \textbf{concept} block.
 
-\item \emph{directAncestors}:
+\item \emph{generalizations}:
 an \emph{ordered set} referencing all \emph{concepts}
-whose NAMEs were enumerated in the \emph{AncestorList}.
+whose NAMEs were enumerated in the \emph{GeneralizationList}.
 
 \end{itemize}
 \end{abstract-syntax}
 
 \begin{figure}
-\includegraphics[width=\textwidth]{metamodel/concept}
+\centering
+\includegraphics[width=0.5\textwidth]{metamodel/concept}
 \caption{Concept Metamodel}
 \label{fig:meta:concept}
 \end{figure}
@@ -100,10 +101,6 @@ Figure \ref{fig:ocl:concept} presents the invariants of the \emph{concept} metam
 
 \item \emph{unique\_concept\_name}:
 Each \emph{concept} must have a unique NAME within its \emph{module} (\ref{ch:modules}).
-
-\item \emph{not\_own\_ancestor}:
-A \emph{concept} may not be listed on its own \emph{AncestorList},
-nor on the \emph{AncestorList} of its direct or indirect ancestors (\ref{sec:generalization}).
 
 \end{itemize}
 \end{constraints}

@@ -64,27 +64,29 @@ in an EMOF \cite{mof} class diagram,
 and figure \ref{fig:ast:concept} specifies
 the \emph{concept} transformation
 from its concrete syntax to its abstract syntax.
-There are two unidirecional associations in the \emph{Concept} class
-that keep track of generalization/specialization relationships:
+There is a unidirecional association in the \emph{Concept} class
+that keeps track of the generalization/specialization relationships,
+which is named \emph{generalizations}.
+It is an \emph{ordered set} referencing all \emph{concepts}
+whose NAMEs were enumerated in the \emph{GeneralizationList}
+of the declared \emph{concept}.
+\end{abstract-syntax}
+
+\begin{constraints}
+Figure \ref{fig:ocl:generalization} presents the invariants of the \emph{Concept} class
+related to \emph{generalizations}:
 
 \begin{itemize}
 
-\item \emph{directAncestors}:
-an \emph{ordered set} referencing all \emph{concepts}
-whose NAMEs were enumerated in the \emph{AncestorList}
-of the declared \emph{concept}.
-
-\item \emph{allAncestors}:
-a derived property,
-defined in the figure \ref{fig:meta:allAncestors},
-referencing all \emph{concepts} whose NAMEs were enumerated in the \emph{AncestorList}
-of the declared \emph{concept} and of all its \emph{directAncestors}.
+\item \emph{not\_own\_generalization}:
+A \emph{concept} (\ref{ch:concepts}) may not be listed on its own \emph{GeneralizationList},
+nor on the \emph{GeneralizationList} of its direct or indirect generalizations.
 
 \end{itemize}
-\end{abstract-syntax}
+\end{constraints}
 
 \begin{figure}
-\lstinputlisting[language=ocl_]{ocl/allAncestors.ocl}
-\caption{Definition of Concept::allAncestors}
-\label{fig:meta:allAncestors}
+\lstinputlisting[language=ocl_]{ocl/generalization.ocl}
+\caption{Generalization Constraints}
+\label{fig:ocl:generalization}
 \end{figure}

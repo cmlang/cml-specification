@@ -1,5 +1,30 @@
-context Concept::all_generalizations: OrderedSet(Concept)
-derive: generalizations->closure(generalizations)
+context Concept::all_generalizations:OrderedSet(Concept)
+derive:
+    generalizations->closure(generalizations)
+
+context Concept::all_properties:OrderedSet(Property)
+derive:
+    elements->closure(elements)
+
+context Concept::generalization_pairs
+                 :Tuple(left: Concept, right: Concept)
+derive:
+    generalizations->collect(g1|
+        generalizations
+            ->select(g2| g1 != g2)
+            ->collect(g2| Tuple { left: g1, right: g2 })
+    )->flatten()
+
+context Concept::generalization_property_pairs
+                 :Set(Tuple(left: Property, right: Property))
+derive:
+    generalization_pairs->collect(pair|
+        pair.left.all_properties->collect(p1|
+            pair.right.all_properties
+                ->select(p2| p1.name = p2.name)
+                ->collect(p2| Tuple { left: p1, right: p2 })
+        )
+    ) 
 
 context Concept
 inv not_own_generalization:
@@ -7,34 +32,14 @@ inv not_own_generalization:
 
 context Concept
 inv compatible_generalizations:
-    self.all_generalizations
-        ->forAll(generalization|
-            generalization.elements->forAll(property|
-                self.all_generalizations
-                    ->reject(g| g == generalization)
-                    ->forAll(
-                        elements
-                            ->select(name = property.name)    
-                            ->select(type != property.type)
-                            ->isEmpty())))
+    generalization_property_pairs
+        ->forAll(left.type = right.type)
 
-content context
+context Concept
 inv definition_conflict:
-    self.generalizations
-        ->forAll(generalization|
-            generalization.elements->forAll(property|
-                self.generalizations
-                    ->reject(g| g == generalization)
-                    ->forAll(
-                        elements
-                            ->select(name = property.name)    
-                            ->select(type = property.type)
-                            ->forAll(conflict|
-                                self.properties
-                                    ->select(name = conflict.name)
-                                    ->notEmpty()))))
-
-                            
+    generalization_property_pairs
+        ->select(left.type = right.type)
+        ->forAll(self.elements->exists(name = left.name))
 
 context Property
 inv redefinition_compatible_with_generalizations:
@@ -42,3 +47,7 @@ inv redefinition_compatible_with_generalizations:
         ->select(property| self.name = property.name)    
         ->select(property| self.type != property.type)
         ->isEmpty()
+
+
+
+

@@ -3,9 +3,7 @@ derive: generalizations->closure(generalizations)
 
 context Concept
 inv not_own_generalization:
-    self.all_generalizations    
-        ->select(c| c = self)
-        ->isEmpty()
+    all_generalizations->excludes(self)    
 
 context Concept
 inv compatible_generalizations:

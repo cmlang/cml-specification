@@ -3,8 +3,14 @@ derive:
     generalizations->closure(generalizations)
 
 context Concept::all_properties: Set(Property)
+pre:
+    all_generalizations->excludes(self)
 derive:
-    elements->union(generalizations.all_properties)
+    elements->union(
+        generalizations.all_properties->select(p1|
+            not elements->exists(p2| p1.name == p2.name)
+        )
+    )
 
 context Concept::generalization_pairs
                  : Set(Tuple(left: Concept, right: Concept))
@@ -21,10 +27,9 @@ derive:
     generalization_pairs->collect(pair|
         pair.left.all_properties->collect(p1|
             pair.right.all_properties
-                ->select(p2| p1 != p2)
-                ->select(p2| p1.name = p2.name)
+                ->select(p2| p1 != p2 and p1.name = p2.name)
                 ->collect(p2| Tuple { left: p1, right: p2 })
-        )
+        )->flatten() 
     )->flatten() 
 
 context Concept
@@ -40,6 +45,8 @@ context Concept
 inv conflict_redefinition:
     generalization_property_pairs
         ->select(left.type = right.type)
+        ->select(left.expression->notEmpty() or
+                 right.expression->notEmpty())
         ->forAll(self.elements->exists(name = left.name))
 
 context Property

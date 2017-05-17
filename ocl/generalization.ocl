@@ -50,11 +50,10 @@ inv conflict_redefinition:
         ->forAll(self.elements->exists(name = left.name))
 
 context Property
-inv redefinition_compatible_with_generalizations:
+inv generalization_compatible_redefinition:
     self.scope.generalizations.all_properties
         ->select(property| self.name = property.name)    
-        ->select(property| self.type != property.type)
-        ->isEmpty()
+        ->forAll(property| self.type = property.type)
 
 
 

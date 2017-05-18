@@ -45,8 +45,8 @@ context Concept
 inv conflict_redefinition:
     generalization_property_pairs
         ->select(left.type = right.type)
-        ->select(left.expression->notEmpty() or
-                 right.expression->notEmpty())
+        ->select(left.derived or left.expression->notEmpty() or
+                 right.derived or right.expression->notEmpty())
         ->forAll(self.elements->exists(name = left.name))
 
 context Property

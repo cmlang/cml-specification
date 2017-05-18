@@ -1,0 +1,19 @@
+\begin{definition}
+An \emph{abstract concept} is one that does not represent specific instances,
+but instead serves as a \emph{generalization} (\ref{sec:generalization}) 
+for other \emph{concepts},
+which in turn represent specific instances.
+Thus, all instances of an \emph{abstract concept}
+are first instances of its \emph{specializations}.
+CML supports tagging a \emph{concept} as \emph{abstract}.
+An \emph{abstract concept} in CML may also define \emph{derived properties} (\ref{sec:properties})
+that do not provide an \emph{expression} (\ref{ch:expressions}) in their definition;
+such \emph{properties} may also be called \emph{abstract properties}.
+CML's support for \emph{abstract concepts} matches UML's \cite{uml},
+which allows the declaration of \emph{abstract classes}
+-- by setting the \emph{isAbstract} attribute of the \emph{Class} metaclass instance to \emph{true}.
+UML also allows the declaration of corresponding \emph{abstract attributes} and \emph{abstract operations}.
+The original version of the ER \cite{er} metamodel, however,
+as a consequence of lacking the \emph{generalization/specialization} relationship,
+has not considered the notion of \emph{abstract entities}.
+\end{definition}

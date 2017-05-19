@@ -76,3 +76,23 @@ from its concrete syntax to its abstract syntax.
 There is a \textbf{Boolean} attribute named \textbf{abstract} in the \emph{Concept} class
 that determines whether a \emph{concept} is \emph{abstract} or not.
 \end{abstract-syntax}
+
+\begin{constraints}
+Figure \ref{fig:ocl:abstract} presents the invariants
+of the \emph{Property} class in CML's EMOF \emph{emof} metamodel
+related to \emph{abstract concepts}:
+
+\begin{itemize}
+
+\item \emph{abstract\_property\_in\_abstract\_concept}:
+Only \emph{abstract concepts} may have \emph{abstract properties}.
+
+\end{itemize}
+\end{constraints}
+
+\begin{figure}
+\lstinputlisting[language=ocl_]{ocl/abstract.ocl}
+\caption{Abstract Concept Constraints}
+\label{fig:ocl:abstract}
+\end{figure}
+

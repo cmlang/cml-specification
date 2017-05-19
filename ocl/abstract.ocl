@@ -1,0 +1,7 @@
+context Property::abstract: Boolean
+derive:
+    self.derived and self.expression->isEmpty()
+
+context Property
+inv abstract_property_in_abstract_concept:
+    self.abstract implies self.scope.abstract

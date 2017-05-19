@@ -31,7 +31,7 @@ concept UnitCircle: Circle
     -- Observe below that the redefinition of 
     -- an abstract property may be concrete;
     -- that is, it does not have to be derived
-    -- as it was done in Cicle.
+    -- as it was done in Circle.
     area = 3.14159d;
 
     -- In the case above, however, 

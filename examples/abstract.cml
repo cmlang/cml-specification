@@ -2,7 +2,8 @@
 -- no direct instances of Shape are ever created.
 abstract concept Shape
 {
-    -- A derived property without an expression is considered abstract.
+    -- A derived property without an expression
+    -- is considered abstract.
     -- Only abstract concepts may have abstract properties.
     /area: Double;
 
@@ -16,7 +17,8 @@ concept Circle: Shape
     radius: Double;
 
     -- In order to be considered a concrete concept,
-    -- Circle must redefine the abstract properties inherited from Shape.
+    -- Circle must redefine the abstract properties
+    -- inherited from Shape.
     /area = 3.14159 * radius ^ 2;
 
     -- Circle may also redefine concrete properties of Shape.
@@ -26,14 +28,16 @@ concept Circle: Shape
 
 concept UnitCircle: Circle
 {
-    -- Observe below that the redefinition of an abstract property
-    -- may be concrete, that is, it does not have to be derived
+    -- Observe below that the redefinition of 
+    -- an abstract property may be concrete;
+    -- that is, it does not have to be derived
     -- as it was done in Cicle.
     area = 3.14159;
 
-    -- In the case above, however, it is desirable to redefine "area"
-    -- as a derived property, in order to guarantee area's value
-    -- cannot be modified after instantiation.
+    -- In the case above, however, 
+    -- it is desirable to redefine "area" as a derived property,
+    -- in order to guarantee area's value cannot be modified
+    -- after the instantiation of UnitCircle.
     -- This is done with the redefinition of "radius" below.
     -- Notice that, in Circle, radius was concrete,
     -- but its redefinition below makes it derived.

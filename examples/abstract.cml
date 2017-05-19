@@ -32,7 +32,7 @@ concept UnitCircle: Circle
     -- an abstract property may be concrete;
     -- that is, it does not have to be derived
     -- as it was done in Cicle.
-    area = 3.14159;
+    area = 3.14159d;
 
     -- In the case above, however, 
     -- it is desirable to redefine "area" as a derived property,
@@ -43,5 +43,5 @@ concept UnitCircle: Circle
     -- but its redefinition below makes it derived.
     -- That's allowed in CML just as the other way around,
     -- as it was done with "area" above.
-    /radius = 1;
+    /radius = 1.0d;
 }

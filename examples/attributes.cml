@@ -1,0 +1,17 @@
+concept Attributes
+{
+    -- Attribute with a slot for values of a primitive type:
+    a: Integer;
+
+    -- An attribute with an initial value:
+    b: String = "initial value";
+
+    -- A derived attribute:
+    /c: Decimal = 2.0 * a; 
+
+    -- An attribute with type inferred from its initial value:
+    d = 3; -- Inferred as Integer based on constant "3"
+
+    -- A derived attribute with type inferred from expression:
+    /e = 2.0d * a; -- Inferred as Double based on "2.0d"
+}

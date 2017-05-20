@@ -9,4 +9,38 @@ An initial value may be specified as an \emph{expression} (\ref{ch:expressions})
 An \emph{attribute}'s value may also be constantly
 derived from an \emph{expression} (not only initially),
 in which case it is called a \emph{derived attribute} (\ref{sec:derived-attributes}).
+While initial values are only set when a \emph{concept} (\ref{ch:concepts})
+is instantiated,
+the value of \emph{derived attributes} are always evaluated 
+from the given \emph{expression},
+and they cannot be set any other way.
 \end{definition}
+
+\begin{examples}
+Figure \ref{fig:ex:attributes} presents some examples of \emph{attributes} declared in CML.
+As shown,
+the attribute \textbf{a} is a regular attribute definition 
+that specifies the \emph{primitive type} (\ref{sec:primitive-types})
+of the values that can be held by the \emph{attribute}'s slot.
+The attribute \textbf{b} is an example showing how an \emph{attribute}
+can be defined with an initial value.
+As shown by the attribute \textbf{c}, 
+an attribute may be derived from an \emph{expression}
+that refers to other \emph{attributes}.
+In order to differentiate \emph{attributes} with initial values
+from \emph{derived attributes},
+a forward slash (``/'') prefixes the name of the latter.
+Attributes \textbf{d} and \textbf{e} are examples
+where the type of the attribute,
+instead of being specified,
+is inferred from the given \emph{expression}.
+Type inference is possible for both slot-based \emph{attributes}
+and \emph{derived attributes} that provide an \emph{expression}.
+\end{examples}
+
+\begin{figure}
+\verbatimfont{\small}
+\lstinputlisting[language=cml]{examples/attributes.cml}
+\caption{Examples of Attributes}
+\label{fig:ex:attributes}
+\end{figure}

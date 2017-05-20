@@ -19,7 +19,7 @@ concept Circle: Shape
     -- In order to be considered a concrete concept,
     -- Circle must redefine the abstract properties
     -- inherited from Shape.
-    /area = 3.14159 * radius ^ 2;
+    /area = 3.14159d * radius ^ 2;
 
     -- Circle may also redefine concrete properties of Shape.
     -- However, the redefinition is not required in this case.

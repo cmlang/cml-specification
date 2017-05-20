@@ -34,7 +34,7 @@ Attributes \textbf{d} and \textbf{e} are examples
 where the type of the attribute,
 instead of being specified,
 is inferred from the given \emph{expression}.
-Type inference is possible for both slot-based \emph{attributes}
+Type inference is possible for both regular, slot-based \emph{attributes}
 and \emph{derived attributes} that provide an \emph{expression}.
 \end{examples}
 
@@ -44,3 +44,18 @@ and \emph{derived attributes} that provide an \emph{expression}.
 \caption{Examples of Attributes}
 \label{fig:ex:attributes}
 \end{figure}
+
+\begin{concrete-syntax}
+Figure \ref{fig:stx:property} specifies the syntax used
+to declare any kind of \emph{property} (\ref{sec:properties}),
+including \emph{attributes}.
+The NAME of an \emph{attribute} is followed
+by a \emph{typeDeclaration} of a \emph{primitive type}
+(\ref{sec:primitive-types}).
+Optionally, an \emph{expression} (\ref{ch:expressions}) may be specified
+in order to set the initial value.
+A \emph{derived attribute} must be prefixed with the forward-slash character,
+as specified by DERIVED,
+in which case the given \emph{expression} defines the value
+of the \emph{attribute} at all times.
+\end{concrete-syntax}

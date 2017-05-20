@@ -8,8 +8,8 @@
 \contentsline {section}{\numberline {2.2}Generalization / Specialization}{9}{section.2.2}
 \contentsline {section}{\numberline {2.3}Abstract Concepts}{12}{section.2.3}
 \contentsline {chapter}{\chapternumberline {3}Attributes}{17}{chapter.3}
-\contentsline {section}{\numberline {3.1}Primitive Types}{17}{section.3.1}
-\contentsline {section}{\numberline {3.2}Derived Attributes}{17}{section.3.2}
+\contentsline {section}{\numberline {3.1}Primitive Types}{18}{section.3.1}
+\contentsline {section}{\numberline {3.2}Derived Attributes}{18}{section.3.2}
 \contentsline {chapter}{\chapternumberline {4}Associations}{19}{chapter.4}
 \contentsline {section}{\numberline {4.1}Unidirectional Associations}{19}{section.4.1}
 \contentsline {section}{\numberline {4.2}Bidirectional Associations}{19}{section.4.2}

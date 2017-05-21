@@ -22,8 +22,8 @@ while the former is called the specialization.
 A generalization, such as \textbf{Shape},
 may define \emph{attributes} (\ref{ch:attributes}),
 such as \textbf{color} and \textbf{area},
-or also \emph{unidirecional associations} (\ref{sec:assoc-unidir}),
-which are \emph{properties} (\ref{sec:properties}) shared among all its specializations.
+or also the \emph{roles} in \emph{unidirecional associations} (\ref{sec:assoc-unidir}).
+Both \emph{attributes} and \emph{roles} are \emph{properties} (\ref{sec:properties}) shared among all its specializations.
 Some of these \emph{properties} may be redefined by the some of the specializations,
 as it is the case with the \emph{area} property,
 which is redefined by \textbf{Rectangle}, \textbf{Rhombus} and \textbf{Square}.
@@ -59,8 +59,8 @@ referring to other \emph{concepts} that this concept is a specialization of.
 \end{concrete-syntax}
 
 \begin{abstract-syntax}
-Figure \ref{fig:meta:concept} presents the \emph{concept} metamodel
-in an EMOF \cite{mof} class diagram,
+Figure \ref{fig:meta:concept} presents the \emph{Concept} metaclass
+in an EMOF \cite{mof} class diagram of the CML metamodel,
 and figure \ref{fig:ast:concept} specifies
 the \emph{concept} transformation
 from its concrete syntax to its abstract syntax.

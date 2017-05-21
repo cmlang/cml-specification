@@ -74,3 +74,40 @@ matching the parsed \emph{expression}.
 \caption{Property AST Instantiation}
 \label{fig:ast:property}
 \end{figure}
+
+\begin{constraints}
+Figure \ref{fig:ocl:property} presents the invariants
+of the \emph{Property} metaclass:
+
+\begin{itemize}
+
+\item \emph{unique\_property\_name}:
+Each \emph{property} must have a unique NAME within its \emph{concept}
+(\ref{ch:concepts}).
+
+\item \emph{property\_type\_specified\_or\_inferred}:
+Either the \emph{property} explicitly defines a \emph{type}
+or it defines an \emph{expression},
+from which the type is inferred.
+That is required for both regular, slot-based \emph{properties}
+(which may provide an \emph{initialization expression})
+and \emph{derived properties}
+(which may have an \emph{expression} defining the derivation).
+
+\item \emph{property\_type\_matches\_expression\_type}:
+When both a \emph{type} and \emph{expression} are provided by a \emph{property},
+the \emph{type} inferred from the \emph{expression} should match
+the declared \emph{type}.
+That is required for both regular, slot-based \emph{properties}
+(which may provide an \emph{initialization expression})
+and \emph{derived properties}
+(which may have an \emph{expression} defining the derivation).
+
+\end{itemize}
+\end{constraints}
+
+\begin{figure}
+\lstinputlisting[language=ocl_]{ocl/property.ocl}
+\caption{Property Constraints}
+\label{fig:ocl:property}
+\end{figure}

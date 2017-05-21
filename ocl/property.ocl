@@ -1,6 +1,16 @@
 context Property
-
 inv unique_property_name:
-    self.parent.properties
+    self.scope.properties
         ->select(p| p != self and p.name = self.name)
         ->isEmpty()
+
+context Property
+inv property_type_specified_or_inferred:
+    type->notEmpty() or expression->notEmpty()        
+
+context Property
+inv property_type_matches_expression_type:
+    type->notEmpty() and expression->notEmpty() implies
+        type = expression.type       
+
+

@@ -13,5 +13,5 @@ concept Attributes
     d = 3; -- Inferred as Integer based on constant "3"
 
     -- A derived attribute with type inferred from expression:
-    /e = 2.0d * a; -- Inferred as Double based on "2.0d"
+    /e = 2.0d * a; -- Inferred as Double based on "2.0d * a"
 }

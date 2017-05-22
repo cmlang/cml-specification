@@ -117,3 +117,18 @@ and an initial \emph{value} must be provided as \emph{expression} (\ref{ch:expre
 \caption{Type Declaration Syntax}
 \label{fig:stx:type}
 \end{figure}
+
+\begin{abstract-syntax}
+Figure \ref{fig:meta:property} presents the \emph{Type} metaclass
+in an EMOF \cite{mof} class diagram of the CML metamodel,
+and figure \ref{fig:ast:type} specifies
+the transformation
+from the \emph{type} concrete syntax to its abstract syntax.
+\end{abstract-syntax}
+
+\begin{figure}
+\verbatimfont{\small}
+\lstinputlisting[language=lsl]{ast/type.lsl}
+\caption{Type AST Instantiation}
+\label{fig:ast:type}
+\end{figure}

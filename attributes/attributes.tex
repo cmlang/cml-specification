@@ -2,16 +2,19 @@
 In CML, \emph{attributes} are \emph{properties} (\ref{sec:properties})
 of \emph{primitive types} (\ref{sec:primitive-types}).
 They correspond to the \emph{Attribute} metaclass 
-in the ER \cite{er} and UML \cite{uml} metamodels.
-\emph{Attributes} serve as a \emph{slot} to hold a value of 
+in the ER \cite{er} metamodel;
+in the UML \cite{uml} metamodel,
+to the association \emph{attribute} between the metaclass \emph{Class} 
+and the metaclass \emph{Property}.
+\emph{Attributes} serve as a \emph{slot} that holds a value of 
 the specified \emph{primitive type}.
 An initial value may be specified as an \emph{expression} (\ref{ch:expressions}).
-An \emph{attribute}'s value may also be constantly
-derived from an \emph{expression} (not only initially),
-in which case it is called a \emph{derived attribute} (\ref{sec:derived-attributes}).
+Some \emph{attributes}, however, may be constantly
+derive their \emph{value} from an \emph{expression} (not only initially),
+in which case they are called \emph{derived attributes} (\ref{sec:derived-attributes}).
 While initial values are only set when a \emph{concept} (\ref{ch:concepts})
 is instantiated,
-the value of \emph{derived attributes} are always evaluated 
+the value of \emph{derived attributes} is always evaluated 
 from the given \emph{expression},
 and they cannot be set any other way.
 \end{definition}

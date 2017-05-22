@@ -1,0 +1,78 @@
+\begin{definition}
+A \emph{primitive type} in CML is one of the pre-defined \emph{data types}
+supported by the language,
+as shown in tables \ref{tab:core-primitive-types} and \ref{tab:additional-primitive-types}.
+In the ER \cite{er} metamodel,
+a \emph{data type} is formally defined as a \emph{set} of \emph{values}
+that can be held by an \emph{attribute} (\ref{ch:attributes}).
+The original ER paper \cite{er} states that,
+for each \emph{value set} (i.e. \emph{data type}),
+there is a \emph{predicate} that can be used to test
+whether a \emph{value} belongs to the \emph{set}.
+In CML, instead,
+\emph{literal expressions} are syntactically defined for each \emph{primitive type},
+so that the \emph{type} can be inferred from the \emph{literal expression}.
+On the original ER paper,
+it is also said that \emph{values} in a \emph{value set}
+may be equivalent to \emph{values} in another \emph{value set}.
+In CML, also,
+\emph{literal expressions} of the \emph{Integer} type may be equivalent 
+to \emph{literal expressions} of the \emph{Decimal},
+and so with other \emph{ordinal types}.
+This allows \emph{expressions} of a \emph{primitive type}
+to be promoted to \emph{expressions} of another \emph{primitive type}
+in order to allow \emph{type inference} of composite \emph{expressions},
+such as \emph{infix expressions} (\ref{sec:infix}).
+In the UML \cite{uml} metamodel,
+there is a specific metaclass named \emph{PrimitiveType},
+which matches to the same notion in CML.
+\end{definition}
+
+\begin{table}[h]
+\centering
+\begin{tabular}
+{l l l l p{7cm} }
+\hline
+CML & Java & C\# & C++ & Specification \\
+\hline
+Boolean & boolean & bool & bool & Only values are the literal expressions: \textbf{true}, \textbf{false}. \\
+Integer & int & int & int32\_t & 32-bit signed two's complement integer. \\
+Decimal & BigDecimal & decimal & decimal128 & Arbitrary precision arithmetic. \\
+String & String & string & std::wstring & 16-bit Unicode character sequences. \\
+\end{tabular}
+\caption{Core Primitive Types in CML.}
+\label{tab:core-primitive-types}
+\end{table}
+
+\begin{table}[h]
+\centering
+\begin{tabular}
+{l l l l p{7cm} }
+\hline
+CML & Java & C\# & C++ & Specification \\
+\hline
+Byte & byte & byte & int8\_t & 8-bit signed two's complement integer. \\
+Short & short & short & int16\_t & 16-bit signed two's complement integer. \\
+Long & long & long & int64\_t & 64-bit signed two's complement integer. \\
+Float & float & float & float* & 32-bit IEEE 754 floating point. \\
+Double & double & double & double* & 64-bit IEEE 754 floating point. \\
+& & & & *C++ floating point types may vary by hardware and compiler.
+\end{tabular}
+\caption{Additional Primitive Types in CML.}
+\label{tab:additional-primitive-types}
+\end{table}
+
+\begin{examples}
+Figure \ref{fig:ex:primitive-types} presents examples
+of \emph{atributes} declared with \emph{primitive types} in CML.
+Each example corresponds to one of the \emph{primitive types} 
+supported by language,
+as shown in tables \ref{tab:core-primitive-types} and \ref{tab:additional-primitive-types}.
+\end{examples}
+
+\begin{figure}
+\verbatimfont{\small}
+\lstinputlisting[language=cml]{examples/primitive_types.cml}
+\caption{Example of \emph{Primitive Types}}
+\label{fig:ex:primitive-types}
+\end{figure}

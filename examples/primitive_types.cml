@@ -1,17 +1,45 @@
 concept PrimitiveTypes
 {
     -- Core Primitive Types:
-    a: Boolean; // Only values are: true, false
-    b: String; // 16-bit Unicode character sequences in Java/C#/C/C++/JavaScript.
-    c: Integer; // 32-bit signed two's complement integer in Java/C#/C/C++; Number in JavaScript.
-    d: Decimal; // Arbitrary precision arithmetic: BigDecimal in Java; decimal in C#; decimal128 in C++; Number in JavaScript.
+
+    // Only values are the literal expressions: true, false
+    a: Boolean; 
+
+    // 32-bit signed two's complement integer
+    c: Integer; 
+
+    // Arbitrary precision arithmetic.
+    // BigDecimal in Java; decimal in C#; decimal128 in C++.
+    d: Decimal; 
+
+    // 16-bit Unicode character sequences
+    // as in Java, C#, C++ (std::wstring), and JavaScript.
+    b: String; 
 
     -- Additional Primitive Types:
-    e: Byte; // 8-bit signed two's complement integer in Java/C#/C/C++; Number in JavaScript.
-    f: Short; // 16-bit signed two's complement integer in Java/C#/C/C++; Number in JavaScript.
-    g: Long; // 64-bit signed two's complement integer in Java/C#/C/C++; Number in JavaScript.
-    h: Float; // 32-bit IEEE 754 floating point in Java/C#/C/C++; Number in JavaScript.
-    i: Double; // 64-bit IEEE 754 floating point in Java/C#/C/C++; Number in JavaScript.
+
+    // 8-bit signed two's complement integer 
+    e: Byte; 
+
+    // 16-bit signed two's complement integer
+    f: Short; 
+
+    // 64-bit signed two's complement integer
+    g: Long; 
+
+    // 32-bit IEEE 754 floating point
+    h: Float; 
+
+    // 64-bit IEEE 754 floating point
+    i: Double; 
+
+    -- NOTE
+    
+    // On numeric types and the CML target constructors: 
+    // - All numeric types are translated to the respective type
+    //   in Java, C#, and C/C++.
+    // - All the numeric types are translated to Number
+    //   in JavaScript.
 }
 
 

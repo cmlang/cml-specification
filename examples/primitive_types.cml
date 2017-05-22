@@ -32,14 +32,6 @@ concept PrimitiveTypes
 
     -- 64-bit IEEE 754 floating point
     i: Double; 
-
-    -- NOTE:
-    
-    -- On numeric types and the CML target constructors: 
-    -- * All numeric types are translated to the respective type
-    --   in Java, C#, and C/C++.
-    -- * All the numeric types are translated to Number
-    --   in JavaScript.
 }
 
 

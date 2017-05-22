@@ -10,30 +10,30 @@
 \contentsline {chapter}{\chapternumberline {3}Attributes}{18}{chapter.3}
 \contentsline {section}{\numberline {3.1}Primitive Types}{19}{section.3.1}
 \contentsline {section}{\numberline {3.2}Derived Attributes}{20}{section.3.2}
-\contentsline {chapter}{\chapternumberline {4}Associations}{22}{chapter.4}
-\contentsline {section}{\numberline {4.1}Unidirectional Associations}{22}{section.4.1}
-\contentsline {section}{\numberline {4.2}Bidirectional Associations}{22}{section.4.2}
-\contentsline {section}{\numberline {4.3}Collection Types}{22}{section.4.3}
-\contentsline {section}{\numberline {4.4}Collections}{22}{section.4.4}
-\contentsline {section}{\numberline {4.5}Derived Associations}{22}{section.4.5}
-\contentsline {chapter}{\chapternumberline {5}Expressions}{23}{chapter.5}
-\contentsline {section}{\numberline {5.1}Literal Values}{24}{section.5.1}
-\contentsline {section}{\numberline {5.2}Prefix Expressions}{24}{section.5.2}
-\contentsline {section}{\numberline {5.3}Infix Expressions}{24}{section.5.3}
-\contentsline {section}{\numberline {5.4}Conditional Expressions}{24}{section.5.4}
-\contentsline {section}{\numberline {5.5}Path Expressions}{24}{section.5.5}
-\contentsline {chapter}{\chapternumberline {6}Queries}{28}{chapter.6}
-\contentsline {chapter}{\chapternumberline {7}Code Generation}{29}{chapter.7}
-\contentsline {section}{\numberline {7.1}Tasks}{29}{section.7.1}
-\contentsline {section}{\numberline {7.2}Constructors}{29}{section.7.2}
-\contentsline {section}{\numberline {7.3}Templates}{29}{section.7.3}
-\contentsline {section}{\numberline {7.4}Targets}{29}{section.7.4}
-\contentsline {chapter}{\chapternumberline {8}Modules}{30}{chapter.8}
-\contentsline {chapter}{\chapternumberline {9}Libraries}{31}{chapter.9}
-\contentsline {appendix}{\chapternumberline {A}CML Concrete Syntax (Grammar)}{32}{appendix.A}
-\contentsline {section}{\numberline {A.1}ANTLR Grammar}{33}{section.A.1}
-\contentsline {appendix}{\chapternumberline {B}CML Abstract Syntax (Metamodel)}{37}{appendix.B}
-\contentsline {appendix}{\chapternumberline {C}CML Abstract Syntax Tree (Instantiation)}{38}{appendix.C}
-\contentsline {appendix}{\chapternumberline {D}CML Constraints (Validations)}{39}{appendix.D}
-\contentsline {appendix}{\chapternumberline {E}Language Specification Notation}{41}{appendix.E}
-\contentsline {chapter}{Bibliography}{42}{section*.4}
+\contentsline {chapter}{\chapternumberline {4}Associations}{23}{chapter.4}
+\contentsline {section}{\numberline {4.1}Unidirectional Associations}{23}{section.4.1}
+\contentsline {section}{\numberline {4.2}Bidirectional Associations}{23}{section.4.2}
+\contentsline {section}{\numberline {4.3}Collection Types}{23}{section.4.3}
+\contentsline {section}{\numberline {4.4}Collections}{23}{section.4.4}
+\contentsline {section}{\numberline {4.5}Derived Associations}{23}{section.4.5}
+\contentsline {chapter}{\chapternumberline {5}Expressions}{24}{chapter.5}
+\contentsline {section}{\numberline {5.1}Literal Values}{25}{section.5.1}
+\contentsline {section}{\numberline {5.2}Prefix Expressions}{25}{section.5.2}
+\contentsline {section}{\numberline {5.3}Infix Expressions}{25}{section.5.3}
+\contentsline {section}{\numberline {5.4}Conditional Expressions}{25}{section.5.4}
+\contentsline {section}{\numberline {5.5}Path Expressions}{25}{section.5.5}
+\contentsline {chapter}{\chapternumberline {6}Queries}{29}{chapter.6}
+\contentsline {chapter}{\chapternumberline {7}Code Generation}{30}{chapter.7}
+\contentsline {section}{\numberline {7.1}Tasks}{30}{section.7.1}
+\contentsline {section}{\numberline {7.2}Constructors}{30}{section.7.2}
+\contentsline {section}{\numberline {7.3}Templates}{30}{section.7.3}
+\contentsline {section}{\numberline {7.4}Targets}{30}{section.7.4}
+\contentsline {chapter}{\chapternumberline {8}Modules}{31}{chapter.8}
+\contentsline {chapter}{\chapternumberline {9}Libraries}{32}{chapter.9}
+\contentsline {appendix}{\chapternumberline {A}CML Concrete Syntax (Grammar)}{33}{appendix.A}
+\contentsline {section}{\numberline {A.1}ANTLR Grammar}{34}{section.A.1}
+\contentsline {appendix}{\chapternumberline {B}CML Abstract Syntax (Metamodel)}{38}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}CML Abstract Syntax Tree (Instantiation)}{39}{appendix.C}
+\contentsline {appendix}{\chapternumberline {D}CML Constraints (Validations)}{40}{appendix.D}
+\contentsline {appendix}{\chapternumberline {E}Language Specification Notation}{42}{appendix.E}
+\contentsline {chapter}{Bibliography}{43}{section*.4}

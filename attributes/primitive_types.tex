@@ -31,16 +31,23 @@ which matches to the same notion in CML.
 \begin{table}[h]
 \centering
 \begin{tabular}
-{l l l l p{5.5cm} }
+{l l l l l p{2cm} }
 \hline
-CML & Java & C\# & C++ & Specification \\
+CML & Java & C\# & C++ & Python & TypeScript (JavaScript) \\
 \hline
-String & String & string & std::wstring & 16-bit Unicode character sequences. \\
-Boolean & boolean & bool & bool & Only values are the literal expressions: \textbf{true}, \textbf{false}. \\
-Integer & int & int & int32\_t & 32-bit signed two's complement integer. \\
-Decimal* & BigDecimal & decimal & decimal128 & Arbitrary precision arithmetic,
-as provided by the target language. \\
-\multicolumn{5}{p{14cm}}{*The specification of Decimal type varies by target programming language;
+String & String & string & std::wstring & str & string \\
+\multicolumn{6}{p{13cm}}{\footnotesize{16-bit Unicode character sequences.}} \\
+\\
+Boolean & boolean & bool & bool & bool & boolean \\
+\multicolumn{6}{p{13cm}}{\footnotesize{Only values are the literal expressions: \textbf{true}, \textbf{false}.}}  \\
+\\
+Integer & int & int & int32\_t & int & number  \\
+\multicolumn{6}{p{13cm}}{\footnotesize{32-bit signed two's complement integer.}}  \\
+\\
+Decimal* & BigDecimal & decimal & decimal128 & Decimal & number \\
+\multicolumn{6}{p{13cm}}{\footnotesize{Arbitrary precision arithmetic, as provided by the target language.}} \\
+\\
+\multicolumn{6}{p{13cm}}{*The specification of Decimal type varies by target programming language;
 compared to floating-point types, the Decimal type has more precision,
 making it appropriate for monetary calculations.}
 \end{tabular}
@@ -51,16 +58,17 @@ making it appropriate for monetary calculations.}
 \begin{table}[h]
 \centering
 \begin{tabular}
-{l l l l p{7cm} }
+{l l l l l p{2cm} p{3.5cm} }
 \hline
-CML & Java & C\# & C++ & Specification \\
+CML & Java & C\# & C++ & Python & TypeScript (JavaScript) & Specification \\
 \hline
-Byte & byte & byte & int8\_t & 8-bit signed two's complement integer. \\
-Short & short & short & int16\_t & 16-bit signed two's complement integer. \\
-Long & long & long & int64\_t & 64-bit signed two's complement integer. \\
-Float & float & float & float* & 32-bit IEEE 754 floating point. \\
-Double & double & double & double* & 64-bit IEEE 754 floating point. \\
-\multicolumn{5}{p{12cm}}{*C++ floating point types may vary by hardware and compiler.}
+Byte & byte & byte & int8\_t & int & number & 8-bit signed two's complement integer \\
+Short & short & short & int16\_t & int & number & 16-bit signed two's complement integer \\
+Long & long & long & int64\_t & long & number & 64-bit signed two's complement integer \\
+Float & float & float & float* & float & number & 32-bit IEEE 754 floating point \\
+Double & double & double & double* & float & number & 64-bit IEEE 754 floating point \\
+\\
+\multicolumn{7}{p{12cm}}{*C++ floating point types may vary by hardware and compiler}
 \end{tabular}
 \caption{Additional Primitive Types in CML.}
 \label{tab:additional-primitive-types}
@@ -72,6 +80,10 @@ of \emph{atributes} declared with \emph{primitive types} in CML.
 Each example corresponds to one of the \emph{primitive types} 
 supported by the language,
 as shown in tables \ref{tab:core-primitive-types} and \ref{tab:additional-primitive-types}.
+The CML's base module will translate the primitive types to Java, C\#, and C/C++,
+according to the tables.
+All numberic types will be translated to Number in TypeScript. 
+
 \end{examples}
 
 \begin{figure}

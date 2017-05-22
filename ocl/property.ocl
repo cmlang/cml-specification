@@ -9,9 +9,8 @@ inv property_type_specified_or_inferred:
     type->notEmpty() or expression->notEmpty()        
 
 context Property
-inv property_type_matches_expression_type:
+inv property_type_assignable_from_expression_type:
     type->notEmpty() and expression->notEmpty() implies
-        type.name = expression.type.name and
-        type.cardinality = expression.type.cardinality       
+        type.isAssignableFrom(expression.type)
 
 

@@ -31,14 +31,18 @@ which matches to the same notion in CML.
 \begin{table}[h]
 \centering
 \begin{tabular}
-{l l l l p{7cm} }
+{l l l l p{5.5cm} }
 \hline
 CML & Java & C\# & C++ & Specification \\
 \hline
+String & String & string & std::wstring & 16-bit Unicode character sequences. \\
 Boolean & boolean & bool & bool & Only values are the literal expressions: \textbf{true}, \textbf{false}. \\
 Integer & int & int & int32\_t & 32-bit signed two's complement integer. \\
-Decimal & BigDecimal & decimal & decimal128 & Arbitrary precision arithmetic. \\
-String & String & string & std::wstring & 16-bit Unicode character sequences. \\
+Decimal* & BigDecimal & decimal & decimal128 & Arbitrary precision arithmetic,
+as provided by the target language. \\
+\multicolumn{5}{p{14cm}}{*The specification of Decimal type varies by target programming language;
+compared to floating-point types, the Decimal type has more precision,
+making it appropriate for monetary calculations.}
 \end{tabular}
 \caption{Core Primitive Types in CML.}
 \label{tab:core-primitive-types}
@@ -56,7 +60,7 @@ Short & short & short & int16\_t & 16-bit signed two's complement integer. \\
 Long & long & long & int64\_t & 64-bit signed two's complement integer. \\
 Float & float & float & float* & 32-bit IEEE 754 floating point. \\
 Double & double & double & double* & 64-bit IEEE 754 floating point. \\
-& & & & *C++ floating point types may vary by hardware and compiler.
+\multicolumn{5}{p{12cm}}{*C++ floating point types may vary by hardware and compiler.}
 \end{tabular}
 \caption{Additional Primitive Types in CML.}
 \label{tab:additional-primitive-types}
@@ -66,7 +70,7 @@ Double & double & double & double* & 64-bit IEEE 754 floating point. \\
 Figure \ref{fig:ex:primitive-types} presents examples
 of \emph{atributes} declared with \emph{primitive types} in CML.
 Each example corresponds to one of the \emph{primitive types} 
-supported by language,
+supported by the language,
 as shown in tables \ref{tab:core-primitive-types} and \ref{tab:additional-primitive-types}.
 \end{examples}
 

@@ -93,3 +93,27 @@ according to the mapping shown in the tables.
 \caption{Example of \emph{Primitive Types}}
 \label{fig:ex:primitive-types}
 \end{figure}
+
+\begin{concrete-syntax}
+Figure \ref{fig:stx:type} specifies the syntax used
+to declare any kind of \emph{type},
+including \emph{primitive types}.
+The NAME of the \emph{type} may be any of the \emph{primitive types}
+defined in the column named \emph{CML}
+of the tables \ref{tab:core-primitive-types} and \ref{tab:additional-primitive-types}.
+Optionally, cardinality may also be specified
+for a \emph{primitive type}.
+The `*' cardinality suffix allows zero or more values to be stored
+in a property as a collection type (\ref{sec:collection-types}).
+The `?' cardinality suffix allows a single value to be stored, or none.
+If no cardinality is specified,
+a value is required to always be assigned to the \emph{attribute},
+and an initial \emph{value} must be provided as \emph{expression} (\ref{ch:expressions}).
+\end{concrete-syntax}
+
+\begin{figure}
+\verbatimfont{\small}
+\lstinputlisting[language=antlr]{grammar/Types.txt}
+\caption{Type Declaration Syntax}
+\label{fig:stx:type}
+\end{figure}

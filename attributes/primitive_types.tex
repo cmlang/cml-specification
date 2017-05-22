@@ -47,8 +47,8 @@ Integer & int & int & int32\_t & int & number  \\
 Decimal* & BigDecimal & decimal & decimal128 & Decimal & number \\
 \multicolumn{6}{p{13cm}}{\footnotesize{Arbitrary precision arithmetic, as provided by the target language.}} \\
 \\
-\multicolumn{6}{p{13cm}}{*The specification of Decimal type varies by target programming language;
-compared to floating-point types, the Decimal type has more precision,
+\multicolumn{6}{p{13cm}}{*The specification of Decimal type varies by target programming language.
+Compared to floating-point types, the Decimal type has more precision,
 making it appropriate for monetary calculations.}
 \end{tabular}
 \caption{Core Primitive Types in CML.}
@@ -80,9 +80,10 @@ of \emph{atributes} declared with \emph{primitive types} in CML.
 Each example corresponds to one of the \emph{primitive types} 
 supported by the language,
 as shown in tables \ref{tab:core-primitive-types} and \ref{tab:additional-primitive-types}.
-The CML's base module will translate the primitive types to Java, C\#, and C/C++,
-according to the tables.
-All numberic types will be translated to Number in TypeScript. 
+The \emph{target constructors} (\ref{sec:constructors})
+of CML's base module will translate the primitive types to Java, C\#, C/C++,
+Python, and TypeScript (JavaScript),
+according to the mapping shown in the tables.
 
 \end{examples}
 

@@ -39,7 +39,10 @@ inv not_own_generalization:
 context Concept
 inv compatible_generalizations:
     generalization_property_pairs
-        ->forAll(left.type = right.type)
+        ->forAll(
+            left.type.name = right.type.name and
+            left.type.cardinality = right.type.cardinality    
+        )
 
 context Concept
 inv conflict_redefinition:
@@ -53,7 +56,10 @@ context Property
 inv generalization_compatible_redefinition:
     self.scope.generalizations.all_properties
         ->select(property| self.name = property.name)    
-        ->forAll(property| self.type = property.type)
+        ->forAll(property| 
+            self.type.name = property.type.name and
+            self.type.cardinality = property.type.cardinality
+        )
 
 
 

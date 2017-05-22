@@ -11,6 +11,7 @@ inv property_type_specified_or_inferred:
 context Property
 inv property_type_matches_expression_type:
     type->notEmpty() and expression->notEmpty() implies
-        type = expression.type       
+        type.name = expression.type.name and
+        type.cardinality = expression.type.cardinality       
 
 

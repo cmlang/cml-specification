@@ -28,7 +28,7 @@ concept Rhombus: Shape
     q: Double;
 
     -- Another redefinition of the area attribute:
-    /area = (p * q) / 2;
+    /area = (p * q) / 2.0d;
 }
 
 -- Specialization of both Rectangle and Rhombus:
@@ -47,5 +47,5 @@ concept Square: Rectangle, Rhombus
 
     -- Required to redefine area in order to resolve conflict
     -- between Rectangle's area and Rhombus' area:
-    /area = side_length ^ 2;
+    /area = side_length ^ 2.0d;
 }

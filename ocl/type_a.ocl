@@ -1,0 +1,37 @@
+context Type::numeric: Boolean
+def: 
+    types = Set {
+        'Byte' 'Short' 'Integer' 'Long' 'Decimal'
+    }
+derive:
+    types->includes(self.name)
+
+context Type::isNumericWiderThan(Type other): Boolean
+def: 
+    types = Sequence {
+        'Byte' 'Short' 'Integer' 'Long' 'Decimal'
+    }
+pre:
+    self.numeric and other.numeric
+post:
+    result = 
+        types->indexOf(self.name) > types->indexOf(other.name)
+
+context Type::floating: Boolean
+def: 
+    types = Set {
+        'Float' 'Double'
+    }
+derive:
+    types->includes(self.name)
+
+context Type::isFloatingWiderThan(Type other): Boolean
+def: 
+    types = Sequence {
+        'Float' 'Double'
+    }
+pre:
+    self.floating and other.floating
+post:
+    result = 
+        types->indexOf(self.name) > types->indexOf(other.name)

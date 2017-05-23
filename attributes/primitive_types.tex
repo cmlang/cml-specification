@@ -138,14 +138,20 @@ from the \emph{type} concrete syntax to its abstract syntax.
 \end{figure}
 
 \begin{constraints}
-Figure \ref{fig:ocl:type} defines the \emph{isAssignableFrom()}
+Figures \ref{fig:ocl:type_a} and \ref{fig:ocl:type_b} define the \emph{isAssignableFrom()}
 operation in the \emph{Type} metaclass,
 which is used by the \emph{property\_type\_assignable\_from\_expression\_type}
 constraint in figure \ref{fig:ocl:property}.
 \end{constraints}
 
 \begin{figure}
-\lstinputlisting[language=ocl_]{ocl/type.ocl}
-\caption{Type Constraints}
-\label{fig:ocl:type}
+\lstinputlisting[language=ocl_]{ocl/type_a.ocl}
+\caption{Auxiliary Methods of The \emph{Type} Metaclass}
+\label{fig:ocl:type_a}
+\end{figure}
+
+\begin{figure}
+\lstinputlisting[language=ocl_]{ocl/type_b.ocl}
+\caption{The \emph{isAssignableFrom()} Method of The \emph{Type} Metaclass}
+\label{fig:ocl:type_b}
 \end{figure}

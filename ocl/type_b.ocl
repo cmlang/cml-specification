@@ -1,0 +1,27 @@
+context Type::isTypeAssignableFrom(Type other): Boolean
+post:
+    if self.name = other.name then
+        result = true
+    else if self.numeric and other.numeric then
+        result = self.isNumericWiderThan(other)
+    else if self.floating and other.floating then
+        result = self.isFloatingWiderThan(other)
+    else if self.concept->notEmpty() and 
+            other.concept->notEmpty() 
+         then
+            result = other.concept.all_generalizations
+                        ->exists(name = self.concept.name)    
+    else
+        result = false
+
+context Type::isCardinalityAssignableFrom(Type other): Boolean
+post:
+    result = (self.cardinality = other.cardinality)
+          or (self.cardinality = '?' and other.cardinality = '')
+          or (self.cardinality = '*')
+
+context Type::isAssignableFrom(Type other): Boolean
+post:
+    result = self.isTypeAssignableFrom(other) and
+             self.isCardinalityAssignableFrom(other)
+

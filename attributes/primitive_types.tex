@@ -132,3 +132,16 @@ from the \emph{type} concrete syntax to its abstract syntax.
 \caption{Type AST Instantiation}
 \label{fig:ast:type}
 \end{figure}
+
+\begin{constraints}
+Figure \ref{fig:ocl:type} defines the \emph{isAssignableFrom()}
+operation in the \emph{Type} metaclass,
+which is used by the \emph{property\_type\_assignable\_from\_expression\_type}
+constraint in figure \ref{fig:ocl:property}.
+\end{constraints}
+
+\begin{figure}
+\lstinputlisting[language=ocl_]{ocl/type.ocl}
+\caption{Type Constraints}
+\label{fig:ocl:type}
+\end{figure}

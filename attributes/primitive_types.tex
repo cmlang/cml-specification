@@ -142,6 +142,34 @@ Figures \ref{fig:ocl:type_a} and \ref{fig:ocl:type_b} define the \emph{isAssigna
 operation in the \emph{Type} metaclass,
 which is used by the \emph{property\_type\_assignable\_from\_expression\_type}
 constraint in figure \ref{fig:ocl:property}.
+Basically, one of the following conditions must be met for a source \emph{type}
+to be assignable to a destination \emph{type}:
+
+\begin{itemize}
+
+\item The source \emph{type} has the same name as the destination \emph{type}.
+
+\item Both types are \emph{numeric} and the destination \emph{type} is wider than the source \emph{type}.
+Caveat: Floating-point types (Float and Double) are never assignable to the other \emph{numeric types}
+(Byte, Short, Integer, Long), and vice-versa.
+
+\item Both types refer to \emph{concepts} and the destination \emph{concept}
+is \emph{generalization} (\ref{sec:generalization}) of the source \emph{concept}.
+
+\end{itemize}
+
+Additionally, one of the following conditions must be met regarding the \emph{type}'s \emph{cardinality}:
+
+\begin{itemize}
+
+\item The cardinality of the source \emph{type} matches the cardinality of the destination \emph{type}.
+
+\item The destination \emph{type} has the \emph{zero-or-one} cardinality and the source \emph{type} has the \emph{one} cardinality.
+
+\item The destination \emph{type} has the \emph{zero-or-more} cardinality and the source \emph{type} has any other cardinality.
+
+\end{itemize}
+
 \end{constraints}
 
 \begin{figure}

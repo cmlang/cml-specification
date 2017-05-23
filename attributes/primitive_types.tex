@@ -45,11 +45,15 @@ Integer & int & int & int32\_t & int & number  \\
 \multicolumn{6}{p{13cm}}{\footnotesize{32-bit signed two's complement integer.}}  \\
 \\
 Decimal* & BigDecimal & decimal & decimal128 & Decimal & number \\
-\multicolumn{6}{p{13cm}}{\footnotesize{Arbitrary precision arithmetic, as provided by the target language.}} \\
+\multicolumn{6}{p{13cm}}{\footnotesize{Arbitrary precision,
+fixed-point,
+or decimal floating-point, 
+depending on the target language.}} \\
 \\
 \multicolumn{6}{p{13cm}}{*The specification of Decimal type varies by target programming language.
-Compared to floating-point types, the Decimal type has more precision,
-making it appropriate for monetary calculations.}
+Compared to the binary floating-point types (Float and Double),
+the Decimal type is better suited for monetary calculations
+at a performance cost.}
 \end{tabular}
 \caption{Core Primitive Types in CML.}
 \label{tab:core-primitive-types}
@@ -65,8 +69,8 @@ CML & Java & C\# & C++ & Python & TypeScript (JavaScript) & Specification \\
 Byte & byte & byte & int8\_t & int & number & 8-bit signed two's complement integer \\
 Short & short & short & int16\_t & int & number & 16-bit signed two's complement integer \\
 Long & long & long & int64\_t & long & number & 64-bit signed two's complement integer \\
-Float & float & float & float* & float & number & 32-bit IEEE 754 floating point \\
-Double & double & double & double* & float & number & 64-bit IEEE 754 floating point \\
+Float & float & float & float* & float & number & 32-bit IEEE 754 binary floating point \\
+Double & double & double & double* & float & number & 64-bit IEEE 754 binary floating point \\
 \\
 \multicolumn{7}{p{12cm}}{*C++ floating point types may vary by hardware and compiler}
 \end{tabular}

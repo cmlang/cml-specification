@@ -6,4 +6,6 @@ spec.synctex.gz
 spec.blg
 spec.fls
 spec.fdb_latexmk
+spec.out
+spec.toc
 *-eps-converted-to.pdf

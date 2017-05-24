@@ -27,3 +27,19 @@ The CML metamodel and its syntax, on the other hand,
 define whether an \emph{attribute} is memory-based (a \emph{non-derived attribute})
 or it is derived from an \emph{expression} (a \emph{derived attribute}).
 \end{definition}
+
+\begin{examples}
+Figure \ref{fig:ex:attributes} presents two examples of \emph{derived attributes}
+declared in CML.
+As shown,
+the attribute \textbf{c} is derived from an \emph{expression}
+that refers to other \emph{attributes}.
+In order to differentiate \emph{attributes} with initial values,
+such as \textbf{b},
+from \emph{derived attributes},
+such as \textbf{c},
+a forward slash (``/'') prefixes the name of the latter.
+The attribute \textbf{e} is an example of a \emph{derived attribute}
+where the type is inferred from the given \emph{expression},
+instead of being specified.
+\end{examples}

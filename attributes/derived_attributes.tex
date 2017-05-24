@@ -43,3 +43,13 @@ The attribute \textbf{e} is an example of a \emph{derived attribute}
 where the type is inferred from the given \emph{expression},
 instead of being specified.
 \end{examples}
+
+\begin{concrete-syntax}
+Figure \ref{fig:stx:property} specifies the syntax used
+to declare any kind of \emph{property} (\ref{sec:properties}),
+including \emph{derived attributes}.
+A \emph{derived attribute} must be prefixed with the forward-slash character,
+as specified by DERIVED,
+in which case the given \emph{expression} provides the value
+of the \emph{attribute} every time it is fetched.
+\end{concrete-syntax}

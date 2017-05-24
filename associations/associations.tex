@@ -1,1 +1,27 @@
-
+\begin{definition}
+In CML,
+an \emph{association} represents a relation between two \emph{concepts} (\ref{ch:concepts}),
+where each \emph{concept} has an \emph{instance} in every tuple that is part of the relation.
+When \emph{concepts} have an \emph{association},
+its \emph{instances} may be linked in such way that
+it is possible to access an \emph{instance} of one \emph{concept}
+from an \emph{instance} of the other \emph{concept}.
+The UML \cite{uml} metamodel has a metaclass named \emph{Association} that has \emph{Property} instances,
+whose \emph{types} are the \emph{Class} instances that are part of the \emph{association}.
+In UML, the name of each \emph{Property} instance in the \emph{Association} metaclass
+is known as the \emph{role} of the corresponding \emph{Class} in the \emph{association}.
+In the CML metamodel, on other hand,
+the \emph{Association} metaclass is only needed
+when it is necessary to define \emph{bidirectional associations} (\ref{sec:assoc-bidir}).
+For \emph{unidirectional associations},
+only a \emph{property} is defined in the source \emph{concept},
+making its \emph{type} to be the target \emph{concept}.
+In the ER \cite{er} metamodel,
+each \emph{association} is known as a \emph{relationship set},
+and each tuple in this set is called a \emph{relationship}.
+Unlike CML and UML,
+the tuples in a \emph{relationship set} of any ER model
+can be queried directly,
+and no notion of \emph{property} is required in an \emph{entity type}
+in order to access those \emph{relationships}.
+\end{definition}

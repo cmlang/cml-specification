@@ -1,0 +1,40 @@
+The concrete syntax used to declare an \emph{association} in CML
+is specified by figure \ref{fig:stx:association}.
+First, the \textbf{association} keyword is followed by a NAME.
+Then, under the \textbf{association} block,
+a list of \emph{association ends} are declared under the \textbf{association} block.
+For each declaration of an \emph{association end},
+The \textbf{conceptName} and \textbf{propertyName} are optionally followed by a \textbf{typeDeclaration}.
+
+\begin{figure}
+\verbatimfont{\small}
+\lstinputlisting[language=antlr]{grammar/Associations.txt}
+\caption{Association Concrete Syntax}
+\label{fig:stx:association}
+\end{figure}
+
+The \emph{Association} metaclass is presented 
+in the EMOF \cite{mof} class diagram of figure \ref{fig:meta:associations},
+and its instantiation from the concrete syntax is specified by figure \ref{fig:ast:associations}.
+For each parsed \emph{association},
+an instance of the \emph{Association} class will be created,
+and its properties will be assigned
+according to parsed information:
+
+\begin{itemize}
+
+\item \emph{name}:
+assigned with the value of the terminal node NAME.
+
+\item \emph{members}:
+an \emph{ordered set} referencing all \emph{associationEnd}
+instances parsed in the \textbf{association} block.
+
+\end{itemize}
+
+\begin{figure}
+\verbatimfont{\small}
+\lstinputlisting[language=lsl]{ast/associations.lsl}
+\caption{Association AST Instantiation}
+\label{fig:ast:associations}
+\end{figure}

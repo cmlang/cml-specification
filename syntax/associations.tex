@@ -17,14 +17,14 @@ The \emph{Association} metaclass is presented
 in the EMOF \cite{mof} class diagram of figure \ref{fig:meta:associations},
 and its instantiation from the concrete syntax is specified by figure \ref{fig:ast:associations}.
 For each parsed \emph{association},
-an instance of the \emph{Association} class will be created,
-and its properties will be assigned
+an instance of the \emph{Association} metaclass will be created,
+and its meta-properties will be assigned
 according to parsed information:
 
 \begin{itemize}
 
 \item \emph{name}:
-assigned with the value of the terminal node NAME.
+assigned with the value of the token NAME.
 
 \item \emph{members}:
 an \emph{ordered set} referencing all \emph{associationEnd}

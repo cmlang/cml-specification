@@ -1,4 +1,3 @@
-\begin{definition}
 A \emph{concept} in CML may have \emph{attributes} (\ref{ch:attributes})
 that do not hold specific \emph{values},
 but instead provide a \emph{value} derived from an \emph{expression} (\ref{ch:expressions}).
@@ -6,11 +5,13 @@ These are called \emph{derived attributes}.
 Unlike an \emph{expression} used to initialize a \emph{non-derived attribute},
 the \emph{expression} of a \emph{derived attribute} is evaluated
 every time the \emph{value} of an \emph{attribute} is fetched.
+
 In the UML \cite{uml} metamodel,
 the \emph{Property} metaclass has a meta-attribute named \emph{isDerived},
 which determines whether an \emph{attribute} is derived or not.
 A \emph{derived attribute} in UML may be defined using a OCL \cite{ocl} constraint;
 while CML has \emph{expressions} as part of the language.
+
 The ER \cite{er} metamodel,
 in its original form,
 does not allow for the differentiation of \emph{derived attributes}
@@ -23,10 +24,10 @@ to the \emph{value set},
 does not prescribe that all \emph{attributes} are memory-based,
 nor does it prevent the definition of an \emph{attribute} function 
 as an \emph{expression}.
+
 The CML metamodel and its syntax, on the other hand,
 define whether an \emph{attribute} is memory-based (a \emph{non-derived attribute})
 or it is derived from an \emph{expression} (a \emph{derived attribute}).
-\end{definition}
 
 \begin{examples}
 Figure \ref{fig:ex:attributes} presents two examples of \emph{derived attributes}

@@ -5,9 +5,6 @@
 \usepackage{amsthm}
 
 \theoremstyle{definition}
-\newtheorem*{definition}{Definition}
-
-\theoremstyle{definition}
 \newtheorem*{examples}{Examples}
 
 \theoremstyle{definition}
@@ -19,8 +16,10 @@
 \theoremstyle{definition}
 \newtheorem*{constraints}{Constraints}
 
-\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\rmdefault}{ppl}
 \chapterstyle{demo2}
+\renewcommand\partnumberlinebox[2]{#2\hspace{1em}}
+\renewcommand\chapternumberlinebox[2]{#2\hspace{1em}}
 
 \usepackage{hyperref}
 \hypersetup{pdftex,colorlinks=true,allcolors=blue}
@@ -109,111 +108,118 @@ Initially developed as part of the author's Bachelor Technical Report in Compute
 
 \mainmatter
 
-\chapter{Introduction}
+\part{Language and Compiler}
+
+\chapter{The Language}
 \input{intro/intro.tex}
 
-\section{The CML Compiler}
-\label{sec:compiler}
+\chapter{The Compiler}
+\label{ch:compiler}
 \input{compiler/overview.tex}
 
-\subsection[Frontend]{The Compiler Frontend}
-\label{subsec:frontend}
+\section[The Frontend]{The Compiler Frontend}
+\label{sec:frontend}
 \input{compiler/frontend.tex}
 
-\subsection[Backend]{The Compiler Backend}
-\label{subsec:backend}
+\section[The Backend]{The Compiler Backend}
+\label{sec:backend}
 \input{compiler/backend.tex}
 
-\section{Organization and Notations}
-\label{sec:org}
-\input{intro/organization.tex}
+\chapter{Specification and Notations}
+\label{ch:notations}
+\input{intro/notations.tex}
+
+\part{Conceptual Modeling}
 
 \chapter{Concepts}
 \label{ch:concepts}
-\input{concepts/concepts.tex}
+\input{definitions/concepts.tex}
 
-\section{Properties}
-\label{sec:properties}
-\input{concepts/properties.tex}
-
-\section{Generalization / Specialization}
-\label{sec:generalization}
-\input{concepts/generalization.tex}
-
-\section{Abstract Concepts}
-\label{sec:abstract}
-\input{concepts/abstract.tex}
+\chapter{Properties}
+\label{ch:properties}
+\input{definitions/properties.tex}
 
 \chapter{Attributes}
 \label{ch:attributes}
-\input{attributes/attributes.tex}
+\input{definitions/attributes.tex}
 
-\section{Primitive Types}
-\label{sec:primitive-types}
-\input{attributes/primitive_types.tex}
-
-\section{Derived Attributes}
-\label{sec:derived-attributes}
-\input{attributes/derived_attributes.tex}
+\chapter{Derived Attributes}
+\label{ch:derived-attributes}
+\input{definitions/derived_attributes.tex}
 
 \chapter{Associations}
 \label{ch:associations}
-\input{associations/associations.tex}
+\input{definitions/associations.tex}
 
-\section{Sequence Types}
+\chapter{Derived Associations}
+\label{ch:derived-associations}
+
+\chapter{Generalization / Specialization}
+\label{ch:generalization}
+\input{definitions/generalization.tex}
+
+\chapter{Abstract Concepts}
+\label{ch:abstract}
+\input{definitions/abstract.tex}
+
+\part{Type System}
+
+\chapter{Types}
+
+\chapter{Primitive Types}
+\label{ch:primitive-types}
+\input{definitions/primitive_types.tex}
+
+\chapter{Sequence Types}
 \label{sec:sequence-types}
 
-\section{Derived Associations}
-\label{sec:derived-associations}
+\part{Values and Expressions}
 
 \chapter{Expressions}
 \label{ch:expressions}
-\input{expressions/expressions.tex}
+\input{definitions/expressions.tex}
 
-\section{Literal Values}
-\label{sec:literals}
-\input{expressions/literals.tex}
+\chapter{Literal Values}
+\label{ch:literals}
 
-\section{Prefix Expressions}
-\label{sec:prefix}
-\input{expressions/prefix.tex}
+\chapter{Prefix Expressions}
+\label{ch:prefix}
 
-\section{Infix Expressions}
-\label{sec:infix}
-\input{expressions/infix.tex}
+\chapter{Infix Expressions}
+\label{ch:infix}
 
-\section{Conditional Expressions}
-\label{sec:conditionals}
-\input{expressions/conditionals.tex}
+\chapter{Conditional Expressions}
+\label{ch:conditionals}
 
-\section{Path Expressions}
-\label{sec:paths}
-\input{expressions/paths.tex}
+\chapter{Path Expressions}
+\label{ch:paths}
 
-\chapter{Queries}
+\chapter{Query Expressions}
 \label{ch:queries}
-\input{queries/queries.tex}
 
-\chapter{Code Generation}
-\label{ch:codegen}
+\part{Code Generation}
 
-\section{Tasks}
-\label{sec:tasks}
-
-\section{Constructors}
-\label{sec:constructors}
-
-\section{Templates}
+\chapter{Templates}
 \label{sec:templates}
 
-\section{Targets}
+\chapter{Constructors}
+\label{sec:constructors}
+
+\chapter{Tasks}
+\label{sec:tasks}
+
+\chapter{Targets}
 \label{sec:targets}
+
+\part{Organization and Sharing}
 
 \chapter{Modules}
 \label{ch:modules}
 
 \chapter{Libraries}
 \label{ch:libraries}
+
+\part{Appendices}
 
 \appendix
 

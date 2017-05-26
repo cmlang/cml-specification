@@ -6,4 +6,14 @@ node Association:
 }
 
 node AssociationEnd:
-    conceptName=NAME '.' propertyName=NAME (':' type=Type)?;
+    conceptName=NAME '.' propertyName=NAME (':' type=Type)?
+{
+    concept = Model.concepts
+                ->select(concept.name = conceptName)
+                ->first()
+    
+    property = concept.allProperties
+                    ->select(property.name = propertyName)
+                    ->first()
+}
+

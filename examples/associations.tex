@@ -7,7 +7,7 @@ which always refers to an instance of \textbf{Organization},
 meaning that an \textbf{owner} must always be assigned to each instance of \textbf{Vehicle}. 
 Similarly,
 the concept \textbf{Employee} has the property \textbf{employer},
-which must always be assigned to instance of \textbf{Organization}.
+which must always be assigned to an instance of \textbf{Organization}.
 
 Just below the declaration of \textbf{Organization},
 we observe an association named \textbf{Employment},
@@ -22,9 +22,10 @@ the slot \textbf{employees} of the \textbf{Organization} instance.
 However,
 since the \emph{type} of \textbf{employees}
 in the concept \textbf{Organization}
-is a sequence of \textbf{Employee} instances,
-the reference to the instance of \textbf{Employee} will actually be added to the sequence,
-along with the other instances already found in the sequence.
+is a sequence (\ref{ch:sequence-types}) of \textbf{Employee} instances,
+the reference to the instance of \textbf{Employee} will actually be appended to the sequence
+being held by the slot \textbf{employees} of the concept \textbf{Organization},
+and maintained along with the other \textbf{Employee} instances already found in the sequence.
 Thus, the association \textbf{Employment} actually characterizes a \emph{bidirectional association}.
 
 The association \textbf{VehicleOwnership} is another example of a \emph{bidirectional association};
@@ -52,7 +53,7 @@ is \emph{derived association} (\ref{ch:derived-associations}).
 \begin{figure}
 \verbatimfont{\small}
 \lstinputlisting[language=cml]{examples/associations.cml}
-\caption{Association Examples}
+\caption{Association Example}
 \label{fig:ex:associations}
 \end{figure}
 

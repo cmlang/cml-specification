@@ -1,0 +1,30 @@
+\begin{figure}
+\lstinputlisting[language=ocl_]{constraints/associations.ocl}
+\caption{Association Constraints}
+\label{fig:inv:associations}
+\end{figure}
+
+The invariants of the metaclasses \emph{Association} and \emph{AssociationEnd}
+are specified by figure \ref{fig:inv:associations}:
+
+\begin{itemize}
+
+\item \emph{association\_end\_property\_found\_in\_model}:
+Each \emph{association end} enumerated under an \emph{association}
+must correspond to a \emph{property} of the same name under the specified \emph{concept}.
+
+\item \emph{association\_end\_type\_matches\_property\_type}:
+If a \emph{type} is specified for a given \emph{association end},
+its \emph{name} and \emph{cardinality} must match the \emph{type}
+of the corresponding \emph{property}.
+
+\item \emph{association\_must\_have\_two\_association\_ends}:
+An \emph{association} must have exaclty two \emph{association ends},
+since only \emph{binary associations} are supported in CML.
+
+\item \emph{association\_end\_types\_must\_match}:
+The \emph{concept} of one \emph{association end} must correspond
+to the \emph{type} of the \emph{property} of the other \emph{association end},
+and vice-versa.
+
+\end{itemize}

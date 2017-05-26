@@ -3,5 +3,5 @@ compilationUnit:
     declarations*;
 
 declarations:
-    moduleDeclaration | conceptDeclaration | taskDeclaration;
+    moduleDeclaration | conceptDeclaration | associationDeclaration | taskDeclaration;
 

@@ -27,6 +27,6 @@ association Employment
 
 association VehicleOwnership
 {
-    Vehicle.owner: Employee;
+    Vehicle.owner: Organization;
     Organization.fleet: Vehicle*;
 }

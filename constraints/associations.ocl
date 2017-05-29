@@ -4,9 +4,10 @@ inv association_end_property_found_in_model:
 
 context AssociationEnd
 inv association_end_type_matches_property_type:
-    self.type->notEmpty() implies
-        self.type.name = property.type.name and
-        self.type.cardinality = property.type.cardinality
+    self.propertyType->notEmpty() and 
+    self.property->notEmpty() implies
+        self.propertyType.name = property.type.name and
+        self.propertyType.cardinality = property.type.cardinality
 
 context Association
 inv association_must_have_two_association_ends:
@@ -16,6 +17,7 @@ context Association
 def: first = associationEnds->first()
 def: last = associationEnds->last()
 inv association_end_types_must_match:
+    associationEnds->count() = 2 and
     first->notEmpty() and last->notEmpty() and
     first.concept->notEmpty() and 
     first.property->notEmpty() and
@@ -23,3 +25,5 @@ inv association_end_types_must_match:
     last.property->notEmpty() implies
         first.concept.name = last.property.type.name and
         last.concept.name = first.property.type.name
+
+        

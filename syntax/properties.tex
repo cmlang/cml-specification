@@ -1,0 +1,47 @@
+Figure \ref{fig:stx:property} specifies the syntax used
+to declare a \emph{property}.
+The NAME is followed by a \emph{typeDeclaration}
+(\ref{ch:primitive-types} and \ref{ch:sequence-types}).
+Optionally, an \emph{expression} (\ref{ch:expressions}) may be specified
+in order to set the initial value.
+
+\begin{figure}
+\verbatimfont{\small}
+\lstinputlisting[language=antlr]{grammar/Properties.txt}
+\caption{Property Declaration Syntax}
+\label{fig:stx:property}
+\end{figure}
+
+Figure \ref{fig:meta:property} presents the \emph{Property} metaclass
+in an EMOF \cite{mof} class diagram of the CML metamodel,
+and figure \ref{fig:ast:property} specifies
+the transformation
+from the \emph{property} concrete syntax to its abstract syntax.
+For each \emph{property} parsed by the compiler,
+an instance of the \emph{Property} class will be created,
+and its properties will be assigned
+according to parsed information:
+
+\begin{itemize}
+
+\item \emph{name}:
+assigned with the value of the terminal node NAME.
+
+\item \emph{type}:
+if \emph{typeDeclaration} is provided,
+\emph{type} is set with the instance of the \emph{Type} class
+matching the \emph{typeDeclaration}.
+
+\item \emph{expression}:
+if provided,
+it contains the instance of the \emph{Expression} class
+matching the parsed \emph{expression}.
+
+\end{itemize}
+
+\begin{figure}
+\verbatimfont{\small}
+\lstinputlisting[language=lsl]{ast/property.lsl}
+\caption{Property AST Instantiation}
+\label{fig:ast:property}
+\end{figure}

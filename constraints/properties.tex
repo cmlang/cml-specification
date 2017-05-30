@@ -1,0 +1,34 @@
+Figure \ref{fig:ocl:property} presents the invariants
+of the \emph{Property} metaclass:
+
+\begin{itemize}
+
+\item \emph{unique\_property\_name}:
+Each \emph{property} must have a unique NAME within its \emph{concept}
+(\ref{ch:concepts}).
+
+\item \emph{property\_type\_specified\_or\_inferred}:
+Either the \emph{property} explicitly defines a \emph{type}
+or it defines an \emph{expression},
+from which the type is inferred.
+That is required for both regular, slot-based \emph{properties}
+(which may provide an \emph{initialization expression})
+and \emph{derived properties}
+(which may have an \emph{expression} defining the derivation).
+
+\item \emph{property\_type\_assignable\_from\_expression\_type}:
+When both a \emph{type} and \emph{expression} are defined for a \emph{property},
+the \emph{type} inferred from the \emph{expression} should be assignable to
+the declared \emph{type}.
+That is required for both regular, slot-based \emph{properties}
+(which may provide an \emph{initialization expression})
+and \emph{derived properties}
+(which may have an \emph{expression} defining the derivation).
+
+\end{itemize}
+
+\begin{figure}
+\lstinputlisting[language=ocl_]{ocl/property.ocl}
+\caption{Property Constraints}
+\label{fig:ocl:property}
+\end{figure}

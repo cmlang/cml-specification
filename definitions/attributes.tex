@@ -1,5 +1,5 @@
-In CML, \emph{attributes} are \emph{properties} (\ref{sec:properties})
-of \emph{primitive types} (\ref{sec:primitive-types}).
+In CML, \emph{attributes} are \emph{properties} (\ref{ch:properties})
+of \emph{primitive types} (\ref{ch:primitive-types}).
 They correspond to the \emph{Attribute} metaclass 
 in the ER \cite{er} metamodel;
 in the UML \cite{uml} metamodel,
@@ -11,65 +11,11 @@ the specified \emph{primitive type}.
 An initial value may be specified as an \emph{expression} (\ref{ch:expressions}).
 Some \emph{attributes}, however, may be constantly
 derive their \emph{value} from an \emph{expression} (not only initially),
-in which case they are called \emph{derived attributes} (\ref{sec:derived-attributes}).
+in which case they are called \emph{derived attributes} (\ref{ch:derived-attributes}).
 While initial values are only set when a \emph{concept} (\ref{ch:concepts})
 is instantiated,
 the value of \emph{derived attributes} is always evaluated 
 from the given \emph{expression},
 and they cannot be set any other way.
 
-\begin{examples}
-Figure \ref{fig:ex:attributes} presents some examples of \emph{attributes} declared in CML.
-As shown,
-the attribute \textbf{a} is a regular attribute definition 
-that specifies the \emph{primitive type} (\ref{sec:primitive-types})
-of the values that can be held by the \emph{attribute}'s slot.
-The attribute \textbf{b} is an example showing how an \emph{attribute}
-can be defined with an initial value.
-As shown by the attribute \textbf{c}, 
-an attribute may be derived from an \emph{expression}
-that refers to other \emph{attributes}.
-In order to differentiate \emph{attributes} with initial values
-from \emph{derived attributes},
-a forward slash (``/'') prefixes the name of the latter.
-Attributes \textbf{d} and \textbf{e} are examples
-where the type of the attribute,
-instead of being specified,
-is inferred from the given \emph{expression}.
-Type inference is possible for both regular, slot-based \emph{attributes}
-and \emph{derived attributes} that provide an \emph{expression}.
-\end{examples}
 
-\begin{figure}
-\verbatimfont{\small}
-\lstinputlisting[language=cml]{examples/attributes.cml}
-\caption{Examples of Attributes}
-\label{fig:ex:attributes}
-\end{figure}
-
-\begin{concrete-syntax}
-Figure \ref{fig:stx:property} specifies the syntax used
-to declare any kind of \emph{property} (\ref{sec:properties}),
-including \emph{attributes}.
-The NAME of an \emph{attribute} is followed
-by a \emph{typeDeclaration} of a \emph{primitive type}
-(\ref{sec:primitive-types}).
-Optionally, an \emph{expression} (\ref{ch:expressions}) may be specified
-in order to set the initial value.
-A \emph{derived attribute} must be prefixed with the forward-slash character,
-as specified by DERIVED,
-in which case the given \emph{expression} defines the value
-of the \emph{attribute} at all times.
-\end{concrete-syntax}
-
-\begin{abstract-syntax}
-Since an \emph{attribute} in CML is just a \emph{property} (\ref{sec:properties})
-with \emph{primitive types} (\ref{sec:primitive-types}),
-the \emph{property} metaclass in the CML metamodel is used to represent
-\emph{attributes}.
-Figure \ref{fig:meta:property} presents the \emph{property} metaclass
-in an EMOF \cite{mof} class diagram,
-and figure \ref{fig:ast:property} specifies
-the \emph{property} transformation
-from its concrete syntax to its abstract syntax.
-\end{abstract-syntax}

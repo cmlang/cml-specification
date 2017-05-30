@@ -1,0 +1,22 @@
+Figure \ref{fig:stx:property} specifies the syntax used
+to declare any kind of \emph{property} (\ref{ch:properties}),
+including \emph{attributes}.
+The NAME of an \emph{attribute} is followed
+by a \emph{typeDeclaration} of a \emph{primitive type}
+(\ref{ch:primitive-types}).
+Optionally, an \emph{expression} (\ref{ch:expressions}) may be specified
+in order to set the initial value.
+A \emph{derived attribute} must be prefixed with the forward-slash character,
+as specified by DERIVED,
+in which case the given \emph{expression} defines the value
+of the \emph{attribute} at all times.
+
+Since an \emph{attribute} in CML is just a \emph{property} (\ref{ch:properties})
+with \emph{primitive types} (\ref{ch:primitive-types}),
+the \emph{property} metaclass in the CML metamodel is used to represent
+\emph{attributes}.
+Figure \ref{fig:meta:property} presents the \emph{property} metaclass
+in an EMOF \cite{mof} class diagram,
+and figure \ref{fig:ast:property} specifies
+the \emph{property} transformation
+from its concrete syntax to its abstract syntax.

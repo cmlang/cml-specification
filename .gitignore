@@ -8,4 +8,5 @@ spec.fls
 spec.fdb_latexmk
 spec.out
 spec.toc
+spec.locode
 *-eps-converted-to.pdf

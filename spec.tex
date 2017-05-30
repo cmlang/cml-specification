@@ -75,6 +75,12 @@
 Initially developed as part of the author's Bachelor Technical Report in Computer Sciences}}
 \date{July 2017}
 
+\usepackage{caption}
+\DeclareCaptionType{code}[Listing][Listings] 
+
+\renewcommand*\listfigurename{Figures}
+\renewcommand*\listtablename{Tables}
+
 \makeatletter
 \newcommand{\verbatimfont}[1]{\renewcommand{\verbatim@font}{\ttfamily#1}}
 \makeatother
@@ -97,6 +103,9 @@ Initially developed as part of the author's Bachelor Technical Report in Compute
 
 \clearpage
 \tableofcontents
+
+\clearpage
+\listofcodes
 
 \clearpage
 \listoffigures

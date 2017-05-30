@@ -1,4 +1,4 @@
-Figure \ref{fig:ex:associations} presents some examples of \emph{associations} declared in CML.
+Listing \ref{lst:ex:associations} presents some examples of \emph{associations} declared in CML.
 The concept \textbf{Vehicle} contains the property \textbf{driver},
 which may optionally refer to an instance of \textbf{Employee},
 meaning that a \textbf{driver} may or may not be assigned to a single \textbf{Vehicle}.
@@ -42,7 +42,7 @@ if present.
 
 The \textbf{driver} property in the concept \textbf{Vehicle} is a different case,
 since this \emph{property} does not participate in any \emph{association} declaration
-in figure \ref{fig:ex:associations}.
+on listing \ref{lst:ex:associations}.
 That's because there is no corresponding \emph{property} in the concept \textbf{Employee}
 representing the other end of the \emph{association}.
 As such, the property \textbf{driver} is representing the source end of a \emph{unidirectional association}.
@@ -50,10 +50,9 @@ As such, the property \textbf{driver} is representing the source end of a \emph{
 The property \textbf{drivers} in the concept \textbf{Organization}
 is \emph{derived association} (\ref{ch:derived-associations}).
 
-\begin{figure}
+\begin{code}
 \verbatimfont{\small}
 \lstinputlisting[language=cml]{examples/associations.cml}
 \caption{Association Example}
-\label{fig:ex:associations}
-\end{figure}
-
+\label{lst:ex:associations}
+\end{code}

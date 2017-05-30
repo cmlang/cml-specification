@@ -1,6 +1,6 @@
 concept Expressions
 {
-    -- Literals:
+    -- Literal Values:
     c: String = "SomeString";
     d: Integer = 123;
 
@@ -12,12 +12,12 @@ concept Expressions
     equality = 3 == 3;
     boolean_expr = q and p;
 
-    -- Conditional:
+    -- Conditional Expression:
     if_then_else = if a > 0 then a else b;
 
-    -- Path:
+    -- Path Expression:
     path = somePath.bar;
 
-    -- Query:
+    -- Query Expression:
     select_query = items | select name == "this";
 }

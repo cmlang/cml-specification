@@ -1,25 +1,27 @@
-Figure \ref{fig:stx:expressions} specifies the syntax of all CML \emph{expressions}.
+Listing \ref{lst:stx:expressions} specifies the syntax of all kinds of \emph{expressions} in CML.
 It also lists them in their order of precedence.
-Observe that the grammar in figure \ref{fig:stx:expressions} has left
-recursions, and thus is ambiguous.
-However, ANTLR \cite{antlr} will use the order in which the alternatives
-are listed in order to resolve the ambiguity,
-and so define the precedence among the operators.
+
+Observe that the grammar in listing \ref{lst:stx:expressions} has left recursions
+(and thus it is ambiguous).
+However, ANTLR \cite{antlr} resolves the ambiguity
+based on the order in which the \emph{expression} alternatives are listed,
+and so the order in listing \ref{lst:stx:expressions} defines the precedence among the operators for CML.
+
 Also, according to ANTLR,
 and as required by CML,
-all expressions in the grammar are left-to-right associative,
+all \emph{expressions} in the grammar are left-to-right associative,
 except for the \emph{exponentiation expression},
 which is right-to-left associative,
 as defined by the \textbf{<assoc=right>} clause.
 
-\begin{figure}
+\begin{code}
 \verbatimfont{\small}
 \lstinputlisting[language=antlr]{grammar/Expressions.txt}
-\caption{Expressions Syntax}
-\label{fig:stx:expressions}
-\end{figure}
+\caption{Expression Concrete Syntax}
+\label{lst:stx:expressions}
+\end{code}
 
-Figure \ref{fig:meta:expression} presents the \emph{Expression} metamodel
+Figure \ref{fig:meta:expression} presents the \emph{Expression} metaclass
 in an EMOF \cite{mof} class diagram.
 For each kind of \emph{expression} parsed by the compiler,
 an instance of an \emph{Expression} subclass will be created,
@@ -41,6 +43,6 @@ by providing its own definition for this derived attribute.
 
 \begin{figure}
 \includegraphics[width=\textwidth]{metamodel/expression}
-\caption{Expression Metamodel}
+\caption{Expression Abstract Syntax}
 \label{fig:meta:expression}
 \end{figure}

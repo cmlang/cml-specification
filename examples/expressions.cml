@@ -1,23 +1,23 @@
 concept Expressions
 {
-    // Literals:
+    -- Literals:
     c: String = "SomeString";
     d: Integer = 123;
 
-    // Prefix Expression:
+    -- Prefix Expression:
     minus_sign = -2;
 
-    // Infix Expressions:
+    -- Infix Expressions:
     addition = 1 + 2;
     equality = 3 == 3;
     boolean_expr = q and p;
 
-    // Conditional:
+    -- Conditional:
     if_then_else = if a > 0 then a else b;
 
-    // Path:
+    -- Path:
     path = somePath.bar;
 
-    // Query:
+    -- Query:
     select_query = items | select name == "this";
 }

@@ -1,0 +1,35 @@
+Figure \ref{fig:ex:generalization} presents some examples of
+generalization/specialization relationships declared in CML.
+As shown,
+a \emph{concept} (\ref{ch:concepts}) may specialize zero or more other \emph{concepts}.
+The latter are called the generalizations,
+while the former is called the specialization.
+A generalization, such as \textbf{Shape},
+may define \emph{attributes} (\ref{ch:attributes}),
+such as \textbf{color} and \textbf{area},
+or also the \emph{roles} in \emph{unidirecional associations} (\ref{sec:assoc-unidir}).
+Both \emph{attributes} and \emph{roles} are \emph{properties} (\ref{sec:properties}) shared among all its specializations.
+Some of these \emph{properties} may be redefined by the some of the specializations,
+as it is the case with the \emph{area} property,
+which is redefined by \textbf{Rectangle}, \textbf{Rhombus} and \textbf{Square}.
+Some specializations may also define new \emph{properties},
+such as \textbf{width} and \textbf{height} in \textbf{Rectangle},
+which characterize only instances of this specialization.
+A \emph{concept} may be a specialization of two or more other \emph{concepts},
+as seen with \textbf{Square},
+which specializes both \textbf{Rectangle} and \textbf{Rhombus},
+and thus can redefine \emph{properties} of both generalizations.
+If a \emph{property} has been defined by more than one generalization,
+then it must be redefined by the specialization
+in order to resolve the definition conflict,
+which is the case with \textbf{area} in \textbf{Square}. 
+If a redefinition suitable for both generalizations is unattainable,
+it may be an indication that either the specialization or the generalizations
+are unsound from the domain's prospective.
+
+\begin{figure}
+\verbatimfont{\small}
+\lstinputlisting[language=cml]{examples/generalization.cml}
+\caption{Generalization Examples}
+\label{fig:ex:generalization}
+\end{figure}

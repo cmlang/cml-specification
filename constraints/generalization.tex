@@ -1,0 +1,33 @@
+Figure \ref{fig:ocl:generalization} presents the invariants
+of the \emph{Concept} and \emph{Property} classes
+related to \emph{generalizations}:
+
+\begin{itemize}
+
+\item \emph{not\_own\_generalization}:
+A \emph{concept} (\ref{ch:concepts}) may not be listed on its own \emph{GeneralizationList},
+nor on the \emph{GeneralizationList} of its direct or indirect generalizations.
+
+\item \emph{compatible\_generalizations}:
+The \emph{generalizations} of a \emph{concept} must all be compatible between themselves,
+that is, no two \emph{generalizations} may have a \emph{property} with the same name
+but a different type.
+
+\item \emph{generalization\_compatible\_redefinition}:
+A \emph{property} may only be redefined with the same type defined in the \emph{generalizations}.
+
+\item \emph{conflict\_redefinition}:
+A \emph{concept} is required to redefine a \emph{property} that 
+has been defined by two or more of its \emph{generalizations}
+in order to resolve the definition conflict.
+That is required only if the \emph{property} has been initialized or derived
+in at least one of the \emph{generalizations}.
+Otherwise, the redefinition is not required.
+
+\end{itemize}
+
+\begin{figure}
+\lstinputlisting[language=ocl_]{ocl/generalization.ocl}
+\caption{Generalization Constraints}
+\label{fig:ocl:generalization}
+\end{figure}

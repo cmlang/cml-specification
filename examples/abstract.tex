@@ -1,0 +1,34 @@
+Figure \ref{fig:ex:abstract} presents an example of an \emph{abstract concept} declared in CML.
+As shown, the concept \textbf{Shape} is tagged as \emph{abstract},
+and as such no direct instances of \emph{Shape} are ever instantiated.
+As an \emph{abstract concept}, \textbf{Shape} can define \emph{abstract properties},
+like \textbf{area}, which is just a \emph{derived property} (\ref{sec:properties})
+without an \emph{expression} (\ref{ch:expressions}).
+An \emph{abstract concept} may also define concrete \emph{properties},
+such as \textbf{color} in \textbf{Shape}.
+The concept \textbf{Circle} is a \emph{especialization} of \textbf{Shape}
+that must redefine the property \textbf{area}
+(and provide an \emph{expression})
+if it is to be considered a \emph{concrete concept}.
+As a \emph{concrete concept},
+\textbf{Circle} may have direct instances,
+which are in turn instances of \emph{Shape} as well.
+\textbf{Circle} may also redefine \emph{concrete properties} of \textbf{Shape},
+like \textbf{color},
+but the redefinition is not a requirement in this case.
+In \textbf{UnitCircle},
+we can observe that the redefinition of an \emph{abstract property},
+such as \textbf{area},
+may be made \emph{concrete};
+meaning it does not need to be redefined as a \emph{derived property}.
+The converse situation is also allowed in CML,
+where a \emph{concrete property} is redefined by as a \emph{derived property},
+as illustrated with the property \textbf{radius} in \textbf{UnitCircle}.
+
+\begin{figure}
+\verbatimfont{\small}
+\lstinputlisting[language=cml]{examples/abstract.cml}
+\caption{Abstract Concept Example}
+\label{fig:ex:abstract}
+\end{figure}
+

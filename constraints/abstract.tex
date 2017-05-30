@@ -1,0 +1,20 @@
+Figure \ref{fig:ocl:abstract} presents the invariants
+of the \emph{Concept} and \emph{Property} classes in CML's EMOF \cite{mof} metamodel
+related to \emph{abstract concepts}:
+
+\begin{itemize}
+
+\item \emph{abstract\_property\_redefinition}:
+A \emph{concrete concept} must redefine concretely all \emph{abstract properties} of 
+its \emph{generalizations}.
+
+\item \emph{abstract\_property\_in\_abstract\_concept}:
+Only \emph{abstract concepts} may have \emph{abstract properties}.
+
+\end{itemize}
+
+\begin{figure}
+\lstinputlisting[language=ocl_]{ocl/abstract.ocl}
+\caption{Abstract Concept Constraints}
+\label{fig:ocl:abstract}
+\end{figure}

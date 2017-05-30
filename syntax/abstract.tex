@@ -1,0 +1,18 @@
+Figure \ref{fig:stx:concept} specifies the syntax used
+to declare a \emph{concept} (\ref{ch:concepts}) in CML.
+It shows that a \emph{concept} may be tagged with the \textbf{abstract} keyword
+in order to convey it as an \emph{abstract concept}.
+Figure \ref{fig:stx:property} specifies the syntax used 
+to declare a \emph{property} (\ref{sec:properties}) in CML.
+It shows that a \emph{property} may be prefixed with a forward slash (``/'')
+in order to mark it as a \emph{derived property}.
+If the optional \textbf{expression} is not provided,
+the property is then considered an \emph{abstract property}.
+
+Figure \ref{fig:meta:concept} presents the \emph{concept} metamodel
+in an EMOF \cite{mof} class diagram,
+and figure \ref{fig:ast:concept} specifies
+the \emph{concept} transformation
+from its concrete syntax to its abstract syntax.
+There is a \textbf{Boolean} attribute named \textbf{abstract} in the \emph{Concept} class
+that determines whether a \emph{concept} is \emph{abstract} or not.

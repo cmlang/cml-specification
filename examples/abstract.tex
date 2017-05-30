@@ -1,8 +1,8 @@
-Figure \ref{fig:ex:abstract} presents an example of an \emph{abstract concept} declared in CML.
+Listing \ref{lst:ex:abstract} presents an example of an \emph{abstract concept} declared in CML.
 As shown, the concept \textbf{Shape} is tagged as \emph{abstract},
 and as such no direct instances of \emph{Shape} are ever instantiated.
 As an \emph{abstract concept}, \textbf{Shape} can define \emph{abstract properties},
-like \textbf{area}, which is just a \emph{derived property} (\ref{sec:properties})
+like \textbf{area}, which is just a \emph{derived property} (\ref{ch:properties})
 without an \emph{expression} (\ref{ch:expressions}).
 An \emph{abstract concept} may also define concrete \emph{properties},
 such as \textbf{color} in \textbf{Shape}.
@@ -25,10 +25,10 @@ The converse situation is also allowed in CML,
 where a \emph{concrete property} is redefined by as a \emph{derived property},
 as illustrated with the property \textbf{radius} in \textbf{UnitCircle}.
 
-\begin{figure}
+\begin{code}
 \verbatimfont{\small}
 \lstinputlisting[language=cml]{examples/abstract.cml}
 \caption{Abstract Concept Example}
-\label{fig:ex:abstract}
-\end{figure}
+\label{lst:ex:abstract}
+\end{code}
 

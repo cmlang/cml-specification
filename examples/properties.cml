@@ -1,12 +1,11 @@
-
-// Attributes of primitive types:
+-- Attributes of primitive types:
 concept Book
 {
     title: String;
     quantity: Integer;
 }
 
-// Role in unidirectional association:
+-- Role in unidirectional association:
 concept Order
 {
     customer: Customer;

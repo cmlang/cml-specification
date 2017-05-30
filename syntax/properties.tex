@@ -1,20 +1,20 @@
-Figure \ref{fig:stx:property} specifies the syntax used
+Listing \ref{lst:stx:property} specifies the syntax used
 to declare a \emph{property}.
 The NAME is followed by a \emph{typeDeclaration}
 (\ref{ch:primitive-types} and \ref{ch:sequence-types}).
 Optionally, an \emph{expression} (\ref{ch:expressions}) may be specified
 in order to set the initial value.
 
-\begin{figure}
+\begin{code}
 \verbatimfont{\small}
 \lstinputlisting[language=antlr]{grammar/Properties.txt}
-\caption{Property Declaration Syntax}
-\label{fig:stx:property}
-\end{figure}
+\caption{Property Concrete Syntax}
+\label{lst:stx:property}
+\end{code}
 
 Figure \ref{fig:meta:property} presents the \emph{Property} metaclass
 in an EMOF \cite{mof} class diagram of the CML metamodel,
-and figure \ref{fig:ast:property} specifies
+and listing \ref{lst:ast:property} specifies
 the transformation
 from the \emph{property} concrete syntax to its abstract syntax.
 For each \emph{property} parsed by the compiler,
@@ -39,9 +39,9 @@ matching the parsed \emph{expression}.
 
 \end{itemize}
 
-\begin{figure}
+\begin{code}
 \verbatimfont{\small}
 \lstinputlisting[language=lsl]{ast/property.lsl}
 \caption{Property AST Instantiation}
-\label{fig:ast:property}
-\end{figure}
+\label{lst:ast:property}
+\end{code}

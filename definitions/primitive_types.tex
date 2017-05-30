@@ -23,7 +23,7 @@ and so with other \emph{numeric types}.
 This allows \emph{expressions} of a \emph{primitive type}
 to be promoted to \emph{expressions} of another \emph{primitive type}
 in order to allow \emph{type inference} of composite \emph{expressions},
-such as \emph{infix expressions} (\ref{sec:infix}).
+such as \emph{infix expressions} (\ref{ch:infix}).
 
 In the UML \cite{uml} metamodel,
 there is a specific metaclass named \emph{PrimitiveType},
@@ -79,108 +79,4 @@ Double & double & double & double* & float & number & 64-bit IEEE 754 binary flo
 \label{tab:additional-primitive-types}
 \end{table}
 
-\begin{examples}
-Figure \ref{fig:ex:primitive-types} presents examples
-of \emph{atributes} declared with \emph{primitive types} in CML.
-Each example corresponds to one of the \emph{primitive types} 
-supported by the language,
-as shown in tables \ref{tab:core-primitive-types} and \ref{tab:additional-primitive-types}.
-The \emph{target constructors} (\ref{sec:constructors})
-of CML's base module will translate the primitive types to Java, C\#, C/C++,
-Python, and TypeScript (JavaScript),
-according to the mapping shown in the tables.
 
-\end{examples}
-
-\begin{figure}
-\verbatimfont{\small}
-\lstinputlisting[language=cml]{examples/primitive_types.cml}
-\caption{Example of \emph{Primitive Types}}
-\label{fig:ex:primitive-types}
-\end{figure}
-
-\begin{concrete-syntax}
-Figure \ref{fig:stx:type} specifies the syntax used
-to declare any kind of \emph{type},
-including \emph{primitive types}.
-The NAME of the \emph{type} may be any of the \emph{primitive types}
-defined in the column named \emph{CML}
-of the tables \ref{tab:core-primitive-types} and \ref{tab:additional-primitive-types}.
-Optionally, cardinality may also be specified
-for a \emph{primitive type}.
-The `*' cardinality suffix allows zero or more values to be stored
-in a property as a collection type (\ref{sec:collection-types}).
-The `?' cardinality suffix allows a single value to be stored, or none.
-If no cardinality is specified,
-a value must be assigned to the \emph{attribute}
-when its \emph{concept} is instantiated.
-\end{concrete-syntax}
-
-\begin{figure}
-\verbatimfont{\small}
-\lstinputlisting[language=antlr]{grammar/Types.txt}
-\caption{Type Declaration Syntax}
-\label{fig:stx:type}
-\end{figure}
-
-\begin{abstract-syntax}
-Figure \ref{fig:meta:property} presents the \emph{Type} metaclass
-in an EMOF \cite{mof} class diagram of the CML metamodel,
-and figure \ref{fig:ast:type} specifies
-the transformation
-from the \emph{type} concrete syntax to its abstract syntax.
-\end{abstract-syntax}
-
-\begin{figure}
-\verbatimfont{\small}
-\lstinputlisting[language=lsl]{ast/type.lsl}
-\caption{Type AST Instantiation}
-\label{fig:ast:type}
-\end{figure}
-
-\begin{constraints}
-Figures \ref{fig:ocl:type_a} and \ref{fig:ocl:type_b} define the \emph{isAssignableFrom()}
-operation in the \emph{Type} metaclass,
-which is used by the \emph{property\_type\_assignable\_from\_expression\_type}
-constraint in figure \ref{fig:ocl:property}.
-Basically, one of the following conditions must be met for a source \emph{type}
-to be assignable to a destination \emph{type}:
-
-\begin{itemize}
-
-\item The source \emph{type} has the same name as the destination \emph{type}.
-
-\item Both types are \emph{numeric} and the destination \emph{type} is wider than the source \emph{type}.
-Caveat: Floating-point types (Float and Double) are never assignable to the other \emph{numeric types}
-(Byte, Short, Integer, Long), and vice-versa.
-
-\item Both types refer to \emph{concepts} and the destination \emph{concept}
-is \emph{generalization} (\ref{ch:generalization}) of the source \emph{concept}.
-
-\end{itemize}
-
-Additionally, one of the following conditions must be met regarding the \emph{type}'s \emph{cardinality}:
-
-\begin{itemize}
-
-\item The cardinality of the source \emph{type} matches the cardinality of the destination \emph{type}.
-
-\item The destination \emph{type} has the \emph{zero-or-one} cardinality and the source \emph{type} has the \emph{one} cardinality.
-
-\item The destination \emph{type} has the \emph{zero-or-more} cardinality and the source \emph{type} has any other cardinality.
-
-\end{itemize}
-
-\end{constraints}
-
-\begin{figure}
-\lstinputlisting[language=ocl_]{ocl/type_a.ocl}
-\caption{Auxiliary Methods of The \emph{Type} Metaclass}
-\label{fig:ocl:type_a}
-\end{figure}
-
-\begin{figure}
-\lstinputlisting[language=ocl_]{ocl/type_b.ocl}
-\caption{The \emph{isAssignableFrom()} Method of The \emph{Type} Metaclass}
-\label{fig:ocl:type_b}
-\end{figure}

@@ -26,4 +26,6 @@ inv association_end_types_must_match:
         first.concept.name = last.property.type.name and
         last.concept.name = first.property.type.name
 
-        
+inv property_must_be_part_of_single_association:
+
+inv no_associations_of_primitive_types:        

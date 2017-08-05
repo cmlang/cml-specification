@@ -16,7 +16,7 @@ concept Organization
     name: String;
     employees: Employee*;
     fleet: Vehicle*;    
-    drivers = fleet.driver;
+    /drivers = fleet.driver;
 }
 
 association Employment

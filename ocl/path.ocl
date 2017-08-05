@@ -1,0 +1,3 @@
+inv all_names_in_path_must_declared:
+
+inv init_expr_may_only_have_literals: ????

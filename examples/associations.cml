@@ -1,31 +1,31 @@
-concept Vehicle
+@concept Vehicle
 {
     plate: String;
     driver: Employee?;
     owner: Organization;
 }
 
-concept Employee
+@concept Employee
 {
     name: String;
     employer: Organization;
 }
 
-concept Organization
+@concept Organization
 {
     name: String;
     employees: Employee*;
-    fleet: Vehicle*;    
+    fleet: Vehicle*;
     /drivers = fleet.driver;
 }
 
-association Employment
+@association Employment
 {
     Employee.employer;
     Organization.employees;
 }
 
-association VehicleOwnership
+@association VehicleOwnership
 {
     Vehicle.owner: Organization;
     Organization.fleet: Vehicle*;

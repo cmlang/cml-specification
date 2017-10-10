@@ -1,17 +1,17 @@
 // Empty concept:
-concept Book;
+@concept Book;
 
 // Property without a type:
-concept TitledBook
+@concept TitledBook
 {
     title;
 }
 
 // Property with the String type:
-concept StringTitledBook
+@concept StringTitledBook
 {
     title: String;
 }
 
 // Specializing another concept:
-concept Ebook: Book;
+@concept Ebook: Book;

@@ -1,4 +1,4 @@
-concept Paths
+@concept Paths
 {
     self_path = self;
     single_var_path = foo;

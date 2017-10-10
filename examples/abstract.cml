@@ -1,6 +1,6 @@
 -- As an abstract concept,
 -- no direct instances of Shape are ever created.
-abstract concept Shape
+@abstraction Shape
 {
     -- A derived property without an expression
     -- is considered abstract.
@@ -12,7 +12,7 @@ abstract concept Shape
 }
 
 -- All instances of Circle are in turn instances of Shape.
-concept Circle: Shape
+@concept Circle: Shape
 {
     radius: Double;
 
@@ -26,15 +26,15 @@ concept Circle: Shape
     color = "Blue";
 }
 
-concept UnitCircle: Circle
+@concept UnitCircle: Circle
 {
-    -- Observe below that the redefinition of 
+    -- Observe below that the redefinition of
     -- an abstract property may be concrete;
     -- that is, it does not have to be derived
     -- as it was done in Circle.
     area = 3.14159d;
 
-    -- In the case above, however, 
+    -- In the case above, however,
     -- it is desirable to redefine "area" as a derived property,
     -- in order to guarantee area's value cannot be modified
     -- after the instantiation of UnitCircle.

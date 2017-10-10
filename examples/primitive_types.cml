@@ -1,37 +1,35 @@
-concept PrimitiveTypes
+@concept PrimitiveTypes
 {
     -- Core Primitive Types:
 
     -- Only values are the literal expressions: true, false
-    a: Boolean; 
+    a: Boolean;
 
     -- 32-bit signed two's complement integer
-    c: Integer; 
+    c: Integer;
 
     -- Arbitrary precision arithmetic.
     -- BigDecimal in Java; decimal in C#; decimal128 in C++.
-    d: Decimal; 
+    d: Decimal;
 
     -- 16-bit Unicode character sequences
     -- as in Java, C#, C++ (std::wstring), and JavaScript.
-    b: String; 
+    b: String;
 
     -- Additional Primitive Types:
 
-    -- 8-bit signed two's complement integer 
-    e: Byte; 
+    -- 8-bit signed two's complement integer
+    e: Byte;
 
     -- 16-bit signed two's complement integer
-    f: Short; 
+    f: Short;
 
     -- 64-bit signed two's complement integer
-    g: Long; 
+    g: Long;
 
     -- 32-bit IEEE 754 floating point
-    h: Float; 
+    h: Float;
 
     -- 64-bit IEEE 754 floating point
-    i: Double; 
+    i: Double;
 }
-
-

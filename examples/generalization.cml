@@ -1,6 +1,6 @@
 
 -- Generalization of Circle and Rectangle:
-concept Shape
+@concept Shape
 {
     -- Specializations below share the color attribute as-is:
     color: String;
@@ -10,7 +10,7 @@ concept Shape
 }
 
 -- Specialization of Shape:
-concept Rectangle: Shape
+@concept Rectangle: Shape
 {
     -- New attributes that characterize a rectangle:
     width: Double;
@@ -21,7 +21,7 @@ concept Rectangle: Shape
 }
 
 -- Another specialization of Shape:
-concept Rhombus: Shape
+@concept Rhombus: Shape
 {
     -- Diagonal attributes that characterize a rhombus:
     p: Double;
@@ -32,7 +32,7 @@ concept Rhombus: Shape
 }
 
 -- Specialization of both Rectangle and Rhombus:
-concept Square: Rectangle, Rhombus
+@concept Square: Rectangle, Rhombus
 {
     -- Only attribute needed to characterize a square:
     side_length: Double;
@@ -41,7 +41,7 @@ concept Square: Rectangle, Rhombus
     /width = side_length;
     /height = side_length;
 
-    -- Redefinitions of Rhombus' attributes:        
+    -- Redefinitions of Rhombus' attributes:
     /p = side_length * 1.41421356237d; -- square root of 2
     /q = p;
 

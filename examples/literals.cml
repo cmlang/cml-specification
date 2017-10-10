@@ -1,4 +1,4 @@
-concept Literals
+@concept Literals
 {
     // Boolean:
     aTrueBoolean: Boolean = true;

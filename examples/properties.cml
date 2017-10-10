@@ -1,12 +1,12 @@
 -- Attributes of primitive types:
-concept Book
+@concept Book
 {
     title: String;
     quantity: Integer;
 }
 
 -- Role in unidirectional association:
-concept Order
+@concept Order
 {
     customer: Customer;
 }

@@ -1,4 +1,4 @@
-concept Attributes
+@concept Attributes
 {
     -- Attribute with a slot for values of a primitive type:
     a: Integer;
@@ -7,7 +7,7 @@ concept Attributes
     b: String = "initial value";
 
     -- A derived attribute:
-    /c: Decimal = 2.0 * a; 
+    /c: Decimal = 2.0 * a;
 
     -- An attribute with type inferred from its initial value:
     d = 3; -- Inferred as Integer based on constant "3"

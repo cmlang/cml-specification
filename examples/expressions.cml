@@ -1,4 +1,4 @@
-concept Expressions
+@concept Expressions
 {
     -- Literal Values:
     c: String = "SomeString";
@@ -19,5 +19,5 @@ concept Expressions
     path = somePath.bar;
 
     -- Query Expression:
-    select_query = items | select name == "this";
+    select_query = items | select: name == "this";
 }

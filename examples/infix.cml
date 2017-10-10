@@ -1,4 +1,4 @@
-concept InfixExpressions
+@concept InfixExpressions
 {
     // Arithmetic Operators:
     addition = 1 + 2;

@@ -13,34 +13,34 @@ concept Queries
     path2 = top_orders.items.product;
 
     // Select / Reject:
-    select_transform = top_items | select name == "this";
+    select_transform = top_items | select: name == "this";
     select_transform_nested = top_items
-                                | select name == "this"
-                                | select qty > 10;
+                                | select: name == "this"
+                                | select: qty > 10;
     select_transform_nested_nested = top_items
-                                        | select name == "this"
-                                        | select qty > 10
-                                        | select number <= 10;
-    reject_transform = top_items | reject name == "this";
+                                        | select: name == "this"
+                                        | select: qty > 10
+                                        | select: number <= 10;
+    reject_transform = top_items | reject: name == "this";
 
     // Yield:
-    yield_transform = top_orders | yield items;
-    yield_transform_unique = top_orders | yield unique items.product;
+    yield_transform = top_orders | yield: items;
+    yield_transform_unique = top_orders | yield: items.product | distinct;
 
     // Recurse
-    recurse_ancestors = class | recurse ancestors;
-    recurse_unique = class | recurse unique ancestors;
+    recurse_ancestors = class | recurse: ancestors;
+    recurse_unique = class | recurse: ancestors | distinct;
     recurse_children = children
-                        | recurse children
-                        | select ranking > 10;
+                        | recurse: children
+                        | select: ranking > 10;
 
     // Enumeration:
     enumeration = for order in top_orders | select order.total > 100;
-    enumeration_yield = for order in top_orders | yield order.items;
+    enumeration_yield = for order in top_orders | yield: order.items;
     enumeration_nested = for order in top_orders, goldCustomer in goldCustomers
-                         | select order.customer == goldCustomer and
+                         | select: order.customer == goldCustomer and
                                   order.total > 1000
-                         | yield order.customer.name;
+                         | yield: order.customer.name;
 }
 
 concept Order

@@ -1,0 +1,22 @@
+In CML, \emph{functions} may be defined by a \emph{signature}
+and a corresponding \emph{expression} (\ref{ch:expressions}).
+The \emph{function signature} declares the \emph{parameter}
+and the resulting \emph{type} (\ref{ch:types}).
+Such a \emph{function} is translated to a target programming language
+much like a \emph{derived attribute} (\ref{ch:derived-attributes}),
+except that it does not belong to any particular \emph{concept} (\ref{ch:concepts})
+and it may be invoked by any \emph{expression}, in any scope.
+
+\emph{Functions} declared in CML are pure functions,
+which means they have the following characteristics:
+
+\begin{itemize}
+\item they always evaluate to the same result given the same arguments;
+\item their evaluation does not cause any side-effects or state mutation.
+\end{itemize}
+
+If a \emph{declared function} in its definition invokes other \emph{functions},
+then those \emph{functions}
+(being them other \emph{declared functions} or \emph{template functions} \ref{ch:template-functions})
+must provide the same guarantees listed above in order
+for the \emph{declared function} to be considered pure.

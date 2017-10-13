@@ -1,8 +1,10 @@
-The following chapters will specify every element of CML metamodel.
-Each chapter starts with a definition, followed by: an example;
+The first two parts of this specification specify all elements of CML metamodel
+needed for conceptual modeling.
+Every chapter in these two parts starts with a definition,
+which is followed by: an example;
 the specification of the concrete syntax;
-and then presenting the abstract syntax,
-and how to transform the concrete syntax into the abstract one.
+the abstract syntax;
+and then how to transform the concrete syntax into the abstract one.
 
 Chapters may also have sections that specify sub-elements
 of the top-level CML metamodel element being described in the chapter level.
@@ -11,59 +13,47 @@ using the same definition structure (detailed below)
 that is used to define the top-level elements.
 
 The definition of each CML metamodel element is stated in plain English
-on a paraprah (such as this one)
-starting with the ``\textbf{Definition.}'' heading.
+on the first paraprah of the chapter.
 If a correspondence exists to an element of
 the Entity-Relationship (ER) \cite{er} metamodel,
 or to an element of the Unified Modeling Language (UML) \cite{uml} metamodel,
 it is provided.
 
-\begin{examples}
-For each metamodel element declaration in CML,
-examples are provided on a paraprah (such as this one),
-starting with the ``\textbf{Examples.}'' heading.
-This type of paragraph refers to a \verb+verbatim+ figure
-containing the examples, and describes them as needed.
+Examples are provided in a separate section
+for each declaration of a metamodel element.
+These sections refer to a \verb+verbatim+ figure containing the examples,
+and describes them as needed.
 The examples are provided for illustrative purposes only,
 and they are \emph{not} intended to be normative.
 They may be excerpts of larger CML source files,
 and thus may not be successfully compiled on their own.
-\end{examples}
 
-\begin{concrete-syntax}
 The concrete syntax of each CML metamodel element is described
-on a paragraph (such as this one),
-starting with the ``\textbf{Concrete Syntax.}'' heading.
-This type of paragraph refers to a \verb+verbatim+ figure,
+on its own section.
+This type of section refers to a \verb+verbatim+ figure,
 which contains the actual ANTLR \cite{antlr} grammar
 specifying the syntax for the CML metamodel element in question,
 and it must be considered normative.
 The appendix \ref{apx:concrete-syntax} presents all the grammar rules
 in a single listing.
-\end{concrete-syntax}
 
-\begin{abstract-syntax}
 The abstract syntax of each CML metamodel element is described
-on a paragraph (such as this one),
-starting with the ``\textbf{Abstract Syntax.}'' heading.
-This type of paragraph refers to two types of figure:
+on the next section.
+This type of section refers to two types of figure:
 the first figure presents a class diagram
 with the EMOF \cite{mof}-based metamodel
 of the element being described;
 the second figure specifies the transformation
 from the concrete syntax into instances of the metamodel classes,
 which are the nodes of the abstract syntax tree
-(the intermediate representation described in section \ref{sec:compiler}).
+(the intermediate representation described in the \emph{Compiler Overview}).
 The notation used to specify the transformations is presented
 in the appendix \ref{apx:lsl}.
 Both figures must be considered normative.
-\end{abstract-syntax}
 
-\begin{constraints}
 The constraints of each CML metamodel element are described
-on a paragraph (such as this one),
-starting with the ``\textbf{Constraints.}'' heading.
-This type of paragraph refers to a \verb+verbatim+ figure,
+on its own section.
+These sections refer to a \verb+verbatim+ figure,
 which contains the OCL \cite{ocl} invariants
 (and its definitions)
 of the CML metamodel element in question,
@@ -75,14 +65,12 @@ Derived properties may also be defined before the constraints
 in order to simplify the constraint expressions.
 The appendix \ref{apx:ocl} presents all the constraint rules
 in a single listing.
-\end{constraints}
 
 All metamodel elements referred by one of the descriptions defined above
-(definitions, examples, etc.)
-are emphasized in \emph{italic}.
-If the descriptions of a CML metamodel element refer to another CML metamodel element,
+(definitions, examples, etc.) are emphasized in \emph{italic}.
+If the descriptions of a CML metamodel element refer to another metamodel element,
 the corresponding chapter or section defining the other element
-is provided in parenthesis, like so (\ref{sec:org}).
+is provided in parenthesis, like so (\ref{ch:notations}).
 
 Some sections may not follow the structure defined above.
 These normally provide additional semantic information in plain English,

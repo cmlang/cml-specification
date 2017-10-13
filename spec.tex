@@ -4,18 +4,6 @@
 \usepackage{verbatim}
 \usepackage{amsthm}
 
-\theoremstyle{definition}
-\newtheorem*{examples}{Examples}
-
-\theoremstyle{definition}
-\newtheorem*{concrete-syntax}{Concrete Syntax}
-
-\theoremstyle{definition}
-\newtheorem*{abstract-syntax}{Abstract Syntax}
-
-\theoremstyle{definition}
-\newtheorem*{constraints}{Constraints}
-
 \renewcommand{\rmdefault}{ppl}
 \chapterstyle{demo2}
 \renewcommand\partnumberlinebox[2]{#2\hspace{1em}}
@@ -134,6 +122,7 @@ Initially developed as part of the author's Bachelor Technical Report in Compute
 \input{compiler/backend.tex}
 
 \chapter{Specification and Notations}
+\label{ch:notations}
 \input{intro/notations.tex}
 
 \part{Conceptual Modeling}
@@ -229,24 +218,7 @@ Initially developed as part of the author's Bachelor Technical Report in Compute
 \section{Constraints}
 \input{constraints/abstract.tex}
 
-\part{Type Checking}
-
-\chapter{Types}
-
-\chapter{Primitive Types}
-\label{ch:primitive-types}
-\input{definitions/primitive_types.tex}
-
-\section{Example}
-\input{examples/primitive_types.tex}
-
-\section{Syntax}
-\input{syntax/primitive_types.tex}
-
-\chapter{Sequence Types}
-\label{ch:sequence-types}
-
-\part{Values and Expressions}
+\part{Expressions}
 
 \chapter{Expressions}
 \label{ch:expressions}
@@ -275,6 +247,23 @@ Initially developed as part of the author's Bachelor Technical Report in Compute
 
 \chapter{Query Expressions}
 \label{ch:queries}
+
+\part{Type Checking}
+
+\chapter{Types}
+
+\chapter{Primitive Types}
+\label{ch:primitive-types}
+\input{definitions/primitive_types.tex}
+
+\section{Example}
+\input{examples/primitive_types.tex}
+
+\section{Syntax}
+\input{syntax/primitive_types.tex}
+
+\chapter{Sequence Types}
+\label{ch:sequence-types}
 
 \part{Code Generation}
 

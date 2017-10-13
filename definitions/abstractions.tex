@@ -1,0 +1,20 @@
+An \emph{abstraction} in CML is a \emph{concept} (\ref{ch:concepts})
+that cannot create instances on its own,
+but instead serves as a \emph{generalization} (\ref{ch:generalization})
+for other \emph{concepts},
+which in turn can create their own instances.
+Thus, all instances of an \emph{abstraction}
+are first instances of its \emph{specializations}.
+
+In CML, an \emph{abstraction} may also define a \emph{derived property} (\ref{ch:properties})
+without providing an \emph{expression} (\ref{ch:expressions}) in its definition;
+such \emph{properties} are called \emph{abstract properties}.
+
+CML's support for \emph{abstractions} matches UML's \cite{uml},
+which allows the declaration of \emph{abstract classes}
+by setting the \emph{isAbstract} attribute of a \emph{Class} instance to \emph{true}.
+UML also allows the declaration of \emph{abstract attributes} and \emph{abstract operations}.
+
+The original version of the ER \cite{er} metamodel, however,
+as a consequence of lacking the \emph{generalization/specialization} relationship,
+has not considered the notion of \emph{abstract entities}.

@@ -1,6 +1,7 @@
 An \emph{expression} in CML is used to compute
-\emph{values} (\ref{ch:primitive-types}) and sequences (\ref{ch:sequence-types})
-that initialize or derive \emph{properties} (\ref{ch:properties}).
+\emph{values} (\ref{ch:primitive-types})
+and references to \emph{concept} instances (\ref{ch:concepts}).
+They are used to initialize or derive \emph{properties} (\ref{ch:properties}).
 On the UML \cite{uml} metamodel,
 it corresponds to the \emph{Expression} metaclass;
 in OCL \cite{ocl}, to \emph{OclExpressionCS}.
@@ -8,6 +9,5 @@ in OCL \cite{ocl}, to \emph{OclExpressionCS}.
 CML \emph{expressions} are designed to provide the same level of
 expressivity provided by OCL \emph{expressions},
 but the CML syntax varies from OCL's;
-especially for OCL's \emph{collection operations},
-which correspond to \emph{query expressions} (\ref{ch:queries}) in CML.
-
+sintactically, they differ especially on OCL's \emph{collection operations},
+which correspond to \emph{comprehensions} (\ref{ch:comprehensions}) in CML.

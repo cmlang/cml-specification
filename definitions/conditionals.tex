@@ -1,0 +1,27 @@
+In CML, \emph{conditional expressions} allow alternating between
+one or more \emph{expressions} (\ref{ch:expressions})
+based on some \emph{condition},
+which is an \emph{expression} of \emph{Boolean} type (\ref{ch:boolean}).
+The remaining operands of a \emph{conditional expression}
+-- the alternating \emph{expressions} --
+may be of any type (\ref{ch:types}),
+including the \emph{primitive types} (\ref{ch:primitive-types})
+and \emph{references} (\ref{ch:references}).
+
+The \emph{conditional expressions} are divided in three categories:
+
+\begin{itemize}
+\item unary: only evaluates a single \emph{expression}
+if the \emph{condition} evaluates to \verb!true!.
+\item binary: results in the evaluation of the first \emph{expression}
+if the \emph{condition} evaluates to \verb!true!;
+otherwise, it results in the evaluation of the second \emph{expression}.
+\item optional: the \emph{condition} is implicit;
+it results in the first \emph{expression} if it provides a value;
+else, it results in the second \emph{expression} if it provides a value;
+otherwise, it results in \emph{none}.
+\end{itemize}
+
+The resulting type of a \emph{conditional expression}
+is based on the type of its \emph{operands}.
+The cardinality is also based on the \emph{operands}.

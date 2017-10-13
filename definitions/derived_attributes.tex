@@ -3,8 +3,8 @@ that do not hold specific \emph{values},
 but instead provide a \emph{value} derived from an \emph{expression} (\ref{ch:expressions}).
 These are called \emph{derived attributes}.
 Unlike an \emph{expression} used to initialize a \emph{non-derived attribute},
-the \emph{expression} of a \emph{derived attribute} is evaluated
-every time the \emph{value} of an \emph{attribute} is fetched.
+the expression of a derived attribute is evaluated
+every time the attribute is queried.
 
 In the UML \cite{uml} metamodel,
 the \emph{Property} metaclass has a meta-attribute named \emph{isDerived},
@@ -16,13 +16,13 @@ The ER \cite{er} metamodel,
 in its original form,
 does not allow for the differentiation of \emph{derived attributes}
 as part of an \emph{entity set},
-but it is possible to define \emph{retrieval operations} whose 
+but it is possible to define \emph{retrieval operations} whose
 results would equal to \emph{values} of \emph{derived properties} in CML.
 It can be said, however, that ER,
 by defining an \emph{attribute} as a function from the \emph{entity set}
 to the \emph{value set},
 does not prescribe that all \emph{attributes} are memory-based,
-nor does it prevent the definition of an \emph{attribute} function 
+nor does it prevent the definition of an \emph{attribute} function
 as an \emph{expression}.
 
 The CML metamodel and its syntax, on the other hand,

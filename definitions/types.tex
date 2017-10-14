@@ -5,15 +5,15 @@ Additionally:
 
 \begin{itemize}
 \item the type of a \emph{property} must be compatible with the type of its \emph{expression};
-\item the type of the \emph{operands} must be compatible with its \emph{operator};
+\item the type of the \emph{operands} in an \emph{expression} must be compatible with its \emph{operator};
 \item the type of a \emph{property redefinition} must be compatible with
 the original \emph{property definition} in the \emph{generalization};
 \item and the type of the arguments in a \emph{invocation} must be compatible with the
 type of the declared parameters of the corresponding \emph{function}.
 \end{itemize}
 
-In order to verify the types during the model validation,
-the model elements that have must have an associated type
+In order to allow the compiler to verify the types during the model validation,
+the model elements that must have an associated type
 are all specializations of the \emph{TypedElement} metaclass,
 which has the abstract property \emph{type}.
 Each \emph{TypedElement} specialization must redefine the \emph{type} property

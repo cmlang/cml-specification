@@ -17,13 +17,12 @@ On the original ER paper,
 it is also said that \emph{values} in a \emph{value set}
 may be equivalent to \emph{values} in another \emph{value set}.
 In CML, also,
-\emph{literal expressions} of the \emph{Integer} type may be equivalent 
+\emph{literal expressions} of the \emph{Integer} type may be equivalent
 to \emph{literal expressions} of the \emph{Decimal},
 and so with other \emph{numeric types}.
-This allows \emph{expressions} of a \emph{primitive type}
+This allows \emph{expressions} (\ref{ch:expressions}) of a \emph{primitive type}
 to be promoted to \emph{expressions} of another \emph{primitive type}
-in order to allow \emph{type inference} of composite \emph{expressions},
-such as \emph{infix expressions} (\ref{ch:infix}).
+in order to allow \emph{type inference} of composite \emph{expressions}.
 
 In the UML \cite{uml} metamodel,
 there is a specific metaclass named \emph{PrimitiveType},
@@ -48,7 +47,7 @@ Integer & int & int & int32\_t & int & number  \\
 Decimal* & BigDecimal & decimal & decimal128 & Decimal & number \\
 \multicolumn{6}{p{13cm}}{\footnotesize{Arbitrary precision,
 fixed-point,
-or decimal floating-point, 
+or decimal floating-point,
 depending on the target language.}} \\
 \\
 \multicolumn{6}{p{13cm}}{*The specification of Decimal type varies by target programming language.
@@ -78,5 +77,3 @@ Double & double & double & double* & float & number & 64-bit IEEE 754 binary flo
 \caption{Additional Primitive Types in CML.}
 \label{tab:additional-primitive-types}
 \end{table}
-
-

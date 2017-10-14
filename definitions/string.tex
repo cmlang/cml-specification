@@ -1,0 +1,12 @@
+The \emph{String} type in CML represents a 16-bit Unicode character sequence,
+matching the same type in other programming languages,
+as described in table \ref{tab:core-primitive-types}.
+
+There is a specific \emph{literal expression syntax} (\ref{ch:literals})
+for \emph{String} values,
+which allows them to be inferred uniquely.
+\emph{Expressions} \emph{\ref{ch:expressions}} of the \emph{String}
+may be the operands of \emph{relational expressions} (\ref{ch:relational}).
+They may also be combined with the addition (\emph{+}) operator, for concatenation,
+and the mod (\verb|%|) operator, for interpolation (\ref{ch:arithmetic}),
+in which case the resulting \emph{expression} is inferred as of \emph{String} type.

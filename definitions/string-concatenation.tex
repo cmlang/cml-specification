@@ -1,15 +1,22 @@
-\emph{Expressions} (\ref{ch:expressions}) of the \emph{String} type (\ref{ch:string})
+\emph{Expressions} (\ref{ch:expressions}) of
+the \emph{primitive types} (\ref{ch:primitive-types}),
+such as the \emph{String} type (\ref{ch:string}),
 may be combined with the ampersand (\emph{\&}) operator
-for concatenation (\ref{ch:string-concatenation}).
-The resulting \emph{expression} is of \emph{String} type.
+for concatenation.
+The resulting \emph{expression} is always of \emph{String} type,
+regardless of the operand types.
 
 Only \emph{expressions} of \emph{primitive types} (\ref{ch:primitive-types})
 may be used as operands of a \emph{string concatenation} expression.
-In that case,
-they are evaluated and the resulting value is converted to a \emph{String} value,
-which is then concatenated like any other \emph{String} value.
+If the operand type is not \emph{String},
+then it is evaluated and the resulting value is converted to a \emph{String} value,
+which is then concatenated with the other \emph{String} values.
+
 It is possible that none of the operands are of \emph{String} type.
 All operands are converted to \emph{String} before concatenation.
+The conversion is dependent on the target programming language,
+but it is normally done using the standard methods,
+such as \emph{Objects.toString()} in Java, or \emph{str()} in Python.
 
 The associativity of the concatenation operator is from left to right,
 just like the \emph{arithmetic operators} (\ref{ch:arithmetic}).

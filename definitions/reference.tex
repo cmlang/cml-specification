@@ -4,3 +4,11 @@ whose type is declared or inferred as a concept A, holds a reference
 to an instance of concept A; not the actual instance.
 This allows other \emph{properties} or \emph{variables}
 to also reference the same instance of A.
+
+Models in CML do not need to keep track of the memory used
+to store the actual instances.
+CML expects the target programming language or technology
+to support some kind of reference management,
+such as a garbage collector in Java or automatic reference counting in Swift
+or still a database,
+but CML does not require any particular implementation.

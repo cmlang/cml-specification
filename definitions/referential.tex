@@ -3,4 +3,73 @@ which only accept as operands the \emph{expressions} (\ref{ch:expressions})
 resulting in references (\ref{ch:reference}).
 That excludes all \emph{primitive types} (\ref{ch:primitive-types}).
 All referential operators are infixed.
-There is no associativity between referential operators.
+There is no associativity between the referential operators.
+
+There are three groups of \emph{referential operators}:
+the \emph{referencial-equality operators} (table \ref{tab:referential-equality}),
+the \emph{type-checking operators} (table \ref{tab:type-checking})
+and the \emph{type-casting operators} (table \ref{tab:type-casting}).
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}
+{ L{1cm} L{3cm} L{4.5cm} l }
+\hline
+Oper. & Operation & Resulting Type & Example \\
+\hline
+\verb|===| & Referential Equality & Boolean & \verb|c1 === c2| \\
+\verb|!==| & Referencial Inequality & Boolean & \verb|c1 !== c2| \\
+\end{tabular}
+\caption{Referential-Equality Operators}
+\label{tab:referential-equality}
+\end{table}
+
+The \emph{referential equality operator} (\verb|is|)
+results in the \verb|true| value
+if both operands reference the same instance.
+The \emph{referential inequality operator} (\verb|is|)
+results in \verb|true| if the refecences do not point to the same instance.
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}
+{ L{1cm} L{3cm} L{4.5cm} l }
+\hline
+Oper. & Operation & Resulting Type & Example \\
+\hline
+\verb|is| & Type-Checking & Boolean & \verb|member is Task| \\
+\verb|isnt| & Negative Type-Checking  & Boolean & \verb|member isnt Task| \\
+\end{tabular}
+\caption{Type-Checking Operators}
+\label{tab:type-checking}
+\end{table}
+
+The \emph{type-checking operator} (\verb|is|)
+results in the \verb|true| value
+if the instance referenced by the first operand
+is of the type specified by the second operand,
+or it is an \emph{specialization} of such type.
+The \emph{nagative type-checking operator} (\verb|is|)
+results in \verb|true| if the type does not match.
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}
+{ L{1cm} L{3cm} L{4.5cm} l }
+\hline
+Oper. & Operation & Resulting Type & Example \\
+\hline
+\verb|as!| & Uncondicional Type-Casting & Type and cardinality of second operand. & \verb|members as! Task*| \\
+\verb|as?| & Condicional Type-Casting & Type of second operand,
+only optional (?) or sequential (*) cardinality & \verb|member as? Task?|
+\end{tabular}
+\caption{Type-Casting Operators}
+\label{tab:type-casting}
+\end{table}
+
+The \emph{unconditional type-casting operator} (\verb|as!|)
+may raise an exception at runtime
+if the actual type of the instance is not compatible with the expected type.
+The \emph{conditional type-casting operator} (\verb|as?|)
+automatically selects the compatible instances,
+never raising an expception at runtime.

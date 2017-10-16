@@ -1,14 +1,8 @@
-Any type (\ref{ch:types}) with cardinality zero-or-one
-is also an \emph{optional type}.
-It is declared optional
-by the question-mark (\verb|?|) suffix
-after the type declaration.
-
-The reverse is not true.
-For example,
-an \emph{expression} (\ref{ch:expressions})
-of an \emph{optional numeric type} (\ref{ch:numeric-types}),
-such as \verb|Integer?|,
-cannot be used with the \emph{relational operators} (\ref{ch:relational}) as-is.
-It must first be cast to \verb|Integer|
-before it can used in a \emph{relational expresssion}.
+A \emph{referential type} (\ref{ch:referential-types})
+with cardinality zero-or-one is called an \emph{optional type}.
+It is declared as optional by the question-mark (\verb|?|) suffix
+after the \emph{concept}'s name in a type declaration.
+The \emph{primitive types} (\ref{ch:primitive-types}),
+the \emph{tuple types} (\ref{ch:tuple-types})
+and the \emph{function types} (\ref{ch:function-types})
+cannot be declared as \emph{optional}.

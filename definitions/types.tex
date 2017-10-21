@@ -26,20 +26,38 @@ redefine the \emph{type} property in order to be able to infer its type.
 All types are specializations of the metaclass \emph{Type},
 which represents the \emph{type declaration} or \emph{type inference}
 of a \emph{TypedElement}.
-Among other properties,
-\emph{Type} defines the \emph{min\_cardinality} and the \emph{max\_cardinality}
-allowed on a \emph{TypedElement}.
 
-The two direct specializations of \emph{Type} are the following metaclasses:
+Among other properties,
+\emph{Type} defines the \emph{min\_cardinality} and the \emph{max \_cardinality}
+allowed on a \emph{TypedElement}.
+CML only allows specific cardinality options:
+
+\begin{itemize}
+  \item A \emph{type} with the min/max cardinality equal to one
+  is called ``required''.
+  It is declared as required when no suffix is provided in a \emph{type declaration}.
+  \item A \emph{type} with cardinality zero-or-one is called ``optional''.
+  It is declared as optional by the question-mark (\verb|?|) suffix
+  in a \emph{type declaration}.
+  \item A \emph{type} with cardinality zero-or-more
+  is called ``sequential''.
+  It is declared as sequential by the asterisk-mark (\verb|*|) suffix
+  in a \emph{type declaration}.
+\end{itemize}
+
+The direct specializations of \emph{Type} are the following metaclasses:
 
 \begin{itemize}
   \item \emph{ValueType}: for \emph{types} that contain \emph{values},
   such as the \emph{primitive types} (\ref{ch:primitive-types}).
-  \item \emph{ReferenceType}: for \emph{types} that contains \emph{references}
+  \item \emph{ReferenceType}: for \emph{types} that contain \emph{references}
   to the actual \emph{instances},
   such as the \emph{concept types} (\ref{ch:concept-types}).
+  \item \emph{TupleType}: for types that declare \emph{tuples} used
+  as an \emph{argument} or a \emph{result} of a \emph{function} (\ref{ch:built-in-functions}).
+  \item \emph{FunctionType}: used in \emph{functions} to declare that
+  an \emph{argument} accepts a \emph{lambda expression} (\ref{ch:lambdas}).
 \end{itemize}
 
-The specializations of
-the \emph{ValueType} and \emph{ReferenceType} metaclasses
+The instances of the \emph{Type} specializations listed above
 are presented in the following chapters.

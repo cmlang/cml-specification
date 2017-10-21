@@ -1,23 +1,8 @@
-The table \ref{tab:type-checking} presents the \emph{type-checking operators}.
-
-\begin{table}[htbp]
-\centering
-\begin{tabular}
-{ L{1cm} L{3cm} L{4.5cm} l }
-\hline
-Oper. & Operation & Resulting Type & Example \\
-\hline
-\verb|is| & Type-Checking & Boolean & \verb|member is Task| \\
-\verb|isnt| & Negative Type-Checking  & Boolean & \verb|member isnt Task| \\
-\end{tabular}
-\caption{Type-Checking Operators}
-\label{tab:type-checking}
-\end{table}
 
 The \emph{type-checking operator} (\verb|is|)
 results in the \verb|true| value
 if the instance referenced by the first operand
-is of the type specified by the second operand,
+is of the \emph{type} (\ref{ch:types}) specified by the second operand,
 or it is an \emph{specialization} of such type.
 The \emph{nagative type-checking operator} (\verb|is|)
-results in \verb|true| if the type does not match.
+results in \verb|true| if the \emph{type} does not match.

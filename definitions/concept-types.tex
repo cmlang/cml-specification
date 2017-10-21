@@ -1,9 +1,12 @@
-In CML, all declared \emph{concepts} (\ref{ch:concepts}) are \emph{reference types}.
-That means a \emph{property} (\ref{ch:properties}) or any \emph{variable},
-whose type is declared or inferred as a concept A, holds a reference
-to an instance of concept A; not the actual instance.
-This allows other \emph{properties} or \emph{variables}
-to also reference to the same instance of A.
+In CML, all \emph{type declarations}
+referring to the name of a \emph{concept} (\ref{ch:concepts})
+are instances of the \emph{ReferenceType} metaclass (\ref{ch:types});
+in short, the \emph{type declaration} declares a \emph{reference type}.
+A \emph{property} (\ref{ch:properties}) of a concept A,
+whose type is declared or inferred to be of a concept B,
+holds a reference to an instance of concept B; not the actual instance.
+This allows the \emph{properties} of a concept C
+to also reference the same instance of B.
 
 Models in CML do not to keep track of the memory used
 to store the actual instances.
@@ -14,7 +17,7 @@ or still a database.
 CML does not require any particular implementation.
 
 The \emph{path expressions} (\ref{ch:paths})
-whose result is of a \emph{concept type} may be used
+whose result is of a \emph{reference type} may be used
 in \emph{referential expressions} (\ref{ch:referential}),
 \emph{type-checking expressions} (\ref{tab:type-checking}),
 \emph{type-casting expressions} (\ref{tab:type-casting})

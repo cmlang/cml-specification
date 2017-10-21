@@ -1,0 +1,25 @@
+Table \ref{tab:relational-expr-constraints} shows
+the precende order of the \emph{relational operators} in CML.
+
+\begin{table}[H]
+\centering
+\begin{tabular}
+{ l l }
+\hline
+Operators & Operation \\
+\hline
+\verb!<!, \verb!<=!, \verb!>!, \verb!>=! & Ordering \\
+\verb!==!, \verb|!=| & Equality, Unequality
+\end{tabular}
+\caption{Relational Operators}
+\label{tab:relational-expr-constraints}
+\end{table}
+
+All \emph{relational operators} are infixed.
+There is no associativity between them.
+
+A validation error should reported by the compiler if any of the \emph{operands}
+of a \emph{relational expression} is inferred to be of a \emph{type}
+other than \emph{String} (\ref{ch:string}),
+\emph{numeric} (\ref{ch:numeric-types})
+or \emph{floating-point} (\ref{ch:floating-point}).

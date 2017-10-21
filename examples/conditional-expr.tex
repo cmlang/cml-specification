@@ -1,0 +1,23 @@
+Table \ref{tab:conditional-expr-examples} displays examples of
+\emph{conditional expressions} in CML.
+
+\begin{table}[H]
+\centering
+\begin{tabular}
+{ l l }
+\hline
+Expression & Example \\
+\hline
+\\
+unary if & \verb|10 if i > 2| \\
+unary unless & \verb|10 unless i <= 2| \\
+\\
+binary if-then-else & \verb|if i > 2 then 10 else 5| \\
+binary if-else & \verb|10 if i > 2 else 5| \\
+\\
+conditional or & \verb|item.book or? item.accessory| \\
+conditional xor & \verb|item.book xor? item.accessory| \\
+\end{tabular}
+\caption{Conditional Expressions}
+\label{tab:conditional-expr-examples}
+\end{table}

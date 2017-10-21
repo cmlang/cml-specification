@@ -1,20 +1,45 @@
 CML is a statically-typed language.
 All its \emph{properties} (\ref{ch:properties})
-and \emph{expressions} (\ref{ch:expressions}) must have all their \emph{types} declared or inferred at compilation time.
+and \emph{expressions} (\ref{ch:expressions})
+must have a \emph{type} declared or inferred at compilation time.
 Additionally:
 
 \begin{itemize}
-\item the type of a \emph{property} must be compatible with the type of its \emph{expression};
-\item the type of the \emph{operands} in an \emph{expression} must be compatible with its \emph{operator};
+\item the type of a \emph{property}
+must be compatible with the type of its \emph{expression};
+\item the type of the \emph{operands} in an \emph{expression}
+must be compatible with its \emph{operator};
 \item the type of a \emph{property redefinition} must be compatible with
 the original \emph{property definition} in the \emph{generalization};
-\item and the type of the arguments in a \emph{invocation} must be compatible with the
-type of the declared parameters of the corresponding \emph{function}.
+\item and the type of the arguments in a \emph{invocation}
+must be compatible with the type of the declared parameters
+of the corresponding \emph{function}.
 \end{itemize}
 
 In order to allow the compiler to verify the types during the model validation,
 the model elements that must have an associated type
 are all specializations of the \emph{TypedElement} metaclass,
 which has the abstract property \emph{type}.
-Each \emph{TypedElement} specialization must redefine the \emph{type} property
-in order to be able to infer its type.
+Each \emph{TypedElement} specialization must
+redefine the \emph{type} property in order to be able to infer its type.
+
+All types are specializations of the metaclass \emph{Type},
+which represents the \emph{type declaration} or \emph{type inference}
+of a \emph{TypedElement}.
+Among other properties,
+\emph{Type} defines the \emph{min\_cardinality} and the \emph{max\_cardinality}
+allowed on a \emph{TypedElement}.
+
+The two direct specializations of \emph{Type} are the following metaclasses:
+
+\begin{itemize}
+  \item \emph{ValueType}: for \emph{types} that contain \emph{values},
+  such as the \emph{primitive types} (\ref{ch:primitive-types}).
+  \item \emph{ReferenceType}: for \emph{types} that contains \emph{references}
+  to the actual \emph{instances},
+  such as the \emph{concept types} (\ref{ch:concept-types}).
+\end{itemize}
+
+The specializations of
+the \emph{ValueType} and \emph{ReferenceType} metaclasses
+are presented in the following chapters.

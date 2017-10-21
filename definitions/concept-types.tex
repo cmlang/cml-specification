@@ -5,14 +5,17 @@ to an instance of concept A; not the actual instance.
 This allows other \emph{properties} or \emph{variables}
 to also reference to the same instance of A.
 
-Models in CML do not need to keep track of the memory used
+Models in CML do not to keep track of the memory used
 to store the actual instances.
 CML expects the target programming language or technology
 to support some kind of reference management,
-such as a garbage collector in Java or automatic reference counting in Swift
-or still a database,
-but CML does not require any particular implementation.
+such as a garbage collector in Java or automatic reference counting in Swift,
+or still a database.
+CML does not require any particular implementation.
 
 The \emph{path expressions} (\ref{ch:paths})
-whose result is of a \emph{reference type} may be used
-in \emph{referential expressions} (\ref{ch:referential}).
+whose result is of a \emph{concept type} may be used
+in \emph{referential expressions} (\ref{ch:referential}),
+\emph{type-checking expressions} (\ref{tab:type-checking}),
+\emph{type-casting expressions} (\ref{tab:type-casting})
+and in \emph{invocations} (\ref{ch:invocations}).

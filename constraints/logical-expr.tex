@@ -1,0 +1,28 @@
+Table \ref{tab:logical-expr-constraints} shows
+the precende order of the \emph{logical expressions} in CML.
+
+\begin{table}[H]
+\centering
+\begin{tabular}
+{ l l }
+\hline
+Operator & Operation \\
+\hline
+\verb!not! & Negation \\
+\verb!and! & Conjunction \\
+\verb!or! & Disjunction \\
+\verb!xor! & Exclusive Disjunction \\
+\verb!implies! & Implication \\
+\end{tabular}
+\caption{Logical Operators in Precedence Order}
+\label{tab:logical-expr-constraints}
+\end{table}
+
+All logical operators are infixed,
+except for the negation operator (\verb|not|),
+which is prefixed and unary.
+The associativity of the binary operators is always from left to right.
+
+A validation error should reported by the compiler if any of the \emph{operands}
+of a \emph{logical expression} is inferred to be of a \emph{type}
+other than \emph{Boolean}.

@@ -14,6 +14,17 @@ Operator & Operation & Associativity \\
 \multicolumn{3}{l}{\footnotesize{$^*$The addition/subtraction operators
 may also be prefixed in the unary form.}}
 \end{tabular}
-\caption{Aricthmetic Operators in Precedence Order}
+\caption{Arithmetic Operators in Precedence Order}
 \label{tab:arithmetic-constraints}
 \end{table}
+
+All \emph{arithmetic operators} are infixed,
+but the addition (\verb|+|) and subtraction (\verb|-|) operators may also be prefixed when used in the unary form.
+The associativity of the arithmetic operators is from left to right,
+except for the exponentiation operator (\verb|^|),
+where it is from right to left.
+
+A validation error should reported by the compiler if any of the \emph{operands}
+of an \emph{arithmetic expression} is inferred to be of a \emph{type}
+other than \emph{numeric} (\ref{ch:numeric-types})
+or \emph{floating-point} (\ref{ch:floating-point}).

@@ -5,12 +5,12 @@
     d: Integer = 123;
 
     -- Prefix Expression:
-    minus_sign = -2;
+    prefixed_subtraction = -2;
 
     -- Infix Expressions:
-    addition = 1 + 2;
-    equality = 3 == 3;
-    boolean_expr = q and p;
+    arithmetic = 1 + 2;
+    relational = 3 == 3;
+    logical = q and p;
 
     -- Conditional Expression:
     if_then_else = if a > 0 then a else b;
@@ -18,6 +18,6 @@
     -- Path Expression:
     path = somePath.bar;
 
-    -- Query Expression:
-    select_query = items | select: name == "this";
+    -- Comprehension Expression:
+    selection = items | select: name == "this";
 }

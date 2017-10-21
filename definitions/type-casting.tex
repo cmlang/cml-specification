@@ -1,0 +1,28 @@
+The table \ref{tab:type-casting} presents the \emph{type-casting operators}.
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}
+{ L{1cm} L{3cm} L{4.5cm} l }
+\hline
+Oper. & Operation & Resulting Type & Example \\
+\hline
+\verb|as| & Safe Type-Casting & Type and cardinality of second operand. \verb|members as Task*| \\
+\verb|as!| & Forced Type-Casting & Type and cardinality of second operand. & \verb|members as! Task| \\
+\verb|as?| & Condicional Type-Casting & Type of second operand,
+only optional (?) or sequential (*) cardinality & \verb|member as? Task?|
+\end{tabular}
+\caption{Type-Casting Operators}
+\label{tab:type-casting}
+\end{table}
+
+The \emph{safe type-casting operator} (\verb|as|)
+may only be applied when the casting is guaranteed to work
+and the resulting expression has the same cardinality
+as the original one.
+The \emph{forced type-casting operator} (\verb|as!|)
+may raise an exception at runtime
+if the actual type of the instance is not compatible with the expected type.
+The \emph{conditional type-casting operator} (\verb|as?|)
+automatically selects the compatible instances,
+never raising an expception at runtime.

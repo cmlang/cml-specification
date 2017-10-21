@@ -1,6 +1,7 @@
 An \emph{expression} in CML is used to compute
 \emph{values} (\ref{ch:primitive-types})
-and references to \emph{concept} instances (\ref{ch:concepts}).
+or \emph{references} (\ref{ch:concept-types})
+to \emph{concept} instances (\ref{ch:concepts}).
 They are used to initialize or derive \emph{properties} (\ref{ch:properties}).
 On the UML \cite{uml} metamodel,
 it corresponds to the \emph{Expression} metaclass;
@@ -12,12 +13,22 @@ but the CML syntax varies from OCL's;
 sintactically, they differ especially on OCL's \emph{collection operations},
 which correspond to \emph{comprehensions} (\ref{ch:comprehensions}) in CML.
 
-CML allows the use of \emph{operators} in \emph{expressions} (\ref{ch:expressions}).
+CML allows the use of \emph{operators} in \emph{expressions}.
 The categories of \emph{operators} in CML are:
 \emph{arithmetic operators} (\ref{ch:arithmetic}),
 \emph{relational operators} (\ref{ch:relational}),
-\emph{logical operators} (\ref{ch:logical})
-and \emph{referential operators} (\ref{ch:referential}).
+\emph{logical operators} (\ref{ch:logical}),
+\emph{referential operators} (\ref{ch:referential}),
+\emph{type-checking operators} (\ref{ch:type-checking}) and
+\emph{type-casting operators} (\ref{ch:type-casting}).
 Most of the \emph{operators} in CML are infixed,
 with just three of them (\verb|not|, \verb|+| and \verb|-|) being used as a prefix.
 The use of parenthesis is allowed to estabilish precedence.
+
+Besides the \emph{operators} listed above,
+CML also offers the following \emph{expressions}:
+\emph{paths} (\ref{ch:paths}),
+\emph{invocations} (\ref{ch:invocations}),
+\emph{lambdas} (\ref{ch:lambdas})
+and \emph{comprehensions} (\ref{ch:comprehensions}).
+They are all presented in the following chapters.

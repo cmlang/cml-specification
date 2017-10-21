@@ -1,0 +1,23 @@
+Table \ref{tab:literal-expr-syntax} displays the syntax of \emph{literal expressions}
+in CML.
+
+\begin{table}[H]
+\centering
+\begin{tabular}
+{ l l }
+\hline
+Type & Syntax \\
+\hline
+String & \verb!'"' ('\\'[btnr"\\] | . )*? '"'! \\
+Boolean & \verb!'true' | 'false'! \\
+Integer & \verb!('0'..'9')+! \\
+Decimal & \verb!('0'..'9')* '.' ('0'..'9')+! \\
+Byte & \verb!('0'..'9')+ 'b'! \\
+Short & \verb!('0'..'9')+ 's'! \\
+Long & \verb!('0'..'9')+ 'l'! \\
+Float & \verb!('0'..'9')* '.' ('0'..'9')+ 'f'! \\
+Double & \verb!('0'..'9')* '.' ('0'..'9')+ 'd'!
+\end{tabular}
+\caption{Literal Expressions for Primitive Types}
+\label{tab:literal-expr-syntax}
+\end{table}

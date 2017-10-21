@@ -9,11 +9,10 @@ Table \ref{tab:conditional-expr-examples} displays examples of
 Expression & Example \\
 \hline
 \\
-unary if & \verb|10 if i > 2| \\
-unary unless & \verb|10 unless i <= 2| \\
+unary given & \verb|item.book given item.qty > 2| \\
+unary unless & \verb|item.book unless item.qty <= 2| \\
 \\
-binary if-then-else & \verb|if i > 2 then 10 else 5| \\
-binary if-else & \verb|10 if i > 2 else 5| \\
+binary if-then-else & \verb|if item.qty > 10 then 0.9 else 1.0| \\
 \\
 conditional or & \verb|item.book or? item.accessory| \\
 conditional xor & \verb|item.book xor? item.accessory| \\

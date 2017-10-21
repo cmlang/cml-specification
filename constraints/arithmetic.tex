@@ -1,0 +1,19 @@
+Table \ref{tab:arithmetic-constraints} shows the precende order and associativity of \emph{arithmetic expressions}
+in CML.
+
+\begin{table}[H]
+\centering
+\begin{tabular}
+{ l l l }
+\hline
+Operator & Operation & Associativity \\
+\hline
+\verb!^! & Exponentiation & Right \\
+\verb!*!, \verb!/!, \verb!%! & Multiplication, Division, Modulo & Left  \\
+\verb!+!, \verb!-!$^*$ & Addition, Subtraction & Left \\
+\multicolumn{3}{l}{\footnotesize{$^*$The addition/subtraction operators
+may also be prefixed in the unary form.}}
+\end{tabular}
+\caption{Aricthmetic Operators in Precedence Order}
+\label{tab:arithmetic-constraints}
+\end{table}

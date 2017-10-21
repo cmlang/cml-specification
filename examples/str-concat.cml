@@ -1,0 +1,12 @@
+
+@concept Address
+{
+  number: integer;
+  street: string;
+  city: string;
+  state: string;
+  zip: string;
+
+  /display = number & " " & street & "\n" &
+             city & ", " & state & " " & zip;
+}

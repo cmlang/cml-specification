@@ -1,7 +1,25 @@
-@concept Paths
+concept BookStore
 {
-    self_path = self;
-    single_var_path = foo;
-    path1 = somePath.bar;
-    path2 = somePath.oneMorePath.etc;
+    orders: Order*;
+
+    /ordered_books = orders.items.book;
+}
+
+concept Order
+{
+    items: Item*;
+}
+
+concept Item
+{
+    book: Book;
+    qty: integer;
+    /description = book.title;
+    /amount = qty * price;
+}
+
+concept Book
+{
+    title: string;
+    price: decimal;
 }

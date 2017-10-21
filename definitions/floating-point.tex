@@ -1,19 +1,20 @@
 The \emph{floating-point types} in CML are \emph{Float} and \emph{Double}
-for single-precision (32-bit) and double-precision (64-bit), respecitvely.
+for single-precision (32-bit) and double-precision (64-bit), respectively.
 They belong to the group of \emph{primitive types} (\ref{ch:primitive-types}),
 which are shown in tables \ref{tab:core-primitive-types} and \ref{tab:additional-primitive-types}.
 
-There is a specific \emph{literal expression syntax} (\ref{ch:literals})
-for each \emph{floating-point type},
+Each \emph{floating-point type}
+has a specific \emph{literal expression syntax} (\ref{ch:literals}),
 which allows them to be inferred uniquely.
 \emph{Literal expressions} of the \emph{Float} type may be equivalent
 to \emph{literal expressions} within the same range of the \emph{Double} type.
 This allows type inference of \emph{arithmetic expressions} (\ref{ch:arithmetic})
 and \emph{relational expressions} (\ref{ch:relational}).
-However,
-in order to prevent data/precision loss,
-it is not allowed the coercion of a value of a \emph{numeric type}
+
+In order to prevent data/precision loss,
+it is disallowed the coercion of a value of a \emph{numeric type}
 (\ref{ch:numeric-types}) to a value of a \emph{floating-point type},
 and vice-versa.
-That means it is not possible to combine \emph{expressions} (\ref{ch:expressions})
-of \emph{floating-point} and \emph{numeric} types.
+That means it is only possible to combine \emph{expressions} (\ref{ch:expressions})
+of \emph{floating-point} and \emph{numeric} types
+with explicit conversion.

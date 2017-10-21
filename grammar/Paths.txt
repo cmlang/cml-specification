@@ -1,3 +1,0 @@
-
-pathExpression returns [Path path]:
-    NAME ('.' NAME)*;

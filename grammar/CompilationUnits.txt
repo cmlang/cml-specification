@@ -2,6 +2,10 @@
 compilationUnit:
     declarations*;
 
-declarations:
-    moduleDeclaration | conceptDeclaration | associationDeclaration | taskDeclaration;
+declarations
+    : moduleDeclaration
+    | conceptDeclaration
+    | associationDeclaration
+    | taskDeclaration
+    | templateDeclaration;
 

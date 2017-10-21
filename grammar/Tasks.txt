@@ -1,8 +1,8 @@
 
 taskDeclaration returns [Task task]:
-    'task' NAME
+    TASK NAME
     constructorDeclaration?
     (';' | propertyList);
 
-constructorDeclaration: 'by' NAME;
+constructorDeclaration: ':' NAME;
 

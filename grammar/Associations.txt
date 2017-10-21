@@ -1,11 +1,11 @@
 
 associationDeclaration
     returns [Association association]:
-    'association' NAME
+    ASSOCIATION NAME
     '{' (associationEndDeclaration ';')* '}';
 
 associationEndDeclaration
-    returns [AssociationEnd associationEnd]:
+    returns [Association association]:
     conceptName=NAME '.' propertyName=NAME
     (':' typeDeclaration)?;
 

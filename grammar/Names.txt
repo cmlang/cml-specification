@@ -1,62 +1,75 @@
 
-// All keywords must be declared before NAME.
+// All reserved words must be declared before NAME.
 // Otherwise, they are recognized as a NAME instead.
 
-FOR: 'for';
-IN: 'in';
+FOR:
+    'for';
 
-SELECT: 'select';
-REJECT: 'reject';
+IN:
+    'in';
 
-YIELD: 'yield';
-RECURSE: 'recurse';
+ASB:
+    'as!';
 
-INCLUDES: 'includes';
-EXCLUDES: 'excludes';
+ASQ:
+    'as?';
 
-EVERY: 'every';
-EXISTS: 'exists';
+IS:
+    'is';
 
-FROM: 'from';
-REDUCE: 'reduce';
+ISNT:
+    'isnt';
 
-TAKE: 'take';
-DROP: 'drop';
+IF:
+    'if';
 
-FIRST: 'first';
-LAST: 'last';
+THEN:
+    'then';
 
-COUNT: 'count';
-SUM: 'sum';
-AVERAGE: 'average';
-MAX: 'max';
-MIN: 'min';
-REVERSE: 'reverse';
+ELSE:
+    'else';
 
-UNIQUE: 'unique';
-WHILE: 'while';
+BOOLEAN:
+    'true' | 'false';
 
+AND:
+    'and';
 
-IF: 'if';
+OR:
+    'or';
 
-THEN: 'then';
+XOR:
+    'xor';
 
-ELSE: 'else';
+IMPLIES:
+    'implies';
 
-BOOLEAN: 'true' | 'false';
+NOT:
+    'not';
 
-AND: 'and';
+TEMPLATE:
+    '@template';
 
-OR: 'or';
+FUNCTION:
+    '@function';
 
-XOR: 'xor';
+ABSTRACTION:
+    '@abstraction';
 
-IMPLIES: 'implies';
+CONCEPT:
+    '@concept';
 
-NOT: 'not';
+TASK:
+    '@task';
 
-ABSTRACT:
-    'abstract';
+ASSOCIATION:
+    '@association';
+
+MODULE:
+    '@module';
+
+IMPORT:
+    '@import';
 
 NAME:
     ('A'..'Z' | 'a'..'z')

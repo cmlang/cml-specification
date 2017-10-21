@@ -1,6 +1,6 @@
 
-conceptDeclaration returns [Concept concept]:
-    ABSTRACT? 'concept' NAME
+conceptDeclaration returns [TempConcept concept]:
+    (ABSTRACTION | CONCEPT) NAME
     (':' generalizations)?
     (';' | propertyList);
 

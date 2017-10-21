@@ -1,0 +1,10 @@
+@concept Order
+{
+  items: Item*;
+  total = sum(items.amount);
+}
+
+@concept Item
+{
+  amount: decimal;
+}

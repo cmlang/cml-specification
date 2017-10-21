@@ -1,0 +1,11 @@
+@concept BookStore
+{
+    orders: Order*;
+
+    /premium_orders = select(orders, { total > 1000.00 });
+}
+
+@concept Order
+{
+    total: decimal;
+}

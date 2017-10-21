@@ -1,16 +1,16 @@
-concept BookStore
+@concept BookStore
 {
     orders: Order*;
 
     /ordered_books = orders.items.book;
 }
 
-concept Order
+@concept Order
 {
     items: Item*;
 }
 
-concept Item
+@concept Item
 {
     book: Book;
     qty: integer;
@@ -18,7 +18,7 @@ concept Item
     /amount = qty * price;
 }
 
-concept Book
+@concept Book
 {
     title: string;
     price: decimal;

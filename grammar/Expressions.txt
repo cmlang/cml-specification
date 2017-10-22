@@ -57,7 +57,8 @@ invocationExpression returns [Invocation invocation]:
   NAME '(' expression (',' expression)* ')' lambdaExpression?;
 
 comprehensionExpression returns [Comprehension comprehension]:
-  (pathExpression | FOR enumeratorDeclaration (',' enumeratorDeclaration)*)
+  (pathExpression |
+   FOR enumeratorDeclaration (',' enumeratorDeclaration)*)
   queryStatement+;
 
 enumeratorDeclaration returns [Enumerator enumerator]:

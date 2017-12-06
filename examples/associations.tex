@@ -4,7 +4,7 @@ which may optionally refer to an instance of \textbf{Employee},
 meaning that a \textbf{driver} may or may not be assigned to a single \textbf{Vehicle}.
 The concept \textbf{Vehicle} also has the property \textbf{owner},
 which always refers to an instance of \textbf{Organization},
-meaning that an \textbf{owner} must always be assigned to each instance of \textbf{Vehicle}. 
+meaning that an \textbf{owner} must always be assigned to each instance of \textbf{Vehicle}.
 Similarly,
 the concept \textbf{Employee} has the property \textbf{employer},
 which must always be assigned to an instance of \textbf{Organization}.
@@ -22,7 +22,7 @@ the slot \textbf{employees} of the \textbf{Organization} instance.
 However,
 since the \emph{type} of \textbf{employees}
 in the concept \textbf{Organization}
-is a sequence (\ref{ch:sequence-types}) of \textbf{Employee} instances,
+is a sequence of \textbf{Employee} instances,
 the reference to the instance of \textbf{Employee} will actually be appended to the sequence
 being held by the slot \textbf{employees} of the concept \textbf{Organization},
 and maintained along with the other \textbf{Employee} instances already found in the sequence.
@@ -31,7 +31,7 @@ Thus, the association \textbf{Employment} actually characterizes a \emph{bidirec
 The association \textbf{VehicleOwnership} is another example of a \emph{bidirectional association};
 in this case,
 between \textbf{Vehicle}'s \textbf{owner} property and \textbf{Organization}'s \textbf{fleet} property.
-It can be noticed, though, 
+It can be noticed, though,
 in this second \emph{bidirectional association},
 that the \emph{types} of the \emph{properties} are declared along with their names;
 such a \emph{type} declaration,

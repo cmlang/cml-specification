@@ -7,7 +7,7 @@ of the tables \ref{tab:core-primitive-types} and \ref{tab:additional-primitive-t
 Optionally, cardinality may also be specified
 for a \emph{primitive type}.
 The `*' cardinality suffix allows zero or more values to be stored
-in a property as a collection type (\ref{sec:collection-types}).
+in a property as a sequence type.
 The `?' cardinality suffix allows a single value to be stored, or none.
 If no cardinality is specified,
 a value must be assigned to the \emph{attribute}
@@ -15,12 +15,12 @@ when its \emph{concept} is instantiated.
 
 \begin{figure}
 \verbatimfont{\small}
-\lstinputlisting[language=antlr]{grammar/Types.txt}
+\lstinputlisting[language=antlr_tiny]{grammar/Types.txt}
 \caption{Type Declaration Syntax}
 \label{fig:stx:type}
 \end{figure}
 
-Figure \ref{fig:meta:property} presents the \emph{Type} metaclass
+Figure \ref{fig:meta:association} presents the \emph{Type} metaclass
 in an EMOF \cite{mof} class diagram of the CML metamodel,
 and figure \ref{fig:ast:type} specifies
 the transformation

@@ -38,6 +38,14 @@
   stringstyle=\color{fielddrab},
   morekeywords={,returns,}
 }
+\lstdefinelanguage{antlr_tiny}
+{
+  basicstyle=\ttfamily\tiny,
+  identifierstyle=\color{dark_blue},
+  morestring=[b]",
+  stringstyle=\color{fielddrab},
+  morekeywords={,returns,}
+}
 \lstdefinelanguage{lsl}
 {
   identifierstyle=\color{dark_blue},
@@ -454,33 +462,35 @@ Initially developed as part of the author's Bachelor Technical Report in Compute
     \section{Syntax}
     \input{syntax/primitive_types.tex}
 
-  \chapter{Boolean Type}
-  \label{ch:boolean}
-  \input{definitions/boolean.tex}
+    \section{Boolean Type}
+    \label{ch:boolean}
+    \input{definitions/boolean.tex}
 
-  \chapter{Numeric Types}
-  \label{ch:numeric-types}
-  \input{definitions/numeric.tex}
+    \section{Numeric Types}
+    \label{ch:numeric-types}
+    \input{definitions/numeric.tex}
 
-  \chapter{Floating-Point Types}
-  \label{ch:floating-point}
-  \input{definitions/floating-point.tex}
+    \section{Floating-Point Types}
+    \label{ch:floating-point}
+    \input{definitions/floating-point.tex}
 
-  \chapter{String Type}
-  \label{ch:string}
-  \input{definitions/string.tex}
+    \section{String Type}
+    \label{ch:string}
+    \input{definitions/string.tex}
 
-  \chapter{Reference Types}
-  \label{ch:concept-types}
-  \input{definitions/concept-types.tex}
+  \chapter{Other Types}
 
-  \chapter{Tuple Types}
-  \label{ch:tuple-types}
-  \input{definitions/tuple-types.tex}
+    \section{Reference Types}
+    \label{ch:concept-types}
+    \input{definitions/concept-types.tex}
 
-  \chapter{Function Types}
-  \label{ch:function-types}
-  \input{definitions/function-types.tex}
+    \section{Tuple Types}
+    \label{ch:tuple-types}
+    \input{definitions/tuple-types.tex}
+
+    \section{Function Types}
+    \label{ch:function-types}
+    \input{definitions/function-types.tex}
 
 \part{Code Generation}
 

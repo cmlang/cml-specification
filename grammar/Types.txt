@@ -9,7 +9,8 @@ cardinality:
   ('?' | '*');
 
 tupleTypeDeclaration returns [TupleType type]:
-  '(' ( tupleTypeElementDeclaration (',' tupleTypeElementDeclaration)* )? ')' cardinality?;
+  '(' ( tupleTypeElementDeclaration (',' tupleTypeElementDeclaration)* )? ')'
+  cardinality?;
 
 tupleTypeElementDeclaration returns [TupleTypeElement element]:
   (name=NAME ':')? type=typeDeclaration;
@@ -19,7 +20,3 @@ typeParameterList returns [Seq<TypeParameter> params]:
 
 typeParameter returns [TypeParameter param]:
   name=NAME;
-
-
-
-

@@ -230,6 +230,24 @@ Initially developed as part of the author's Bachelor Technical Report in Compute
     \section{Model Validation}
     \input{validation/abstract.tex}
 
+  \chapter{Functions}
+
+      \section{Built-In Functions}
+      \label{ch:built-in-functions}
+      \input{definitions/built-in-functions.tex}
+
+      \section{Template Functions}
+      \label{ch:template-functions}
+      \input{definitions/template-functions.tex}
+
+      \section{Declared Functions}
+      \label{ch:declared-functions}
+      \input{definitions/declared-functions.tex}
+
+      \section{Comprehension Functions}
+      \label{ch:comprehension-functions}
+      \input{definitions/comprehension-functions.tex}
+
 \part{Expressions}
 
   \chapter{Expressions}
@@ -248,12 +266,6 @@ Initially developed as part of the author's Bachelor Technical Report in Compute
     \section{Model Synthesis}
     \input{synthesis/expressions.tex}
 
-    \section{Model Validation}
-
-    \section{Type Inference / Conformance}
-
-    \section{Model Translation}
-
   \chapter{Literal Expressions}
   \label{ch:literals}
   \input{definitions/literals.tex}
@@ -266,14 +278,6 @@ Initially developed as part of the author's Bachelor Technical Report in Compute
 
     \section{Metamodel}
     \input{metamodel/literals.tex}
-
-    \section{Model Synthesis}
-
-    \section{Model Validation}
-
-    \section{Type Inference / Conformance}
-
-    \section{Model Translation}
 
   \chapter{Arithmetic Expressions}
   \label{ch:arithmetic}
@@ -288,14 +292,8 @@ Initially developed as part of the author's Bachelor Technical Report in Compute
     \section{Metamodel}
     \input{metamodel/arithmetic.tex}
 
-    \section{Model Synthesis}
-
     \section{Model Validation}
     \input{validation/arithmetic.tex}
-
-    \section{Type Inference / Conformance}
-
-    \section{Model Translation}
 
   \chapter{Logical Expressions}
   \label{ch:logical}
@@ -310,14 +308,8 @@ Initially developed as part of the author's Bachelor Technical Report in Compute
     \section{Metamodel}
     \input{metamodel/logical-expr.tex}
 
-    \section{Model Synthesis}
-
     \section{Model Validation}
     \input{validation/logical-expr.tex}
-
-    \section{Type Inference / Conformance}
-
-    \section{Model Translation}
 
   \chapter{Relational Expressions}
   \label{ch:relational}
@@ -332,14 +324,8 @@ Initially developed as part of the author's Bachelor Technical Report in Compute
     \section{Metamodel}
     \input{metamodel/relational-expr.tex}
 
-    \section{Model Synthesis}
-
     \section{Model Validation}
     \input{validation/relational-expr.tex}
-
-    \section{Type Inference / Conformance}
-
-    \section{Model Translation}
 
   \chapter{Referential Expressions}
   \label{ch:referential}
@@ -354,14 +340,8 @@ Initially developed as part of the author's Bachelor Technical Report in Compute
     \section{Metamodel}
     \input{metamodel/referential-expr.tex}
 
-    \section{Model Synthesis}
-
     \section{Model Validation}
     \input{validation/referential-expr.tex}
-
-    \section{Type Inference / Conformance}
-
-    \section{Model Translation}
 
   \chapter{String Concatenation}
   \label{ch:string-concatenation}
@@ -375,8 +355,6 @@ Initially developed as part of the author's Bachelor Technical Report in Compute
 
     \section{Metamodel}
     \input{metamodel/str-concat.tex}
-
-    \section{Model Synthesis}
 
     \section{Model Validation}
     \input{validation/str-concat.tex}
@@ -397,16 +375,8 @@ Initially developed as part of the author's Bachelor Technical Report in Compute
     \section{Syntax}
     \input{syntax/conditional-expr.tex}
 
-    \section{Metamodel}
-
-    \section{Model Synthesis}
-
     \section{Model Validation}
     \input{validation/conditional-expr.tex}
-
-    \section{Type Inference / Conformance}
-
-    \section{Model Translation}
 
   \chapter{Type Checking}
   \label{ch:type-checking}
@@ -418,16 +388,6 @@ Initially developed as part of the author's Bachelor Technical Report in Compute
     \section{Syntax}
     \input{syntax/type-checking.tex}
 
-    \section{Metamodel}
-
-    \section{Model Synthesis}
-
-    \section{Model Validation}
-
-    \section{Type Inference / Conformance}
-
-    \section{Model Translation}
-
   \chapter{Type Casting}
   \label{ch:type-casting}
   \input{definitions/type-casting.tex}
@@ -437,16 +397,6 @@ Initially developed as part of the author's Bachelor Technical Report in Compute
 
     \section{Syntax}
     \input{syntax/type-casting.tex}
-
-    \section{Metamodel}
-
-    \section{Model Synthesis}
-
-    \section{Model Validation}
-
-    \section{Type Inference / Conformance}
-
-    \section{Model Translation}
 
   \chapter{Path Expressions}
   \label{ch:paths}
@@ -458,16 +408,6 @@ Initially developed as part of the author's Bachelor Technical Report in Compute
     \section{Syntax}
     \input{syntax/paths.tex}
 
-    \section{Metamodel}
-
-    \section{Model Synthesis}
-
-    \section{Model Validation}
-
-    \section{Type Inference / Conformance}
-
-    \section{Model Translation}
-
   \chapter{Invocation Expressions}
   \label{ch:invocations}
   \input{definitions/invocations.tex}
@@ -477,16 +417,6 @@ Initially developed as part of the author's Bachelor Technical Report in Compute
 
     \section{Syntax}
     \input{syntax/invocations.tex}
-
-    \section{Metamodel}
-
-    \section{Model Synthesis}
-
-    \section{Model Validation}
-
-    \section{Type Inference / Conformance}
-
-    \section{Model Translation}
 
   \chapter{Lambda Expressions}
   \label{ch:lambdas}
@@ -498,16 +428,6 @@ Initially developed as part of the author's Bachelor Technical Report in Compute
     \section{Syntax}
     \input{syntax/lambdas.tex}
 
-    \section{Metamodel}
-
-    \section{Model Synthesis}
-
-    \section{Model Validation}
-
-    \section{Type Inference / Conformance}
-
-    \section{Model Translation}
-
   \chapter{Comprehension Expressions}
   \label{ch:comprehensions}
   \input{definitions/comprehensions.tex}
@@ -517,34 +437,6 @@ Initially developed as part of the author's Bachelor Technical Report in Compute
 
     \section{Syntax}
     \input{syntax/comprehensions.tex}
-
-    \section{Metamodel}
-
-    \section{Model Synthesis}
-
-    \section{Model Validation}
-
-    \section{Type Inference / Conformance}
-
-    \section{Model Translation}
-
-\part{Functions}
-
-  \chapter{Built-In Functions}
-  \label{ch:built-in-functions}
-  \input{definitions/built-in-functions.tex}
-
-  \chapter{Template Functions}
-  \label{ch:template-functions}
-  \input{definitions/template-functions.tex}
-
-  \chapter{Declared Functions}
-  \label{ch:declared-functions}
-  \input{definitions/declared-functions.tex}
-
-  \chapter{Comprehension Functions}
-  \label{ch:comprehension-functions}
-  \input{definitions/comprehension-functions.tex}
 
 \part{Type System}
 

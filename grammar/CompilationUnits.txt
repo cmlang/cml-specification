@@ -7,5 +7,6 @@ declarations
   | conceptDeclaration
   | associationDeclaration
   | taskDeclaration
-  | templateDeclaration;
+  | templateDeclaration
+  | functionDeclaration;
 

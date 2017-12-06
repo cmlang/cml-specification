@@ -1,12 +1,12 @@
-\clearpage
-\section{ANTLR Grammar}
-
-\begin{framed}
 \verbatimfont{\small}
 \begin{verbatim}
 // Compilation Units:
 \end{verbatim}
 \verbatiminput{grammar/CompilationUnits.txt}
+\begin{verbatim}
+// Module Declarations:
+\end{verbatim}
+\verbatiminput{grammar/Modules.txt}
 \begin{verbatim}
 // Concept Declarations:
 \end{verbatim}
@@ -16,13 +16,25 @@
 \end{verbatim}
 \verbatiminput{grammar/Properties.txt}
 \begin{verbatim}
+// Association Declarations:
+\end{verbatim}
+\verbatiminput{grammar/Associations.txt}
+\begin{verbatim}
+// Function Declarations:
+\end{verbatim}
+\verbatiminput{grammar/Functions.txt}
+\begin{verbatim}
 // Type Declarations:
 \end{verbatim}
 \verbatiminput{grammar/Types.txt}
 \begin{verbatim}
-// Target Declarations:
+// Task Declarations:
 \end{verbatim}
-\verbatiminput{grammar/Targets.txt}
+\verbatiminput{grammar/Tasks.txt}
+\begin{verbatim}
+// Expression Declarations:
+\end{verbatim}
+\verbatiminput{grammar/Expressions.txt}
 \begin{verbatim}
 // Names:
 \end{verbatim}
@@ -32,4 +44,3 @@
 \end{verbatim}
 \verbatiminput{grammar/Literals.txt}
 \verbatiminput{grammar/Ignored.txt}
-\end{framed}

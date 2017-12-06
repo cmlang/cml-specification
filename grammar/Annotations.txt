@@ -1,0 +1,7 @@
+
+annotationList:
+  '[' ( annotationDeclaration (',' annotationDeclaration)* )? ']';
+
+annotationDeclaration:
+  NAME;
+

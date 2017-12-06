@@ -1,7 +1,0 @@
-
-templateDeclaration returns [Template template]:
-  TEMPLATE
-  functionDeclaration;
-
-
-
